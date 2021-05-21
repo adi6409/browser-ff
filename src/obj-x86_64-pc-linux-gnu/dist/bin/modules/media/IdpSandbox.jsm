@@ -1,0 +1,1 @@
+/worker/build/dom/media/IdpSandbox.jsm

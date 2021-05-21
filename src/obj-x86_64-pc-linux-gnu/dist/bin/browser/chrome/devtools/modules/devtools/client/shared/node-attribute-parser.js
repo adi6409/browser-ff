@@ -1,0 +1,1 @@
+/worker/build/devtools/client/shared/node-attribute-parser.js

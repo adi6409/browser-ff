@@ -1,0 +1,1 @@
+/worker/build/gfx/layers/client/CanvasClient.h

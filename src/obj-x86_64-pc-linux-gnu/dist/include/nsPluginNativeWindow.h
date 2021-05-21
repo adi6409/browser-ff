@@ -1,0 +1,1 @@
+/worker/build/dom/plugins/base/nsPluginNativeWindow.h

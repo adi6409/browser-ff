@@ -1,0 +1,1 @@
+/worker/build/toolkit/components/tooltiptext/TooltipTextProvider.jsm

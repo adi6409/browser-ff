@@ -1,0 +1,1 @@
+/worker/build/dom/serializers/nsDOMSerializer.h

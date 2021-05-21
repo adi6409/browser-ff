@@ -1,0 +1,1 @@
+/worker/build/browser/extensions/webcompat/injections/js/bug1631811-datastudio.google.com-indexedDB.js

@@ -1,0 +1,1 @@
+/worker/build/dom/encoding/TextEncoder.h

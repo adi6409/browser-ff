@@ -1,0 +1,1 @@
+/worker/build/devtools/server/connectors/js-window-actor/WindowGlobalLogger.jsm

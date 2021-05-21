@@ -1,0 +1,1 @@
+/worker/build/widget/nsIPluginWidget.h

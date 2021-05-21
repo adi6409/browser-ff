@@ -1,0 +1,1 @@
+/worker/build/browser/extensions/webcompat/lib/intervention_helpers.js

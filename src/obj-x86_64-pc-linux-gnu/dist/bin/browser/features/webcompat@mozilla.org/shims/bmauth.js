@@ -1,0 +1,1 @@
+/worker/build/browser/extensions/webcompat/shims/bmauth.js

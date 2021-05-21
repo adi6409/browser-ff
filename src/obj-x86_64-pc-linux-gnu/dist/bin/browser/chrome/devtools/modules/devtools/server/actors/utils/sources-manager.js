@@ -1,0 +1,1 @@
+/worker/build/devtools/server/actors/utils/sources-manager.js

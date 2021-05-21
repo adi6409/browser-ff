@@ -1,0 +1,1 @@
+/worker/build/services/common/uptake-telemetry.js

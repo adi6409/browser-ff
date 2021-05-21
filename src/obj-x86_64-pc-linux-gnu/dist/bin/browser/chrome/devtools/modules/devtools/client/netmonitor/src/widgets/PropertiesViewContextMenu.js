@@ -1,0 +1,1 @@
+/worker/build/devtools/client/netmonitor/src/widgets/PropertiesViewContextMenu.js

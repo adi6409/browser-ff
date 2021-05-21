@@ -1,0 +1,1 @@
+/worker/build/devtools/client/inspector/shared/compatibility-user-settings.js

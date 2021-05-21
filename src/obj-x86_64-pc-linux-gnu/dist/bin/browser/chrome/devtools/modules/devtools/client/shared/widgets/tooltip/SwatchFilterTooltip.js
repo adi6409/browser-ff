@@ -1,0 +1,1 @@
+/worker/build/devtools/client/shared/widgets/tooltip/SwatchFilterTooltip.js

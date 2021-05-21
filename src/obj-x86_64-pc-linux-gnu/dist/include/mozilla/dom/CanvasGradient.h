@@ -1,0 +1,1 @@
+/worker/build/dom/canvas/CanvasGradient.h

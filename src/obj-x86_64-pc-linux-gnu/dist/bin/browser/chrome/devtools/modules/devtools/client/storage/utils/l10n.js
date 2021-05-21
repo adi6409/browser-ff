@@ -1,0 +1,1 @@
+/worker/build/devtools/client/storage/utils/l10n.js

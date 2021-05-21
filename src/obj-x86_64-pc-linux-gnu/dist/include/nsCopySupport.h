@@ -1,0 +1,1 @@
+/worker/build/dom/base/nsCopySupport.h

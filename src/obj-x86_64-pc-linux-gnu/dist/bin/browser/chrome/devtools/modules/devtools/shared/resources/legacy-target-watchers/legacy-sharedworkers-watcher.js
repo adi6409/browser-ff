@@ -1,0 +1,1 @@
+/worker/build/devtools/shared/resources/legacy-target-watchers/legacy-sharedworkers-watcher.js

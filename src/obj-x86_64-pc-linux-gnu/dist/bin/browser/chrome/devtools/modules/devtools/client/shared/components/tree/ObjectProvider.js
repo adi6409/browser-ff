@@ -1,0 +1,1 @@
+/worker/build/devtools/client/shared/components/tree/ObjectProvider.js

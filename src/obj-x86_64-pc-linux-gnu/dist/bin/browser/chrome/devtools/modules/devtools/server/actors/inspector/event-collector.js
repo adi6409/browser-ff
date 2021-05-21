@@ -1,0 +1,1 @@
+/worker/build/devtools/server/actors/inspector/event-collector.js

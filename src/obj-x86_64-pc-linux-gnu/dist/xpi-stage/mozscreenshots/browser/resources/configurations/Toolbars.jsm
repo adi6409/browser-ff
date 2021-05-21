@@ -1,0 +1,1 @@
+/worker/build/browser/tools/mozscreenshots/mozscreenshots/extension/configurations/Toolbars.jsm

@@ -1,0 +1,1 @@
+/worker/build/xpcom/components/nsComponentManagerUtils.h

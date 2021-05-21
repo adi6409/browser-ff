@@ -1,0 +1,1 @@
+/worker/build/toolkit/crashreporter/CrashReports.jsm

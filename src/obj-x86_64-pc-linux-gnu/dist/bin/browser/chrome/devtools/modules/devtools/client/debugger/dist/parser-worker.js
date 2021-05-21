@@ -1,0 +1,1 @@
+/worker/build/devtools/client/debugger/dist/parser-worker.js

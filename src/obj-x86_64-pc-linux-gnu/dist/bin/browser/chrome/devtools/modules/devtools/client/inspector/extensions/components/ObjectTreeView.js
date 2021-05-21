@@ -1,0 +1,1 @@
+/worker/build/devtools/client/inspector/extensions/components/ObjectTreeView.js

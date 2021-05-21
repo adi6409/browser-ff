@@ -1,0 +1,1 @@
+/worker/build/browser/modules/ContentCrashHandlers.jsm

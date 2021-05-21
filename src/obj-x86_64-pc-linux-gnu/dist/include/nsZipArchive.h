@@ -1,0 +1,1 @@
+/worker/build/modules/libjar/nsZipArchive.h

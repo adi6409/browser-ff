@@ -1,0 +1,1 @@
+/worker/build/browser/extensions/screenshots/domainFromUrl.js

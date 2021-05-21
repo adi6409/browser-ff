@@ -1,0 +1,1 @@
+/worker/build/tools/profiler/public/ProfileBufferEntrySerializationGeckoExtensions.h

@@ -1,0 +1,1 @@
+/worker/build/devtools/client/inspector/markup/views/html-editor.js

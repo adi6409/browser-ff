@@ -1,0 +1,1 @@
+/worker/build/gfx/thebes/gfxPattern.h

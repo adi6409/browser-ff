@@ -1,0 +1,1 @@
+/worker/build/dom/webauthn/AuthenticatorAssertionResponse.h

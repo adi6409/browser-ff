@@ -1,0 +1,1 @@
+/worker/build/devtools/client/inspector/rules/views/text-property-editor.js

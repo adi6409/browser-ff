@@ -1,0 +1,1 @@
+/worker/build/js/xpconnect/tests/components/native/xpctest_private.h

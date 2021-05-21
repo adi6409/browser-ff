@@ -1,0 +1,1 @@
+/worker/build/devtools/server/actors/resources/network-events-stacktraces.js

@@ -1,0 +1,1 @@
+/worker/build/devtools/client/framework/components/DebugTargetInfo.js

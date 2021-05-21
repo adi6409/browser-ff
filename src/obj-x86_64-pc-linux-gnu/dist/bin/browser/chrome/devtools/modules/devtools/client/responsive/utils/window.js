@@ -1,0 +1,1 @@
+/worker/build/devtools/client/responsive/utils/window.js

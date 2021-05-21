@@ -1,0 +1,1 @@
+/worker/build/gfx/layers/D3D11ShareHandleImage.h

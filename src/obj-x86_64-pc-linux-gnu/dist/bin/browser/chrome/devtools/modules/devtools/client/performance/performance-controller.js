@@ -1,0 +1,1 @@
+/worker/build/devtools/client/performance/performance-controller.js

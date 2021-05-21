@@ -1,0 +1,1 @@
+/worker/build/devtools/client/performance-new/popup/background.jsm.js

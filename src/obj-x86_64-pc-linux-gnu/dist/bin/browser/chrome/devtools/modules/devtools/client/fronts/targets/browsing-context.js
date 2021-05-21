@@ -1,0 +1,1 @@
+/worker/build/devtools/client/fronts/targets/browsing-context.js

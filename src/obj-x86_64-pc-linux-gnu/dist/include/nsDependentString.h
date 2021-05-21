@@ -1,0 +1,1 @@
+/worker/build/xpcom/string/nsDependentString.h

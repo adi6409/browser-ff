@@ -1,0 +1,1 @@
+/worker/build/hal/HalBatteryInformation.h

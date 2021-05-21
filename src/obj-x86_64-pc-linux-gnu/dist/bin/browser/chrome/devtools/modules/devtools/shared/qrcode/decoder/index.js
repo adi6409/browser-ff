@@ -1,0 +1,1 @@
+/worker/build/devtools/shared/qrcode/decoder/index.js

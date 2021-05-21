@@ -1,0 +1,1 @@
+/worker/build/devtools/startup/AboutDevToolsToolboxRegistration.jsm

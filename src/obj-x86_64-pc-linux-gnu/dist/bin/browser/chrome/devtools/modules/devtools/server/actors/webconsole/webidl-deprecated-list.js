@@ -1,0 +1,1 @@
+/worker/build/devtools/server/actors/webconsole/webidl-deprecated-list.js

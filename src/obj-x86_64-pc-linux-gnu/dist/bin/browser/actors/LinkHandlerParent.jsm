@@ -1,0 +1,1 @@
+/worker/build/browser/actors/LinkHandlerParent.jsm

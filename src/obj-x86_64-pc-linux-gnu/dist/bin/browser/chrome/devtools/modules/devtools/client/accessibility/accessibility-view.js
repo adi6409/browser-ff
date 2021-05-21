@@ -1,0 +1,1 @@
+/worker/build/devtools/client/accessibility/accessibility-view.js

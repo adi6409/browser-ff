@@ -1,0 +1,1 @@
+/worker/build/devtools/client/inspector/changes/actions/changes.js

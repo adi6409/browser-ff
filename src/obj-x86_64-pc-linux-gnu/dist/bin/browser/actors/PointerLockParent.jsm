@@ -1,0 +1,1 @@
+/worker/build/browser/actors/PointerLockParent.jsm

@@ -1,0 +1,1 @@
+/worker/build/devtools/client/performance/views/details-abstract-subview.js

@@ -1,0 +1,1 @@
+/worker/build/dom/webauthn/WebAuthnManagerBase.h

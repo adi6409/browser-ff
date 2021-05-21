@@ -1,0 +1,1 @@
+/worker/build/toolkit/components/lz4/lz4.js

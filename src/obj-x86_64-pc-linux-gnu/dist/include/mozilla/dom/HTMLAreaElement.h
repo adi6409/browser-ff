@@ -1,0 +1,1 @@
+/worker/build/dom/html/HTMLAreaElement.h

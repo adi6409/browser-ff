@@ -1,0 +1,1 @@
+/worker/build/devtools/client/netmonitor/src/components/search/search-provider.js

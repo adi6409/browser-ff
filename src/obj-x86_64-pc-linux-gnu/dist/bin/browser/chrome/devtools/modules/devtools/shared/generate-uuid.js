@@ -1,0 +1,1 @@
+/worker/build/devtools/shared/generate-uuid.js

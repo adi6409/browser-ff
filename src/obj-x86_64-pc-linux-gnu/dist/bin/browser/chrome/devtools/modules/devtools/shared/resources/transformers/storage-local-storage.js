@@ -1,0 +1,1 @@
+/worker/build/devtools/shared/resources/transformers/storage-local-storage.js

@@ -1,0 +1,1 @@
+/worker/build/toolkit/mozapps/update/common/readstrings.h

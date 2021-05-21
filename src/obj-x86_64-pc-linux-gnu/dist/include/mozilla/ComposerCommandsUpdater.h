@@ -1,0 +1,1 @@
+/worker/build/editor/composer/ComposerCommandsUpdater.h

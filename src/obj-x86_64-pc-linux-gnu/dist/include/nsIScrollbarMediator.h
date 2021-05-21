@@ -1,0 +1,1 @@
+/worker/build/layout/xul/nsIScrollbarMediator.h

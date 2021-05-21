@@ -1,0 +1,1 @@
+/worker/build/services/fxaccounts/FxAccountsKeys.jsm

@@ -1,0 +1,1 @@
+/worker/build/devtools/shared/node-properties/node-properties.js

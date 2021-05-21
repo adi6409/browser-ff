@@ -1,0 +1,1 @@
+/worker/build/devtools/client/jsonview/components/HeadersPanel.js

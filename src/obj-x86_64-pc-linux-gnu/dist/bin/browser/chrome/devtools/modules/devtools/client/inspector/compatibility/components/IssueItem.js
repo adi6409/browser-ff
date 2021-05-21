@@ -1,0 +1,1 @@
+/worker/build/devtools/client/inspector/compatibility/components/IssueItem.js

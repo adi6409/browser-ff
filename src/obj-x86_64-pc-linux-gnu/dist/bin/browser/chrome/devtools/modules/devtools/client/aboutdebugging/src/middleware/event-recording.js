@@ -1,0 +1,1 @@
+/worker/build/devtools/client/aboutdebugging/src/middleware/event-recording.js

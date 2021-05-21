@@ -1,0 +1,1 @@
+/worker/build/browser/extensions/shield/background.js

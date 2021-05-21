@@ -1,0 +1,1 @@
+/worker/build/image/decoders/icon/nsIconURI.h

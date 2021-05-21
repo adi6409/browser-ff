@@ -1,0 +1,1 @@
+/worker/build/devtools/server/performance/recorder.js

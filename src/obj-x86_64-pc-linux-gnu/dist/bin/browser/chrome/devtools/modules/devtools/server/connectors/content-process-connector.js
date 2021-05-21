@@ -1,0 +1,1 @@
+/worker/build/devtools/server/connectors/content-process-connector.js

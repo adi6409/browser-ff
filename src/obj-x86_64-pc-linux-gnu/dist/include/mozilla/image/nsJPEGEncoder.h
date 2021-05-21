@@ -1,0 +1,1 @@
+/worker/build/image/encoders/jpeg/nsJPEGEncoder.h

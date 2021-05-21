@@ -1,0 +1,1 @@
+/worker/build/devtools/client/webconsole/selectors/prefs.js

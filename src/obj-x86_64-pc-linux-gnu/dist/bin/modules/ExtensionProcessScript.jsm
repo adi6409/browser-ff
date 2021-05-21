@@ -1,0 +1,1 @@
+/worker/build/toolkit/components/extensions/ExtensionProcessScript.jsm

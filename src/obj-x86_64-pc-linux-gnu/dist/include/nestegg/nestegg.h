@@ -1,0 +1,1 @@
+/worker/build/media/libnestegg/include/nestegg.h

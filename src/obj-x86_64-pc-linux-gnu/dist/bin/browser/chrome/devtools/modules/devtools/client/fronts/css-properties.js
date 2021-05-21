@@ -1,0 +1,1 @@
+/worker/build/devtools/client/fronts/css-properties.js

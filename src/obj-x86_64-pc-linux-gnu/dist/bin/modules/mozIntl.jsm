@@ -1,0 +1,1 @@
+/worker/build/toolkit/components/mozintl/mozIntl.jsm

@@ -1,0 +1,1 @@
+/worker/build/browser/extensions/webcompat/injections/js/bug1457335-histography.io-ua-change.js

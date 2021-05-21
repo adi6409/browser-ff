@@ -1,0 +1,1 @@
+/worker/build/browser/extensions/report-site-issue/experimentalAPIs/pageActionExtras.js

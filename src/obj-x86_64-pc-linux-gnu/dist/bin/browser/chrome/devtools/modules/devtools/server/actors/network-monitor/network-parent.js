@@ -1,0 +1,1 @@
+/worker/build/devtools/server/actors/network-monitor/network-parent.js

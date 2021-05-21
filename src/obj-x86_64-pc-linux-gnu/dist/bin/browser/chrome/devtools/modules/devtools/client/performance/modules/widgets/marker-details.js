@@ -1,0 +1,1 @@
+/worker/build/devtools/client/performance/modules/widgets/marker-details.js

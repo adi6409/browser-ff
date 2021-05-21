@@ -1,0 +1,1 @@
+/worker/build/devtools/client/inspector/boxmodel/components/BoxModelInfo.js

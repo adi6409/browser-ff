@@ -1,0 +1,1 @@
+/worker/build/browser/extensions/screenshots/build/buildSettings.js

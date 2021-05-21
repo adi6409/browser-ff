@@ -1,0 +1,1 @@
+/worker/build/devtools/client/aboutdebugging/src/components/debugtarget/TemporaryExtensionDetail.js

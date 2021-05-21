@@ -1,0 +1,1 @@
+/worker/build/devtools/shared/content-observer.js

@@ -1,0 +1,1 @@
+/worker/build/toolkit/components/captivedetect/CaptiveDetect.jsm

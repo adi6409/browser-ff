@@ -1,0 +1,1 @@
+/worker/build/browser/components/sessionstore/SessionSaver.jsm

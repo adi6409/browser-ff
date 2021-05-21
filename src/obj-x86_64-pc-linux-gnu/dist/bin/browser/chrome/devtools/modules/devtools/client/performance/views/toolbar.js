@@ -1,0 +1,1 @@
+/worker/build/devtools/client/performance/views/toolbar.js

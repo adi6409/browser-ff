@@ -1,0 +1,1 @@
+/worker/build/devtools/client/inspector/shared/walker-event-listener.js

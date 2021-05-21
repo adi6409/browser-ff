@@ -1,0 +1,1 @@
+../../../modules/libpref/StaticPrefs_full_screen_api.h

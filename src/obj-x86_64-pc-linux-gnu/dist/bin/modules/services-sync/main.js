@@ -1,0 +1,1 @@
+/worker/build/services/sync/modules/main.js

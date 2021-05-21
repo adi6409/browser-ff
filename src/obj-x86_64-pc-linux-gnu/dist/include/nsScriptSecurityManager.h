@@ -1,0 +1,1 @@
+/worker/build/caps/nsScriptSecurityManager.h

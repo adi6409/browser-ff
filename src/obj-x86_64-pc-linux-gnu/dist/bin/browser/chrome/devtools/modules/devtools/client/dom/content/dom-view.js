@@ -1,0 +1,1 @@
+/worker/build/devtools/client/dom/content/dom-view.js

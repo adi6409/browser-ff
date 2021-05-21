@@ -1,0 +1,1 @@
+/worker/build/devtools/shared/base-loader.js

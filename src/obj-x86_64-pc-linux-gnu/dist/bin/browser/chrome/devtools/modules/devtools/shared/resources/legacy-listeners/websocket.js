@@ -1,0 +1,1 @@
+/worker/build/devtools/shared/resources/legacy-listeners/websocket.js

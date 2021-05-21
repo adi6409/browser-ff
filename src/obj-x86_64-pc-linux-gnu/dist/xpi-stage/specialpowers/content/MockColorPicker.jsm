@@ -1,0 +1,1 @@
+/worker/build/testing/specialpowers/content/MockColorPicker.jsm

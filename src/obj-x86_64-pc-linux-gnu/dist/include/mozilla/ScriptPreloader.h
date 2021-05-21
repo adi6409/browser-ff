@@ -1,0 +1,1 @@
+/worker/build/js/xpconnect/loader/ScriptPreloader.h

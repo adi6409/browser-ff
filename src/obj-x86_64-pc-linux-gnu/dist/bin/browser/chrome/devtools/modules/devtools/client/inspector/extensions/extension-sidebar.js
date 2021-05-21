@@ -1,0 +1,1 @@
+/worker/build/devtools/client/inspector/extensions/extension-sidebar.js

@@ -1,0 +1,1 @@
+/worker/build/browser/extensions/webcompat/about-compat/aboutCompat.js

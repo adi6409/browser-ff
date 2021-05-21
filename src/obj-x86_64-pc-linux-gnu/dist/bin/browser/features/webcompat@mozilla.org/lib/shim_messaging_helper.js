@@ -1,0 +1,1 @@
+/worker/build/browser/extensions/webcompat/lib/shim_messaging_helper.js

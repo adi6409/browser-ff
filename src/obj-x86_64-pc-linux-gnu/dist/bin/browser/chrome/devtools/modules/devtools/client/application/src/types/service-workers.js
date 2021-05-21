@@ -1,0 +1,1 @@
+/worker/build/devtools/client/application/src/types/service-workers.js

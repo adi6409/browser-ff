@@ -1,0 +1,1 @@
+/worker/build/devtools/shared/protocol/Front.js

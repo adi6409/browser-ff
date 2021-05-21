@@ -1,0 +1,1 @@
+/worker/build/browser/components/translation/cld2/cld-worker.js

@@ -1,0 +1,1 @@
+/worker/build/toolkit/components/search/SearchSuggestionController.jsm

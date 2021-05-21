@@ -1,0 +1,1 @@
+/worker/build/toolkit/components/antitracking/AntiTrackingRedirectHeuristic.h

@@ -1,0 +1,1 @@
+/worker/build/devtools/client/inspector/animation/components/keyframes-graph/ComputedStylePath.js

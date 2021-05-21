@@ -1,0 +1,1 @@
+/worker/build/devtools/shared/specs/target-configuration.js

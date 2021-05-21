@@ -1,0 +1,1 @@
+/worker/build/browser/components/newtab/actors/ASRouterChild.jsm

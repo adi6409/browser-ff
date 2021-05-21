@@ -1,0 +1,1 @@
+/worker/build/devtools/client/inspector/grids/actions/highlighter-settings.js

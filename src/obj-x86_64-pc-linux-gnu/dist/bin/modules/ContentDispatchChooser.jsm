@@ -1,0 +1,1 @@
+/worker/build/toolkit/mozapps/handling/ContentDispatchChooser.jsm

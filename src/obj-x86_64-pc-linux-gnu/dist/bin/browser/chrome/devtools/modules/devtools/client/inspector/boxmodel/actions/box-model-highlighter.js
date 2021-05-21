@@ -1,0 +1,1 @@
+/worker/build/devtools/client/inspector/boxmodel/actions/box-model-highlighter.js

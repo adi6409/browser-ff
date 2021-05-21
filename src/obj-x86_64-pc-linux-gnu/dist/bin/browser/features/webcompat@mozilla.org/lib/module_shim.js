@@ -1,0 +1,1 @@
+/worker/build/browser/extensions/webcompat/lib/module_shim.js

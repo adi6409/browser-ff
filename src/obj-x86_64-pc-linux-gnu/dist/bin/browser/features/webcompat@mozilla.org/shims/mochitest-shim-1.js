@@ -1,0 +1,1 @@
+/worker/build/browser/extensions/webcompat/shims/mochitest-shim-1.js

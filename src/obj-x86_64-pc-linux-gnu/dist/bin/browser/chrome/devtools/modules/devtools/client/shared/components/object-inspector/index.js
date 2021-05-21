@@ -1,0 +1,1 @@
+/worker/build/devtools/client/shared/components/object-inspector/index.js

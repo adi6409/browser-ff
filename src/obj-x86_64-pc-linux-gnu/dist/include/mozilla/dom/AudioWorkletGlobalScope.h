@@ -1,0 +1,1 @@
+/worker/build/dom/media/webaudio/AudioWorkletGlobalScope.h

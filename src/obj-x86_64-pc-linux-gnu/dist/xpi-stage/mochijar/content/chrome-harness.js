@@ -1,0 +1,1 @@
+/worker/build/testing/mochitest/chrome-harness.js

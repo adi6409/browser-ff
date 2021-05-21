@@ -1,0 +1,1 @@
+/worker/build/netwerk/base/nsAsyncRedirectVerifyHelper.h

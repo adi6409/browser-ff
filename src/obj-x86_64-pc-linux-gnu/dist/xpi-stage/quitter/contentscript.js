@@ -1,0 +1,1 @@
+/worker/build/tools/quitter/contentscript.js

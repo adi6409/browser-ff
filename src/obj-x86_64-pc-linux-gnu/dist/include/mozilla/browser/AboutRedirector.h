@@ -1,0 +1,1 @@
+/worker/build/browser/components/about/AboutRedirector.h

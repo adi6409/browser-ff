@@ -1,0 +1,1 @@
+/worker/build/browser/extensions/webcompat/lib/messaging_helper.js

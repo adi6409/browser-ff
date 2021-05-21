@@ -1,0 +1,1 @@
+/worker/build/devtools/client/netmonitor/src/components/messages/ColumnFinBit.js

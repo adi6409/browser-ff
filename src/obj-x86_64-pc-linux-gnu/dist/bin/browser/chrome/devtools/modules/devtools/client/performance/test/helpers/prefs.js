@@ -1,0 +1,1 @@
+/worker/build/devtools/client/performance/test/helpers/prefs.js

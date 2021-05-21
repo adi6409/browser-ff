@@ -1,0 +1,1 @@
+/worker/build/devtools/client/webconsole/utils/l10n.js

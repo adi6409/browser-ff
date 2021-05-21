@@ -1,0 +1,1 @@
+/worker/build/browser/extensions/qrcodes/third_party/qrcode.js.LICENSE.txt
