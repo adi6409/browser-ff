@@ -1,1 +1,0 @@
-/worker/build/devtools/client/aboutdebugging/src/middleware/extension-component-data.js

@@ -1,1 +1,0 @@
-/worker/build/docshell/base/nsCTooltipTextProvider.h

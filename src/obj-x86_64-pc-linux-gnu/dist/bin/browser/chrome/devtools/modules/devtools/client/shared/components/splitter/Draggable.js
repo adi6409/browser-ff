@@ -1,1 +1,0 @@
-/worker/build/devtools/client/shared/components/splitter/Draggable.js

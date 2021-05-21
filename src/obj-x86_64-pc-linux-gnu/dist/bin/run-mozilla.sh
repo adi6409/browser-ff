@@ -1,1 +1,0 @@
-/worker/build/build/unix/run-mozilla.sh

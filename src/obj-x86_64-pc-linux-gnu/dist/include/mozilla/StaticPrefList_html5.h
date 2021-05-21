@@ -1,1 +1,0 @@
-../../../modules/libpref/init/StaticPrefList_html5.h

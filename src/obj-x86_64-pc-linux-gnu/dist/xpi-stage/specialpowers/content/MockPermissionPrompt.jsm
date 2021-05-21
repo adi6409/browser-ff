@@ -1,1 +1,0 @@
-/worker/build/testing/specialpowers/content/MockPermissionPrompt.jsm

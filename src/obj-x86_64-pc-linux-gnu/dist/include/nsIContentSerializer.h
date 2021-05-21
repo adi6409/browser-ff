@@ -1,1 +1,0 @@
-/worker/build/dom/serializers/nsIContentSerializer.h

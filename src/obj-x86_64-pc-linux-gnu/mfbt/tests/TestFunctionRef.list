@@ -1,7 +1,0 @@
-INPUT("TestFunctionRef.o")
-INPUT("../lz4.o")
-INPUT("../lz4frame.o")
-INPUT("../lz4hc.o")
-INPUT("../xxhash.o")
-INPUT("../Unified_cpp_mfbt0.o")
-INPUT("../Unified_cpp_mfbt1.o")

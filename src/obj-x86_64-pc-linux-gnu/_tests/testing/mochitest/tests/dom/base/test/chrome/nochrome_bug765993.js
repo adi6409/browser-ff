@@ -1,1 +1,0 @@
-/worker/build/dom/base/test/chrome/nochrome_bug765993.js

@@ -1,1 +1,0 @@
-/worker/build/devtools/client/inspector/fonts/components/FontList.js

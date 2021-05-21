@@ -1,1 +1,0 @@
-/worker/build/devtools/client/dom/content/actions/filter.js

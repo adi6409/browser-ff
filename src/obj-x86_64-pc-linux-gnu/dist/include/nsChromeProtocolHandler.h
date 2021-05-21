@@ -1,1 +1,0 @@
-/worker/build/chrome/nsChromeProtocolHandler.h

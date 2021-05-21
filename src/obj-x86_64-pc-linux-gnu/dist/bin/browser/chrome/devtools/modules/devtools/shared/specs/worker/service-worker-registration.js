@@ -1,1 +1,0 @@
-/worker/build/devtools/shared/specs/worker/service-worker-registration.js

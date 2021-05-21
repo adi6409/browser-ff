@@ -1,1 +1,0 @@
-/worker/build/toolkit/modules/tests/xpcshell/TestIntegration.jsm

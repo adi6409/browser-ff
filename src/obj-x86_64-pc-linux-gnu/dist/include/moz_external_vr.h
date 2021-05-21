@@ -1,1 +1,0 @@
-/worker/build/gfx/vr/external_api/moz_external_vr.h

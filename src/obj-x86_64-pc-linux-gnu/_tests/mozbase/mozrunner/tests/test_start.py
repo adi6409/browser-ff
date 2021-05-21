@@ -1,1 +1,0 @@
-/worker/build/testing/mozbase/mozrunner/tests/test_start.py

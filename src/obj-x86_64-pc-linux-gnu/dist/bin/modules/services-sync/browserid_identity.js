@@ -1,1 +1,0 @@
-/worker/build/services/sync/modules/browserid_identity.js

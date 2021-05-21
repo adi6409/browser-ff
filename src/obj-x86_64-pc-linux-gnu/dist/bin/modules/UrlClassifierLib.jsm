@@ -1,1 +1,0 @@
-/worker/build/toolkit/components/url-classifier/UrlClassifierLib.jsm

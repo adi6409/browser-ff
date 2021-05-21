@@ -1,1 +1,0 @@
-/worker/build/js/xpconnect/loader/ScriptCacheActors.h

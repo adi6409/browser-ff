@@ -1,1 +1,0 @@
-/worker/build/gfx/layers/protobuf/LayerScopePacket.pb.h

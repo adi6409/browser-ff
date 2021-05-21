@@ -1,1 +1,0 @@
-/worker/build/devtools/client/shared/remote-debugging/adb/commands/list-devices.js

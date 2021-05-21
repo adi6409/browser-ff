@@ -1,1 +1,0 @@
-/worker/build/toolkit/components/prompts/src/SharedPromptUtils.jsm

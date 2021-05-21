@@ -1,1 +1,0 @@
-/worker/build/testing/mozbase/mozlog/mozlog/pytest_mozlog/plugin.py

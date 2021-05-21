@@ -1,1 +1,0 @@
-/worker/build/editor/AsyncSpellCheckTestHelper.jsm

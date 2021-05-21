@@ -1,1 +1,0 @@
-/worker/build/browser/components/sessionstore/SessionStartup.jsm

@@ -1,1 +1,0 @@
-/worker/build/toolkit/components/osfile/modules/ospath.jsm

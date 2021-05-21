@@ -1,1 +1,0 @@
-/worker/build/devtools/client/performance/components/JITOptimizationsItem.js

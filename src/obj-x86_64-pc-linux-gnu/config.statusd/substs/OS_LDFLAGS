@@ -1,9 +1,0 @@
-[
-    "-lpthread",
-    "-Wl,-z,noexecstack",
-    "-Wl,-z,text",
-    "-Wl,-z,relro",
-    "-Wl,-z,nocopyreloc",
-    "-Wl,-Bsymbolic-functions",
-    "-Wl,--build-id=sha1"
-]

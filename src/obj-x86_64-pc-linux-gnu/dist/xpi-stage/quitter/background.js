@@ -1,1 +1,0 @@
-/worker/build/tools/quitter/background.js

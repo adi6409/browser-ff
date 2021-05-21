@@ -1,1 +1,0 @@
-/worker/build/dom/plugins/base/nsNPAPIPluginInstance.h

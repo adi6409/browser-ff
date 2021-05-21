@@ -1,1 +1,0 @@
-/worker/build/devtools/shared/css/properties-db.js

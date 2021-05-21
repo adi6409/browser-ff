@@ -1,1 +1,0 @@
-/worker/build/testing/mozbase/moztest/moztest/__init__.py

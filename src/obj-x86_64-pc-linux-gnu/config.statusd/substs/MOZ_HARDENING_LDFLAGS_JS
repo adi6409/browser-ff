@@ -1,4 +1,0 @@
-[
-    "-fstack-protector-strong",
-    "-fstack-clash-protection"
-]

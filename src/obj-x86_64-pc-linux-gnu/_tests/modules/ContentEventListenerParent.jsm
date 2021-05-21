@@ -1,1 +1,0 @@
-/worker/build/testing/mochitest/BrowserTestUtils/ContentEventListenerParent.jsm

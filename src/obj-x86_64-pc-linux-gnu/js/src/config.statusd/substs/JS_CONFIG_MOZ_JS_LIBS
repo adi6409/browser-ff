@@ -1,1 +1,0 @@
-"-L${libdir} -l${JS_LIBRARY_NAME}"

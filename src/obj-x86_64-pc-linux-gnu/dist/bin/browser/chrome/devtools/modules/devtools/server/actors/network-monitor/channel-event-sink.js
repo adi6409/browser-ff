@@ -1,1 +1,0 @@
-/worker/build/devtools/server/actors/network-monitor/channel-event-sink.js

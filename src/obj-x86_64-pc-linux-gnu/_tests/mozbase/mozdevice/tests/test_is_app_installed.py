@@ -1,1 +1,0 @@
-/worker/build/testing/mozbase/mozdevice/tests/test_is_app_installed.py

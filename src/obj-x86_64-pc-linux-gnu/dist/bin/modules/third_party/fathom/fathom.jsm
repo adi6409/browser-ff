@@ -1,1 +1,0 @@
-/worker/build/toolkit/modules/third_party/fathom/fathom.jsm

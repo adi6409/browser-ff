@@ -1,1 +1,0 @@
-/worker/build/devtools/shared/loader-plugin-raw.jsm

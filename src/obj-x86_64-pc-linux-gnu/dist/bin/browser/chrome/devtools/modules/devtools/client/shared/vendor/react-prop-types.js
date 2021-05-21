@@ -1,1 +1,0 @@
-/worker/build/devtools/client/shared/vendor/react-prop-types.js

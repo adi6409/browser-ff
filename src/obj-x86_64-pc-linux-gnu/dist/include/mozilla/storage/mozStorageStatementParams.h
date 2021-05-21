@@ -1,1 +1,0 @@
-/worker/build/storage/mozStorageStatementParams.h

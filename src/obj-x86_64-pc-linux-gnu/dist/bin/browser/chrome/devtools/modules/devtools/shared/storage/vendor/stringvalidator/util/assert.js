@@ -1,1 +1,0 @@
-/worker/build/devtools/shared/storage/vendor/stringvalidator/util/assert.js

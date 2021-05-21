@@ -1,1 +1,0 @@
-/worker/build/devtools/client/performance/views/details-js-call-tree.js

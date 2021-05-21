@@ -1,1 +1,0 @@
-/worker/build/testing/mozbase/mozdevice/mozdevice/adb_android.py

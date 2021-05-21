@@ -1,1 +1,0 @@
-/worker/build/toolkit/modules/offlineAppCache.jsm

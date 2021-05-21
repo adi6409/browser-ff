@@ -1,1 +1,0 @@
-/worker/build/gfx/2d/ssse3-scaler.h

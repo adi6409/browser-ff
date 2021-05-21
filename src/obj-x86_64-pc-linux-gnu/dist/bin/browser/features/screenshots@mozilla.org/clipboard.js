@@ -1,1 +1,0 @@
-/worker/build/browser/extensions/screenshots/clipboard.js

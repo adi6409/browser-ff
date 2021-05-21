@@ -1,1 +1,0 @@
-/worker/build/dom/webauthn/U2FHIDTokenManager.h

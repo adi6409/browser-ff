@@ -1,1 +1,0 @@
-/worker/build/devtools/client/inspector/rules/views/class-list-previewer.js

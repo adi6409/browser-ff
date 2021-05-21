@@ -1,1 +1,0 @@
-/worker/build/media/libjpeg/jmorecfg.h

@@ -1,1 +1,0 @@
-/worker/build/browser/actors/BrowserTabParent.jsm

@@ -1,1 +1,0 @@
-/worker/build/testing/mozbase/mozprofile/tests/addon_stubs.py

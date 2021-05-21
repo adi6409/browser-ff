@@ -1,1 +1,0 @@
-/worker/build/browser/tools/mozscreenshots/mozscreenshots/extension/configurations/DevTools.jsm

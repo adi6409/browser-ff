@@ -1,1 +1,0 @@
-/worker/build/testing/mozbase/manifestparser/tests/verifyDirectory/subdir/test_sub.js

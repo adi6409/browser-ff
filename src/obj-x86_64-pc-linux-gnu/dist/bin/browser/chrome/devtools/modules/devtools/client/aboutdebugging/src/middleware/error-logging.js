@@ -1,1 +1,0 @@
-/worker/build/devtools/client/aboutdebugging/src/middleware/error-logging.js

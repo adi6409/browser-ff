@@ -1,1 +1,0 @@
-/worker/build/devtools/client/inspector/layout/components/LayoutApp.js

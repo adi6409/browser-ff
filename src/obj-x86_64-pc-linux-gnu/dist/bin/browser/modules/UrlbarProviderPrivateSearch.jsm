@@ -1,1 +1,0 @@
-/worker/build/browser/components/urlbar/UrlbarProviderPrivateSearch.jsm

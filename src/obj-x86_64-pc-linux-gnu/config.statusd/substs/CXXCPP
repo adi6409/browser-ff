@@ -1,6 +1,0 @@
-[
-    "/home/worker/.mozbuild/sccache/sccache",
-    "/home/worker/.mozbuild/clang/bin/clang++",
-    "-E",
-    "-std=gnu++17"
-]

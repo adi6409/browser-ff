@@ -1,1 +1,0 @@
-/worker/build/toolkit/mozapps/update/UpdateService.jsm

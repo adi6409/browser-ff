@@ -1,1 +1,0 @@
-/worker/build/js/public/SweepingAPI.h

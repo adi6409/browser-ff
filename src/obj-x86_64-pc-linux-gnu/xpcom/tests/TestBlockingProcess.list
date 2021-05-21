@@ -1,7 +1,0 @@
-INPUT("TestBlockingProcess.o")
-INPUT("../../mfbt/lz4.o")
-INPUT("../../mfbt/lz4frame.o")
-INPUT("../../mfbt/lz4hc.o")
-INPUT("../../mfbt/xxhash.o")
-INPUT("../../mfbt/Unified_cpp_mfbt0.o")
-INPUT("../../mfbt/Unified_cpp_mfbt1.o")

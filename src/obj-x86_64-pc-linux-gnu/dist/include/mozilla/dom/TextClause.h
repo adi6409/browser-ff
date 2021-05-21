@@ -1,1 +1,0 @@
-/worker/build/dom/events/TextClause.h

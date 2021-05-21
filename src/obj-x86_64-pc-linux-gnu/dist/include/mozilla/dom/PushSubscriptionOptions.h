@@ -1,1 +1,0 @@
-/worker/build/dom/push/PushSubscriptionOptions.h

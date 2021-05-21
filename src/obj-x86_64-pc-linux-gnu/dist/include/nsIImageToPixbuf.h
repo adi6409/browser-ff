@@ -1,1 +1,0 @@
-/worker/build/widget/gtk/nsIImageToPixbuf.h

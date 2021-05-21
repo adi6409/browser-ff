@@ -1,1 +1,0 @@
-/worker/build/devtools/server/actors/highlighters/utils/canvas.js

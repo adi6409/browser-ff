@@ -1,1 +1,0 @@
-../../../modules/libpref/init/StaticPrefList_plain_text.h

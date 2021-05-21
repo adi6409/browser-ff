@@ -1,7 +1,0 @@
-[
-    "-ffunction-sections",
-    "-fdata-sections",
-    "-fno-math-errno",
-    "-pthread",
-    "-pipe"
-]

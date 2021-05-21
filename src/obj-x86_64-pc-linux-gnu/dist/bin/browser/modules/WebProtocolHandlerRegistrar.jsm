@@ -1,1 +1,0 @@
-/worker/build/browser/components/protocolhandler/WebProtocolHandlerRegistrar.jsm

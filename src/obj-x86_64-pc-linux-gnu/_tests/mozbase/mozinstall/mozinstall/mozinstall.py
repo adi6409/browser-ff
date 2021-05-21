@@ -1,1 +1,0 @@
-/worker/build/testing/mozbase/mozinstall/mozinstall/mozinstall.py

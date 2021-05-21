@@ -1,1 +1,0 @@
-/worker/build/testing/profiles/reftest/user.js

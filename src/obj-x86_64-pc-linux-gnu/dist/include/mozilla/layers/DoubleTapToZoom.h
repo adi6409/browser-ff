@@ -1,1 +1,0 @@
-/worker/build/gfx/layers/apz/util/DoubleTapToZoom.h

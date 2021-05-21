@@ -1,1 +1,0 @@
-/worker/build/widget/nsIDeviceContextSpec.h

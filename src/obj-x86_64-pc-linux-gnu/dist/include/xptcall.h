@@ -1,1 +1,0 @@
-/worker/build/xpcom/reflect/xptcall/xptcall.h

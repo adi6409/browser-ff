@@ -1,1 +1,0 @@
-/worker/build/toolkit/mozapps/extensions/amContentHandler.jsm

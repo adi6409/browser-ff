@@ -1,1 +1,0 @@
-/worker/build/services/settings/RemoteSettingsClient.jsm

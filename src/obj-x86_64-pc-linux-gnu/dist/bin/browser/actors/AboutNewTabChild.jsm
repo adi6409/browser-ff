@@ -1,1 +1,0 @@
-/worker/build/browser/actors/AboutNewTabChild.jsm

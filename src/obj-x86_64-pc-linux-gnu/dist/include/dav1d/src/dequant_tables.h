@@ -1,1 +1,0 @@
-/worker/build/third_party/dav1d/src/dequant_tables.h

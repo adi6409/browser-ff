@@ -1,1 +1,0 @@
-/worker/build/devtools/client/responsive/utils/l10n.js

@@ -1,1 +1,0 @@
-/worker/build/testing/mozbase/mozdevice/mozdevice/version_codes.py

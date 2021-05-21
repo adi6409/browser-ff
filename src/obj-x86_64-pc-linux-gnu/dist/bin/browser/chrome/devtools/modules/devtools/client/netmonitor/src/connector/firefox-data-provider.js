@@ -1,1 +1,0 @@
-/worker/build/devtools/client/netmonitor/src/connector/firefox-data-provider.js

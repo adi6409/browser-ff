@@ -1,1 +1,0 @@
-/worker/build/devtools/shared/jsbeautify/src/beautify-js.js

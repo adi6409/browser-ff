@@ -1,1 +1,0 @@
-/worker/build/devtools/server/actors/worker/service-worker-registration.js

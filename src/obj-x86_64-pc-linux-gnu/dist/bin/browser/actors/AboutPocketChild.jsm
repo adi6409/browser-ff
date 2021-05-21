@@ -1,1 +1,0 @@
-/worker/build/browser/actors/AboutPocketChild.jsm

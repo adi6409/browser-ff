@@ -1,9 +1,0 @@
-5
-8chrome.manifest"manifest en-US.manifest\n"
-5chrome/content/*/worker/build/browser/extensions/formautofill/content/*chrome/content/
-5chrome/content/skin/*/worker/build/browser/extensions/formautofill/skin/shared/*chrome/content/skin/
-5chrome/res/*.jsm/worker/build/browser/extensions/formautofill/*.jsmchrome/res/
-5chrome/res/addressmetadata/*/worker/build/browser/extensions/formautofill/addressmetadata/*chrome/res/addressmetadata/
-5chrome/res/phonenumberutils/*.jsm/worker/build/browser/extensions/formautofill/phonenumberutils/*.jsmchrome/res/phonenumberutils/
-8en-US.manifest"locale formautofill en-US en-US/locale/en-US/\n"
-1en-US/locale/en-US/formautofill.properties/worker/build/browser/extensions/formautofill/locales/en-US/formautofill.properties

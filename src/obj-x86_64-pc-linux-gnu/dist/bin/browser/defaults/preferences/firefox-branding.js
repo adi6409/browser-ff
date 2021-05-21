@@ -1,1 +1,0 @@
-/worker/build/browser/branding/dot/pref/firefox-branding.js

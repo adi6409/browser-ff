@@ -1,1 +1,0 @@
-/worker/build/testing/mozbase/mozdebug/setup.py

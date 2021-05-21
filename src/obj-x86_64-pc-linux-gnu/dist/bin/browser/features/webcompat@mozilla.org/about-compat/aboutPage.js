@@ -1,1 +1,0 @@
-/worker/build/browser/extensions/webcompat/about-compat/aboutPage.js

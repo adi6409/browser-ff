@@ -1,1 +1,0 @@
-/worker/build/testing/modules/Sinon.jsm

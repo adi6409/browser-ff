@@ -1,1 +1,0 @@
-/worker/build/devtools/client/webconsole/actions/object.js

@@ -1,1 +1,0 @@
-/worker/build/xpcom/io/nsAnonymousTemporaryFile.h

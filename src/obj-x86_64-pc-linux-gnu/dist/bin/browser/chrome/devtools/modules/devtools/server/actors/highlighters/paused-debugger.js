@@ -1,1 +1,0 @@
-/worker/build/devtools/server/actors/highlighters/paused-debugger.js

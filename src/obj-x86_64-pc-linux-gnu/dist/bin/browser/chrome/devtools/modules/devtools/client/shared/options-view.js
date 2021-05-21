@@ -1,1 +1,0 @@
-/worker/build/devtools/client/shared/options-view.js

@@ -1,1 +1,0 @@
-/worker/build/browser/actors/AboutNewInstallParent.jsm

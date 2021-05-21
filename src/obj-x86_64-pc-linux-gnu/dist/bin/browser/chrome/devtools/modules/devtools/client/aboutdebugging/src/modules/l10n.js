@@ -1,1 +1,0 @@
-/worker/build/devtools/client/aboutdebugging/src/modules/l10n.js

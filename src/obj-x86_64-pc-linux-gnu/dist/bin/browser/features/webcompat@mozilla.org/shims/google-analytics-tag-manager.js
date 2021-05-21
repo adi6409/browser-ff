@@ -1,1 +1,0 @@
-/worker/build/browser/extensions/webcompat/shims/google-analytics-tag-manager.js

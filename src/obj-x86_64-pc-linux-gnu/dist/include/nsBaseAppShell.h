@@ -1,1 +1,0 @@
-/worker/build/widget/nsBaseAppShell.h

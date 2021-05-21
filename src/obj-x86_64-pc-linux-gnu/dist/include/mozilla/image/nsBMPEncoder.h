@@ -1,1 +1,0 @@
-/worker/build/image/encoders/bmp/nsBMPEncoder.h

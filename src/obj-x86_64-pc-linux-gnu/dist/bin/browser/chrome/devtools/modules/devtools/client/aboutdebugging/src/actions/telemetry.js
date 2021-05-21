@@ -1,1 +1,0 @@
-/worker/build/devtools/client/aboutdebugging/src/actions/telemetry.js

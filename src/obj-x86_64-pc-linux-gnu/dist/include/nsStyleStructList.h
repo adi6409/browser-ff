@@ -1,1 +1,0 @@
-/worker/build/layout/style/nsStyleStructList.h

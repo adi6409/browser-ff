@@ -1,1 +1,0 @@
-/worker/build/extensions/spellcheck/src/mozSpellChecker.h

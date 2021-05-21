@@ -1,1 +1,0 @@
-/worker/build/browser/extensions/ntp/vendors.bundle.js

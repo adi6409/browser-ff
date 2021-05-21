@@ -1,1 +1,0 @@
-/worker/build/testing/mozbase/mozinfo/mozinfo/string_version.py

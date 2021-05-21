@@ -1,1 +1,0 @@
-/worker/build/netwerk/protocol/ftp/ftpCore.h

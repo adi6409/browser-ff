@@ -1,1 +1,0 @@
-../../xpcom/xpcom-config.h

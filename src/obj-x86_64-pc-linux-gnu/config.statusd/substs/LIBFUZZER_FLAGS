@@ -1,3 +1,0 @@
-[
-    "-fsanitize-coverage=trace-pc-guard,trace-cmp"
-]

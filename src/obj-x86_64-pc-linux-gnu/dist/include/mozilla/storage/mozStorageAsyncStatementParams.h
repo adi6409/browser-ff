@@ -1,1 +1,0 @@
-/worker/build/storage/mozStorageAsyncStatementParams.h

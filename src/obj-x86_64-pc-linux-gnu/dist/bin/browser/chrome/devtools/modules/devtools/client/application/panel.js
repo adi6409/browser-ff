@@ -1,1 +1,0 @@
-/worker/build/devtools/client/application/panel.js

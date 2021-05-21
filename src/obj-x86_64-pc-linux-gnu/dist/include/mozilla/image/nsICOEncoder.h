@@ -1,1 +1,0 @@
-/worker/build/image/encoders/ico/nsICOEncoder.h

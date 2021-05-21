@@ -1,1 +1,0 @@
-/worker/build/xpcom/base/nsIInterfaceRequestorUtils.h

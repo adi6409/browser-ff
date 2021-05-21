@@ -1,1 +1,0 @@
-/worker/build/toolkit/components/glean/bindings/private/TimingDistribution.h

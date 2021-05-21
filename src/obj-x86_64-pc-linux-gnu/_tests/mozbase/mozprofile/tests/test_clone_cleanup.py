@@ -1,1 +1,0 @@
-/worker/build/testing/mozbase/mozprofile/tests/test_clone_cleanup.py

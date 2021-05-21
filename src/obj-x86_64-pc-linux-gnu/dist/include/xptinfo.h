@@ -1,1 +1,0 @@
-/worker/build/xpcom/reflect/xptinfo/xptinfo.h

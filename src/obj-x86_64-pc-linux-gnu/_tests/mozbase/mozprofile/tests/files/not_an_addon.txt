@@ -1,1 +1,0 @@
-/worker/build/testing/mozbase/mozprofile/tests/files/not_an_addon.txt

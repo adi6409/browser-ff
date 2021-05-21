@@ -1,1 +1,0 @@
-/worker/build/browser/components/urlbar/UrlbarUtils.jsm

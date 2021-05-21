@@ -1,1 +1,0 @@
-/worker/build/dom/serviceworkers/ServiceWorkerRegistrationInfo.h

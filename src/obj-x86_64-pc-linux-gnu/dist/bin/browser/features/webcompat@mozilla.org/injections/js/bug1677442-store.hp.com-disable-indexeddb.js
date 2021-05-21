@@ -1,1 +1,0 @@
-/worker/build/browser/extensions/webcompat/injections/js/bug1677442-store.hp.com-disable-indexeddb.js

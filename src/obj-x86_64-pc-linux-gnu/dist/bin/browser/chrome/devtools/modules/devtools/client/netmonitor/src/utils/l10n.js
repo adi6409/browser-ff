@@ -1,1 +1,0 @@
-/worker/build/devtools/client/netmonitor/src/utils/l10n.js

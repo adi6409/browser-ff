@@ -1,1 +1,0 @@
-/worker/build/mozglue/misc/decimal/DoubleConversion.h

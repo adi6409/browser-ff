@@ -1,1 +1,0 @@
-/worker/build/browser/extensions/webcompat/injections/js/bug1610358-pcloud.com-appVersion-change.js

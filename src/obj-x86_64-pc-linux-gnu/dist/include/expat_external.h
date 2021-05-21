@@ -1,1 +1,0 @@
-/worker/build/parser/expat/lib/expat_external.h

@@ -1,1 +1,0 @@
-/worker/build/devtools/shared/resources/legacy-listeners/console-messages.js

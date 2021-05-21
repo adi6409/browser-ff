@@ -1,1 +1,0 @@
-/worker/build/third_party/aom/aom/aom_encoder.h

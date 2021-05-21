@@ -1,1 +1,0 @@
-../../../modules/libpref/StaticPrefs_mousewheel.h

@@ -1,1 +1,0 @@
-/worker/build/devtools/server/connectors/js-window-actor/DevToolsWorkerParent.jsm

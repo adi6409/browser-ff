@@ -1,1 +1,0 @@
-/worker/build/devtools/client/performance/test/helpers/dom-utils.js

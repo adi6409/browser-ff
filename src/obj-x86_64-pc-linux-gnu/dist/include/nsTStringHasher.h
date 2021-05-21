@@ -1,1 +1,0 @@
-/worker/build/xpcom/string/nsTStringHasher.h

@@ -1,1 +1,0 @@
-/worker/build/devtools/client/inspector/markup/utils/l10n.js

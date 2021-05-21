@@ -1,1 +1,0 @@
-/worker/build/toolkit/components/places/tests/head_common.js

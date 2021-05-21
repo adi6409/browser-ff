@@ -1,1 +1,0 @@
-/worker/build/testing/mozbase/mozpower/mozpower/__init__.py

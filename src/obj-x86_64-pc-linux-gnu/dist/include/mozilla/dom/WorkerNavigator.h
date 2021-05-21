@@ -1,1 +1,0 @@
-/worker/build/dom/workers/WorkerNavigator.h

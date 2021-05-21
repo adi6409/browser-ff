@@ -1,1 +1,0 @@
-/worker/build/devtools/shared/webconsole/js-property-provider.js

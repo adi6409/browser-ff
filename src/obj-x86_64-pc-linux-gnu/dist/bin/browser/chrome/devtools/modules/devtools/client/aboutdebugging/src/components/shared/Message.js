@@ -1,1 +1,0 @@
-/worker/build/devtools/client/aboutdebugging/src/components/shared/Message.js

@@ -1,1 +1,0 @@
-/worker/build/xpcom/threads/MainThreadIdlePeriod.h

@@ -1,1 +1,0 @@
-/worker/build/devtools/client/webconsole/webconsole-ui.js

@@ -1,1 +1,0 @@
-/worker/build/toolkit/crashreporter/CrashSubmit.jsm

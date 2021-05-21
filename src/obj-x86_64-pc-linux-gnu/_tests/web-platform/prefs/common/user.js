@@ -1,1 +1,0 @@
-/worker/build/testing/profiles/common/user.js

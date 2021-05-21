@@ -1,1 +1,0 @@
-/worker/build/media/libpng/png.h

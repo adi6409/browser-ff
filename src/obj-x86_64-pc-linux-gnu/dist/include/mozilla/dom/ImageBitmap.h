@@ -1,1 +1,0 @@
-/worker/build/dom/canvas/ImageBitmap.h

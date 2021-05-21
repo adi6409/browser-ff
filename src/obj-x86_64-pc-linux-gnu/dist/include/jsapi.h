@@ -1,1 +1,0 @@
-/worker/build/js/src/jsapi.h

@@ -1,1 +1,0 @@
-/worker/build/devtools/client/shared/components/object-inspector/components/ObjectInspector.js

@@ -1,1 +1,0 @@
-/worker/build/devtools/client/shared/widgets/tooltip/css-compatibility-tooltip-helper.js

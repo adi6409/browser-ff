@@ -1,1 +1,0 @@
-/worker/build/browser/extensions/webcompat/data/picture_in_picture_overrides.js

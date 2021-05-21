@@ -1,1 +1,0 @@
-/worker/build/testing/mozbase/mozprofile/mozprofile/diff.py

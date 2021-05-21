@@ -1,1 +1,0 @@
-/worker/build/xpcom/ds/nsTArray-inl.h

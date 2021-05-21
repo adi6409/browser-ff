@@ -1,1 +1,0 @@
-/worker/build/testing/specialpowers/api.js

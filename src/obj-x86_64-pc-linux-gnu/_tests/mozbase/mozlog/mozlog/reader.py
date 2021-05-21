@@ -1,1 +1,0 @@
-/worker/build/testing/mozbase/mozlog/mozlog/reader.py

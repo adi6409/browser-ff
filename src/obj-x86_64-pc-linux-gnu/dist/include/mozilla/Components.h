@@ -1,1 +1,0 @@
-../../../xpcom/components/Components.h

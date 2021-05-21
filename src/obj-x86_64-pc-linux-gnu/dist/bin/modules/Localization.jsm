@@ -1,1 +1,0 @@
-/worker/build/intl/l10n/Localization.jsm

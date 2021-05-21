@@ -1,1 +1,0 @@
-/worker/build/devtools/client/accessibility/utils/l10n.js

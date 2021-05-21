@@ -1,1 +1,0 @@
-/worker/build/widget/gtk/wayland/idle-inhibit-unstable-v1-client-protocol.h

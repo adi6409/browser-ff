@@ -1,1 +1,0 @@
-/worker/build/browser/extensions/report-site-issue/background.js

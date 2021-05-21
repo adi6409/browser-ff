@@ -1,1 +1,0 @@
-/worker/build/devtools/client/accessibility/components/Badges.js

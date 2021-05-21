@@ -1,1 +1,0 @@
-/worker/build/devtools/client/shared/test/shared-redux-head.js

@@ -1,1 +1,0 @@
-/worker/build/testing/mozbase/mozprocess/tests/test_poll.py

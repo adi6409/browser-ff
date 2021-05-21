@@ -1,1 +1,0 @@
-/worker/build/dom/base/nsNameSpaceManager.h

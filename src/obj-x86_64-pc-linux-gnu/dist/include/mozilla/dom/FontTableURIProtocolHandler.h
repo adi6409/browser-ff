@@ -1,1 +1,0 @@
-/worker/build/dom/file/uri/FontTableURIProtocolHandler.h

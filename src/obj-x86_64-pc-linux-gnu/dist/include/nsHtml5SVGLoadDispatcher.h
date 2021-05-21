@@ -1,1 +1,0 @@
-/worker/build/parser/html/nsHtml5SVGLoadDispatcher.h

@@ -1,1 +1,0 @@
-/worker/build/editor/libeditor/ManualNAC.h

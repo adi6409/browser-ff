@@ -1,1 +1,0 @@
-/worker/build/browser/components/tests/startupRecorder.js

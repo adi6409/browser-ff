@@ -1,1 +1,0 @@
-/worker/build/devtools/client/application/src/components/routing/Sidebar.js

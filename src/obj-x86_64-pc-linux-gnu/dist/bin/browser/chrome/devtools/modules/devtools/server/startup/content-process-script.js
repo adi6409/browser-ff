@@ -1,1 +1,0 @@
-/worker/build/devtools/server/startup/content-process-script.js

@@ -1,1 +1,0 @@
-/worker/build/devtools/client/shared/remote-debugging/remote-client-manager.js

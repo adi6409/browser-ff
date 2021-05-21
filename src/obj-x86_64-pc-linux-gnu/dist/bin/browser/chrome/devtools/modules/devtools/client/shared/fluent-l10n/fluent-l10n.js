@@ -1,1 +1,0 @@
-/worker/build/devtools/client/shared/fluent-l10n/fluent-l10n.js

@@ -1,1 +1,0 @@
-/worker/build/third_party/sipcc/sipcc_sdp.h

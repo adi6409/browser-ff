@@ -1,1 +1,0 @@
-/worker/build/dom/quota/OriginScope.h

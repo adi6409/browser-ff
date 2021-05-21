@@ -1,1 +1,0 @@
-/worker/build/devtools/shared/resources/legacy-listeners/server-sent-events.js

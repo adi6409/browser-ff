@@ -1,1 +1,0 @@
-/worker/build/image/ImgDrawResult.h

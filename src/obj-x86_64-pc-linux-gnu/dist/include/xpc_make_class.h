@@ -1,1 +1,0 @@
-/worker/build/js/xpconnect/public/xpc_make_class.h

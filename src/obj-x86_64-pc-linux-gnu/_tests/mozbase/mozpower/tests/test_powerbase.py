@@ -1,1 +1,0 @@
-/worker/build/testing/mozbase/mozpower/tests/test_powerbase.py

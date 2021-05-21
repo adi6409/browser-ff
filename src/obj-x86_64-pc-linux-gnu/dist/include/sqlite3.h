@@ -1,1 +1,0 @@
-/worker/build/third_party/sqlite3/src/sqlite3.h

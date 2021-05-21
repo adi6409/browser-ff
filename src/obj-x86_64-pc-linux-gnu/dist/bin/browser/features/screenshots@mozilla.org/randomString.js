@@ -1,1 +1,0 @@
-/worker/build/browser/extensions/screenshots/randomString.js

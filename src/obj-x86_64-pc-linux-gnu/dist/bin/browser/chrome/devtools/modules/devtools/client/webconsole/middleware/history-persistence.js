@@ -1,1 +1,0 @@
-/worker/build/devtools/client/webconsole/middleware/history-persistence.js

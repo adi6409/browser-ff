@@ -1,1 +1,0 @@
-/worker/build/browser/extensions/report-site-issue/experimentalAPIs/aboutConfigPrefs.js

@@ -1,1 +1,0 @@
-/worker/build/testing/mochitest/tests/SimpleTest/MemoryStats.js

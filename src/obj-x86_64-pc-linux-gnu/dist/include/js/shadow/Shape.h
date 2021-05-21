@@ -1,1 +1,0 @@
-/worker/build/js/public/shadow/Shape.h

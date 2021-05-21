@@ -1,1 +1,0 @@
-../../xpcom/base/ErrorNamesInternal.h

@@ -1,1 +1,0 @@
-/worker/build/testing/marionette/components/marionette.js

@@ -1,9 +1,0 @@
-# THIS FILE WAS AUTOMATICALLY GENERATED. DO NOT EDIT.
-
-DEFINES += -DNDEBUG=1 -DTRIMMED=1
-_tests_xpcshell_services_settings_test_unit_test_remote_settings_signatures_FILES += collection_signing_root.pem
-_tests_xpcshell_services_settings_test_unit_test_remote_settings_signatures_FILES += collection_signing_int.pem
-_tests_xpcshell_services_settings_test_unit_test_remote_settings_signatures_FILES += collection_signing_ee.pem
-_tests_xpcshell_services_settings_test_unit_test_remote_settings_signatures_DEST := $(DEPTH)/_tests/xpcshell/services/settings/test/unit/test_remote_settings_signatures
-_tests_xpcshell_services_settings_test_unit_test_remote_settings_signatures_TARGET := misc
-INSTALL_TARGETS += _tests_xpcshell_services_settings_test_unit_test_remote_settings_signatures

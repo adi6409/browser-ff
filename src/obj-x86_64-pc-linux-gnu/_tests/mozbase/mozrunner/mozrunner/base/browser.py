@@ -1,1 +1,0 @@
-/worker/build/testing/mozbase/mozrunner/mozrunner/base/browser.py

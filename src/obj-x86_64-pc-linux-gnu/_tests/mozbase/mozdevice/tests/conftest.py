@@ -1,1 +1,0 @@
-/worker/build/testing/mozbase/mozdevice/tests/conftest.py

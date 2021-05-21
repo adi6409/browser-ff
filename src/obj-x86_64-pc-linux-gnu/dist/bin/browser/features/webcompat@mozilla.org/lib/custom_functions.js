@@ -1,1 +1,0 @@
-/worker/build/browser/extensions/webcompat/lib/custom_functions.js

@@ -1,1 +1,0 @@
-/worker/build/devtools/client/inspector/rules/views/rule-editor.js

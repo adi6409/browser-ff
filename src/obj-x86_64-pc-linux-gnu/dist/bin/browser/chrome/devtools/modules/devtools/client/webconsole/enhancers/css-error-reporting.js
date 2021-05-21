@@ -1,1 +1,0 @@
-/worker/build/devtools/client/webconsole/enhancers/css-error-reporting.js

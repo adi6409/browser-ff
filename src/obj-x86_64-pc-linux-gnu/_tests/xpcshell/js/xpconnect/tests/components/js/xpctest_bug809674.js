@@ -1,1 +1,0 @@
-/worker/build/js/xpconnect/tests/components/js/xpctest_bug809674.js

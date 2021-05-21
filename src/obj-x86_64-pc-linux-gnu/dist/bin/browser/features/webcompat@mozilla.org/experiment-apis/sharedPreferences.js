@@ -1,1 +1,0 @@
-/worker/build/browser/extensions/webcompat/experiment-apis/sharedPreferences.js

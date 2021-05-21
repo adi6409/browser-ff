@@ -1,1 +1,0 @@
-/worker/build/dom/html/HTMLAnchorElement.h

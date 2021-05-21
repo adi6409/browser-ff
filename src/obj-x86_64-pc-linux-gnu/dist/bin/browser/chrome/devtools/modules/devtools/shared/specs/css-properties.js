@@ -1,1 +1,0 @@
-/worker/build/devtools/shared/specs/css-properties.js

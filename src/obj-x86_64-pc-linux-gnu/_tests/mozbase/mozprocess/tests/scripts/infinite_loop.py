@@ -1,1 +1,0 @@
-/worker/build/testing/mozbase/mozprocess/tests/scripts/infinite_loop.py

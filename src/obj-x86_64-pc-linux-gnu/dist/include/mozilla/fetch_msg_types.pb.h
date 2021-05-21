@@ -1,1 +1,0 @@
-/worker/build/toolkit/components/viaduct/fetch_msg_types.pb.h

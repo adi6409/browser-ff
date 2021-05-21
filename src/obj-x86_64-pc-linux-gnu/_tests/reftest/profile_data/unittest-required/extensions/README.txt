@@ -1,1 +1,0 @@
-/worker/build/testing/profiles/unittest-required/extensions/README.txt

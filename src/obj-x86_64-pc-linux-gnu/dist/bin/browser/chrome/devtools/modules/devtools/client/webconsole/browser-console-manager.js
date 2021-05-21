@@ -1,1 +1,0 @@
-/worker/build/devtools/client/webconsole/browser-console-manager.js

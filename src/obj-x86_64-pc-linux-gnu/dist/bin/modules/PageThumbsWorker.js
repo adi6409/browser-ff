@@ -1,1 +1,0 @@
-/worker/build/toolkit/components/thumbnails/PageThumbsWorker.js

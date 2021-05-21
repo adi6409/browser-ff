@@ -1,1 +1,0 @@
-/worker/build/devtools/client/shared/vendor/react-test-renderer-shallow.js

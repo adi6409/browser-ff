@@ -1,1 +1,0 @@
-"-L/worker/build/obj-x86_64-pc-linux-gnu/dist/bin -lnspr4 -lplc4 -lplds4 -lm -ldl "

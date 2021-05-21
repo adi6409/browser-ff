@@ -1,1 +1,0 @@
-/worker/build/dom/base/test/chrome/bug421622-referer.sjs

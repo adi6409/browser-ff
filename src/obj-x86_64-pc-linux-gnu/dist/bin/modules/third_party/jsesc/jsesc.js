@@ -1,1 +1,0 @@
-/worker/build/toolkit/modules/third_party/jsesc/jsesc.js

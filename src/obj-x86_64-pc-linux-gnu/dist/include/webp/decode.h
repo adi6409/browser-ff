@@ -1,1 +1,0 @@
-/worker/build/media/libwebp/src/webp/decode.h

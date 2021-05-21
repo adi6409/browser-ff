@@ -1,1 +1,0 @@
-/worker/build/toolkit/xre/EventTracer.h

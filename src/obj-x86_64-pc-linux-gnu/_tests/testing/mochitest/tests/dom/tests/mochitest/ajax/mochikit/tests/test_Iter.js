@@ -1,1 +1,0 @@
-/worker/build/dom/tests/mochitest/ajax/mochikit/tests/test_Iter.js

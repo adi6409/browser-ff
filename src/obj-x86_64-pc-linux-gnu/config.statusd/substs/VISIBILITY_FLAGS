@@ -1,5 +1,0 @@
-[
-    "-I/worker/build/obj-x86_64-pc-linux-gnu/dist/system_wrappers",
-    "-include",
-    "/worker/build/config/gcc_hidden.h"
-]

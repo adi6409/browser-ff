@@ -1,1 +1,0 @@
-/worker/build/dom/html/HTMLOptionsCollection.h

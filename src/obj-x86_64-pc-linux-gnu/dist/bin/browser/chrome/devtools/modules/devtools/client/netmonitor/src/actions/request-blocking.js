@@ -1,1 +1,0 @@
-/worker/build/devtools/client/netmonitor/src/actions/request-blocking.js

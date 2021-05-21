@@ -1,1 +1,0 @@
-/worker/build/layout/painting/nsImageRenderer.h

@@ -1,1 +1,0 @@
-/worker/build/devtools/client/responsive/actions/ui.js

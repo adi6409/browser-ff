@@ -1,1 +1,0 @@
-/worker/build/ipc/glue/ScopedXREEmbed.h

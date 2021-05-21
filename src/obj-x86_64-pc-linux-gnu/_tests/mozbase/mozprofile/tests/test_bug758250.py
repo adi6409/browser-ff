@@ -1,1 +1,0 @@
-/worker/build/testing/mozbase/mozprofile/tests/test_bug758250.py

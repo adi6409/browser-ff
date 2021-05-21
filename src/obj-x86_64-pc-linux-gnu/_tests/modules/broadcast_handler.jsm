@@ -1,1 +1,0 @@
-/worker/build/dom/push/test/xpcshell/broadcast_handler.jsm

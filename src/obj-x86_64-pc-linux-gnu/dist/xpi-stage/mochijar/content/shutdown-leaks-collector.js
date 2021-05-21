@@ -1,1 +1,0 @@
-/worker/build/testing/mochitest/shutdown-leaks-collector.js

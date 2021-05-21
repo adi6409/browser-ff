@@ -1,1 +1,0 @@
-/worker/build/devtools/client/netmonitor/src/components/request-details/CookiesPanel.js

@@ -1,1 +1,0 @@
-/worker/build/browser/modules/Discovery.jsm

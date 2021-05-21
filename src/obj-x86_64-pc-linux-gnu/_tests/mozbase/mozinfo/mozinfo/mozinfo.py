@@ -1,1 +1,0 @@
-/worker/build/testing/mozbase/mozinfo/mozinfo/mozinfo.py

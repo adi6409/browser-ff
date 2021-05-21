@@ -1,1 +1,0 @@
-/worker/build/devtools/shared/specs/thread.js

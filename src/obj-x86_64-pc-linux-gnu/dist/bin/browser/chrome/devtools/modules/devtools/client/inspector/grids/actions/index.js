@@ -1,1 +1,0 @@
-/worker/build/devtools/client/inspector/grids/actions/index.js

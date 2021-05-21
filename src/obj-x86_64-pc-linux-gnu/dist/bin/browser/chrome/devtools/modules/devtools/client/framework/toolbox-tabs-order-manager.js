@@ -1,1 +1,0 @@
-/worker/build/devtools/client/framework/toolbox-tabs-order-manager.js

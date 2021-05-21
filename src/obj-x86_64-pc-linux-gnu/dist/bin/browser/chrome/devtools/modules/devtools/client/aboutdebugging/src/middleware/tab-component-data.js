@@ -1,1 +1,0 @@
-/worker/build/devtools/client/aboutdebugging/src/middleware/tab-component-data.js

@@ -1,1 +1,0 @@
-/worker/build/devtools/client/inspector/animation/components/ProgressInspectionPanel.js

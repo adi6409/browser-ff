@@ -1,4 +1,0 @@
-INPUT("Unified_cpp_client0.o")
-INPUT("../../components/jsoncpp/src/lib_json/Unified_cpp_src_lib_json0.o")
-INPUT("../google-breakpad/src/common/linux/file_id.o")
-INPUT("../google-breakpad/src/common/linux/Unified_cpp_src_common_linux0.o")

@@ -1,1 +1,0 @@
-/worker/build/netwerk/mime/nsMimeTypes.h

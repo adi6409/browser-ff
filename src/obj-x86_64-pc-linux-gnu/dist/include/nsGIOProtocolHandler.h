@@ -1,1 +1,0 @@
-/worker/build/netwerk/protocol/gio/nsGIOProtocolHandler.h

@@ -1,1 +1,0 @@
-/worker/build/testing/mozbase/mozdevice/tests/test_socket_connection.py

@@ -1,1 +1,0 @@
-/worker/build/devtools/client/responsive/components/SettingsMenu.js

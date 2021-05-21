@@ -1,1 +1,0 @@
-/worker/build/mozglue/baseprofiler/public/BaseProfileJSONWriter.h

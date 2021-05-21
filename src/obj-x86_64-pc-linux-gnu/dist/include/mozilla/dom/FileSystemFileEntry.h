@@ -1,1 +1,0 @@
-/worker/build/dom/filesystem/compat/FileSystemFileEntry.h

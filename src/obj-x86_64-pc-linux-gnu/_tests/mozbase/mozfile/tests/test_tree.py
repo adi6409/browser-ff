@@ -1,1 +1,0 @@
-/worker/build/testing/mozbase/mozfile/tests/test_tree.py

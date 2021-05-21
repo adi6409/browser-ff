@@ -1,1 +1,0 @@
-/worker/build/browser/tools/mozscreenshots/mozscreenshots/extension/lib/mozscreenshots-script.js

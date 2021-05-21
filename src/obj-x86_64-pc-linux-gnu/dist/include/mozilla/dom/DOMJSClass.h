@@ -1,1 +1,0 @@
-/worker/build/dom/bindings/DOMJSClass.h

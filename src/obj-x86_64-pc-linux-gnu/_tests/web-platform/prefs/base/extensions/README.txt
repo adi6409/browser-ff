@@ -1,1 +1,0 @@
-/worker/build/testing/profiles/base/extensions/README.txt

@@ -1,1 +1,0 @@
-/worker/build/browser/extensions/webcompat/shims/rich-relevance.js

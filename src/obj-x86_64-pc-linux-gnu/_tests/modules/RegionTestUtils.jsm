@@ -1,1 +1,0 @@
-/worker/build/toolkit/modules/tests/xpcshell/RegionTestUtils.jsm

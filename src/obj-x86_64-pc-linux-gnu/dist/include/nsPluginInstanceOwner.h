@@ -1,1 +1,0 @@
-/worker/build/dom/plugins/base/nsPluginInstanceOwner.h

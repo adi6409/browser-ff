@@ -1,1 +1,0 @@
-/worker/build/toolkit/crashreporter/test/CrashTestUtils.jsm

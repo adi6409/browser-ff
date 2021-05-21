@@ -1,1 +1,0 @@
-/worker/build/devtools/client/netmonitor/src/components/messages/parsers/socket-io/index.js

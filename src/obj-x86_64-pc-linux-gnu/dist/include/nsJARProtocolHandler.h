@@ -1,1 +1,0 @@
-/worker/build/modules/libjar/nsJARProtocolHandler.h

@@ -1,1 +1,0 @@
-/worker/build/devtools/client/inspector/markup/views/slotted-node-editor.js

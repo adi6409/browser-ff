@@ -1,1 +1,0 @@
-/worker/build/dom/quota/test/common/mochitest.js

@@ -1,1 +1,0 @@
-/worker/build/testing/mochitest/BrowserTestUtils/content/content-task.js

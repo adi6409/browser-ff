@@ -1,1 +1,0 @@
-/worker/build/parser/prototype/PrototypeDocumentParser.h

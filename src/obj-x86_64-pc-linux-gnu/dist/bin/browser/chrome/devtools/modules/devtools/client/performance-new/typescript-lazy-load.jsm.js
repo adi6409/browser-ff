@@ -1,1 +1,0 @@
-/worker/build/devtools/client/performance-new/typescript-lazy-load.jsm.js

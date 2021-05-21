@@ -1,1 +1,0 @@
-/worker/build/testing/mozbase/mozcrash/tests/test_java_exception.py

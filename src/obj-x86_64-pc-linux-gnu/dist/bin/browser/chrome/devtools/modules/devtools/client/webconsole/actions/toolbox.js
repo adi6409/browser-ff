@@ -1,1 +1,0 @@
-/worker/build/devtools/client/webconsole/actions/toolbox.js

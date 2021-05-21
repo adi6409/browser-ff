@@ -1,1 +1,0 @@
-/worker/build/testing/mochitest/pywebsocket3/mod_pywebsocket/extensions.py

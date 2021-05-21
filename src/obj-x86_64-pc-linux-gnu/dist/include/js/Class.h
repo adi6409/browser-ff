@@ -1,1 +1,0 @@
-/worker/build/js/public/Class.h

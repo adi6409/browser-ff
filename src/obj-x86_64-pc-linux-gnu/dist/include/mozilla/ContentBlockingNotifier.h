@@ -1,1 +1,0 @@
-/worker/build/toolkit/components/antitracking/ContentBlockingNotifier.h

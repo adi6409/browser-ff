@@ -1,1 +1,0 @@
-/worker/build/devtools/client/inspector/compatibility/types.js

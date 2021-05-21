@@ -1,1 +1,0 @@
-/worker/build/devtools/client/performance-new/popup/menu-button.jsm.js

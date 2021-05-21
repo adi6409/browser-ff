@@ -1,1 +1,0 @@
-/worker/build/gfx/webrender_bindings/RenderTextureHostWrapper.h

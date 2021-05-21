@@ -1,1 +1,0 @@
-/worker/build/devtools/client/debugger/dist/search-worker.js

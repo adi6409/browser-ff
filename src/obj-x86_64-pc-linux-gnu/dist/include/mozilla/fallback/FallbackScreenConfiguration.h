@@ -1,1 +1,0 @@
-/worker/build/hal/fallback/FallbackScreenConfiguration.h

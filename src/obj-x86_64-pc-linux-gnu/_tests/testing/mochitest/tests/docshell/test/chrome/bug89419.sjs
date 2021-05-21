@@ -1,1 +1,0 @@
-/worker/build/docshell/test/chrome/bug89419.sjs

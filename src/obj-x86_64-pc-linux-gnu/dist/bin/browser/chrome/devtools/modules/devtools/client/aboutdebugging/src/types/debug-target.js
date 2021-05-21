@@ -1,1 +1,0 @@
-/worker/build/devtools/client/aboutdebugging/src/types/debug-target.js

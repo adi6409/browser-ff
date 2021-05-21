@@ -1,1 +1,0 @@
-/worker/build/gfx/webrender_bindings/RenderThread.h

@@ -1,1 +1,0 @@
-/worker/build/browser/extensions/webcompat/injections/js/bug1605611-maps.google.com-directions-time.js

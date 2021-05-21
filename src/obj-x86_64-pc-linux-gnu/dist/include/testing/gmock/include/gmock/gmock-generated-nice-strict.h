@@ -1,1 +1,0 @@
-/worker/build/testing/gtest/gmock/include/gmock/gmock-generated-nice-strict.h

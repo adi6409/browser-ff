@@ -1,1 +1,0 @@
-/worker/build/dom/html/input/ColorInputType.h

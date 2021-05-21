@@ -1,1 +1,0 @@
-/worker/build/testing/mozbase/mozsystemmonitor/mozsystemmonitor/resourcemonitor.py

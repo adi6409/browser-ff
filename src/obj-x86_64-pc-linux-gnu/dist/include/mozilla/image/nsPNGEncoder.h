@@ -1,1 +1,0 @@
-/worker/build/image/encoders/png/nsPNGEncoder.h

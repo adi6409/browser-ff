@@ -1,1 +1,0 @@
-/worker/build/testing/mozbase/mozlog/tests/test_logtypes.py

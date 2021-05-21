@@ -1,1 +1,0 @@
-/worker/build/services/fxaccounts/FxAccountsClient.jsm

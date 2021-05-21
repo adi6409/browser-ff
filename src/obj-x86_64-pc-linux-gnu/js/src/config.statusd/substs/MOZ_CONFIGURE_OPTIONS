@@ -1,1 +1,0 @@
-"--enable-application=browser --enable-update-channel=release MOZ_APP_BASENAME=Konke --with-ccache=sccache --enable-hardening --with-app-name=konke --enable-rust-simd MAKE=/usr/sbin/make --enable-updater --with-branding=browser/branding/dot"

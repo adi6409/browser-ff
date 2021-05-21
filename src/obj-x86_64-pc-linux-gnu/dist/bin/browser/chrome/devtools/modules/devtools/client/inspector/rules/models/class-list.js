@@ -1,1 +1,0 @@
-/worker/build/devtools/client/inspector/rules/models/class-list.js

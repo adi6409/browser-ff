@@ -1,1 +1,0 @@
-/worker/build/docshell/test/chrome/docshell_helpers.js

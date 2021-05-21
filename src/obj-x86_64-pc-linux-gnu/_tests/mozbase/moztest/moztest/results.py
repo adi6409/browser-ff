@@ -1,1 +1,0 @@
-/worker/build/testing/mozbase/moztest/moztest/results.py

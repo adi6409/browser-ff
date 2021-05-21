@@ -1,1 +1,0 @@
-/worker/build/dom/l10n/DocumentL10n.h

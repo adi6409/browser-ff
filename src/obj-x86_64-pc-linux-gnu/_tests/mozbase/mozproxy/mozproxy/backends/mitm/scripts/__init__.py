@@ -1,1 +1,0 @@
-/worker/build/testing/mozbase/mozproxy/mozproxy/backends/mitm/scripts/__init__.py

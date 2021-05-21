@@ -1,1 +1,0 @@
-/worker/build/toolkit/components/telemetry/app/TelemetryReportingPolicy.jsm

@@ -1,1 +1,0 @@
-/worker/build/devtools/server/connectors/worker-connector.js

@@ -1,1 +1,0 @@
-/worker/build/toolkit/components/extensions/MessageChannel.jsm

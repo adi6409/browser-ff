@@ -1,1 +1,0 @@
-/worker/build/dom/xul/ChromeObserver.h

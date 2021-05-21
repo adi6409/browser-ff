@@ -1,1 +1,0 @@
-/worker/build/devtools/client/inspector/layout/layout.js

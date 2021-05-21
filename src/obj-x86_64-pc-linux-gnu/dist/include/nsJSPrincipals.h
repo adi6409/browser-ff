@@ -1,1 +1,0 @@
-/worker/build/caps/nsJSPrincipals.h

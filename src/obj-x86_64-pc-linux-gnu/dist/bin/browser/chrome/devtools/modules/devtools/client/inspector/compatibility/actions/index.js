@@ -1,1 +1,0 @@
-/worker/build/devtools/client/inspector/compatibility/actions/index.js

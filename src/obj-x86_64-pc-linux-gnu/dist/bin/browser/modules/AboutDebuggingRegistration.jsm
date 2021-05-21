@@ -1,1 +1,0 @@
-/worker/build/devtools/startup/AboutDebuggingRegistration.jsm

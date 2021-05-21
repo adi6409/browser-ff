@@ -1,1 +1,0 @@
-/worker/build/testing/mozbase/mozgeckoprofiler/mozgeckoprofiler/profiling.py

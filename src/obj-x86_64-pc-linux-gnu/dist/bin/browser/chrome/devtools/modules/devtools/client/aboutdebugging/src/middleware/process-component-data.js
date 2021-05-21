@@ -1,1 +1,0 @@
-/worker/build/devtools/client/aboutdebugging/src/middleware/process-component-data.js

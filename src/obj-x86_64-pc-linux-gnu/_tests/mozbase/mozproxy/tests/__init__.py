@@ -1,1 +1,0 @@
-/worker/build/testing/mozbase/mozproxy/tests/__init__.py

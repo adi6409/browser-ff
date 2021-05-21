@@ -1,1 +1,0 @@
-/worker/build/devtools/server/actors/descriptors/tab.js

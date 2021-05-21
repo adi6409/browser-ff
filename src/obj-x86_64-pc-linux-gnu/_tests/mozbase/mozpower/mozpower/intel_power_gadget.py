@@ -1,1 +1,0 @@
-/worker/build/testing/mozbase/mozpower/mozpower/intel_power_gadget.py

@@ -1,1 +1,0 @@
-/worker/build/toolkit/modules/sessionstore/PrivacyFilter.jsm

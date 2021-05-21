@@ -1,1 +1,0 @@
-/worker/build/browser/extensions/webcompat/lib/about_compat_broker.js

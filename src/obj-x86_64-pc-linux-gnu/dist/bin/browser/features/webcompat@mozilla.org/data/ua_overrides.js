@@ -1,1 +1,0 @@
-/worker/build/browser/extensions/webcompat/data/ua_overrides.js

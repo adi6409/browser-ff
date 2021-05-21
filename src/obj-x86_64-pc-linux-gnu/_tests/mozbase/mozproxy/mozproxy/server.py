@@ -1,1 +1,0 @@
-/worker/build/testing/mozbase/mozproxy/mozproxy/server.py

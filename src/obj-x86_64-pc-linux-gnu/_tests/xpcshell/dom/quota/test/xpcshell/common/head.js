@@ -1,1 +1,0 @@
-/worker/build/dom/quota/test/xpcshell/common/head.js

@@ -1,1 +1,0 @@
-/worker/build/devtools/client/shared/source-map/worker.js

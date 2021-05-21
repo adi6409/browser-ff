@@ -1,2 +1,0 @@
-INPUT("../../../media/libsoundtouch/src/sse_optimized.o")
-INPUT("../../../media/libsoundtouch/src/Unified_cpp_libsoundtouch_src0.o")

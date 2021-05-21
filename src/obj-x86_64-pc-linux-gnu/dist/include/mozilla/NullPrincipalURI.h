@@ -1,1 +1,0 @@
-/worker/build/caps/NullPrincipalURI.h

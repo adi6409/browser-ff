@@ -1,1 +1,0 @@
-/worker/build/devtools/shared/performance-new/gecko-profiler-interface.js

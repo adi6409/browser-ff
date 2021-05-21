@@ -1,1 +1,0 @@
-../../xpcom/ds/nsGkAtomConsts.h

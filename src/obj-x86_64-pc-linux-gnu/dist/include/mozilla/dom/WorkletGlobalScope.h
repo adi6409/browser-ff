@@ -1,1 +1,0 @@
-/worker/build/dom/worklet/WorkletGlobalScope.h

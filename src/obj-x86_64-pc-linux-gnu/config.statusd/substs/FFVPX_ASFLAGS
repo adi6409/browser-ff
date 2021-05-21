@@ -1,7 +1,0 @@
-[
-    "-D__x86_64__",
-    "-DPIC",
-    "-DELF",
-    "-Pconfig_unix64.asm",
-    "-Pdefaults_disabled.asm"
-]

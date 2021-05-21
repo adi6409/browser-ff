@@ -1,1 +1,0 @@
-/worker/build/dom/performance/PerformancePaintTiming.h
