@@ -1,0 +1,28 @@
+# Browser branding
+ac_add_options --enable-update-channel=release
+ac_add_options --with-branding=browser/branding/dot
+ac_add_options --with-app-name=konke
+export MOZ_USER_DIR="Konke Browser"
+export MOZ_APP_VENDOR="konke HQ"
+export MOZ_APP_BASENAME=Konke
+export MOZ_APP_PROFILE=dot
+export MOZ_APP_DISPLAYNAME="Konke Browser"
+export MOZ_MACBUNDLE_ID=co.konkehq.browser
+export MOZ_DISTRIBUTION_ID=co.konkehq.browser
+
+# Optimise builds
+ac_add_options --enable-application=browser
+ac_add_options --enable-hardening
+ac_add_options --enable-rust-simd
+ac_add_options --enable-release
+ac_add_options --enable-optimize
+ac_add_options --with-ccache=sccache
+ac_add_options --disable-debug
+ac_add_options --enable-updater
+
+# Disable telemetry and tracking
+mk_add_options MOZ_TELEMETRY_REPORTING=
+mk_add_options MOZ_DATA_REPORTING=
+
+# Support 32-bit builds
+ac_add_options --target=i686
