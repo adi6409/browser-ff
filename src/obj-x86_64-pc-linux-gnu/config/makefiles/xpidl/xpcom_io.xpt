@@ -1,0 +1,4276 @@
+[
+  {
+    "consts": [
+      {
+        "name": "WAIT_CLOSURE_ONLY",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 1
+      }
+    ],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "closeWithStatus",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "asyncWait",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIInputStreamCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIEventTarget",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIAsyncInputStream",
+    "parent": "nsIInputStream",
+    "uuid": "a5f255ab-4801-4161-8816-277ac92f6ad1"
+  },
+  {
+    "consts": [],
+    "flags": [
+      "function"
+    ],
+    "methods": [
+      {
+        "flags": [],
+        "name": "onInputStreamReady",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIAsyncInputStream",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIInputStreamCallback",
+    "parent": "nsISupports",
+    "uuid": "d1f28e94-3a6e-4050-a5f5-2e81b1fc2a43"
+  },
+  {
+    "consts": [
+      {
+        "name": "WAIT_CLOSURE_ONLY",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 1
+      }
+    ],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "closeWithStatus",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "asyncWait",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIOutputStreamCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIEventTarget",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIAsyncOutputStream",
+    "parent": "nsIOutputStream",
+    "uuid": "beb632d3-d77a-4e90-9134-f9ece69e8200"
+  },
+  {
+    "consts": [],
+    "flags": [
+      "function"
+    ],
+    "methods": [
+      {
+        "flags": [],
+        "name": "onOutputStreamReady",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIAsyncOutputStream",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIOutputStreamCallback",
+    "parent": "nsISupports",
+    "uuid": "40dbcdff-9053-42c5-a57c-3ec910d0f148"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "setInputStream",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIInputStream",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "readBoolean",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "read8",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT8"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "read16",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT16"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "read32",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "read64",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT64"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "readFloat",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_FLOAT"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "readDouble",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_DOUBLE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "readCString",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "readString",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "readBytes",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "size_is": 0,
+              "tag": "TD_PSTRING_SIZE_IS"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "readByteArray",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_UINT8"
+              },
+              "tag": "TD_ARRAY"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "jscontext",
+          "hasretval"
+        ],
+        "name": "readArrayBuffer",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT64"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT64"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIBinaryInputStream",
+    "parent": "nsIInputStream",
+    "uuid": "899b826b-2eb3-469c-8b31-4c29f5d341a6"
+  },
+  {
+    "consts": [],
+    "flags": [
+      "builtinclass"
+    ],
+    "methods": [
+      {
+        "flags": [],
+        "name": "setOutputStream",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIOutputStream",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "writeBoolean",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "write8",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT8"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "write16",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT16"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "write32",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "write64",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT64"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "writeFloat",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_FLOAT"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "writeDouble",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_DOUBLE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "writeStringZ",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "writeWStringZ",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "writeUtf8Z",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "writeBytes",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "size_is": 1,
+              "tag": "TD_PSTRING_SIZE_IS"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "optional"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "writeBytesNative",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_VOID"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "writeByteArray",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_UINT8"
+              },
+              "tag": "TD_ARRAY"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIBinaryOutputStream",
+    "parent": "nsIOutputStream",
+    "uuid": "204ee610-8765-11d3-90cf-0040056a906e"
+  },
+  {
+    "consts": [],
+    "flags": [
+      "builtinclass"
+    ],
+    "methods": [
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "cloneable",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "clone",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsIInputStream",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsICloneableInputStream",
+    "parent": "nsISupports",
+    "uuid": "8149be1f-44d3-4f14-8b65-a57a5fbbeb97"
+  },
+  {
+    "consts": [],
+    "flags": [
+      "builtinclass"
+    ],
+    "methods": [
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "cloneWithRange",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT64"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT64"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsIInputStream",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsICloneableInputStreamWithRange",
+    "parent": "nsICloneableInputStream",
+    "uuid": "ece853c3-aded-4cef-8f51-0d1493d60bd5"
+  },
+  {
+    "consts": [
+      {
+        "name": "DEFAULT_REPLACEMENT_CHARACTER",
+        "type": {
+          "tag": "TD_UINT16"
+        },
+        "value": 65533
+      },
+      {
+        "name": "ERRORS_ARE_FATAL",
+        "type": {
+          "tag": "TD_UINT16"
+        },
+        "value": 0
+      }
+    ],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "init",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIInputStream",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT16"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIConverterInputStream",
+    "parent": "nsIUnicharInputStream",
+    "uuid": "fc66ffb6-5404-4908-a4a3-27f92fa0579d"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "init",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIOutputStream",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PSTRING"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIConverterOutputStream",
+    "parent": "nsIUnicharOutputStream",
+    "uuid": "4b71113a-cb0d-479f-8ed5-01daeba2e8d4"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "nextFile",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsIFile",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "close",
+        "params": []
+      }
+    ],
+    "name": "nsIDirectoryEnumerator",
+    "parent": "nsISimpleEnumerator",
+    "uuid": "31f7f4ae-6916-4f2d-a81e-926a4e3022ee"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getFile",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PSTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsIFile",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIDirectoryServiceProvider",
+    "parent": "nsISupports",
+    "uuid": "bbf8cab0-d43a-11d3-8cc2-00609792278c"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getFiles",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PSTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsISimpleEnumerator",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIDirectoryServiceProvider2",
+    "parent": "nsIDirectoryServiceProvider",
+    "uuid": "2f977d4b-5485-11d4-87e2-0010a4e75ef2"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "init",
+        "params": []
+      },
+      {
+        "flags": [],
+        "name": "registerProvider",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIDirectoryServiceProvider",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "unregisterProvider",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIDirectoryServiceProvider",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIDirectoryService",
+    "parent": "nsISupports",
+    "uuid": "57a66a60-d43a-11d3-8cc2-00609792278c"
+  },
+  {
+    "consts": [
+      {
+        "name": "NORMAL_FILE_TYPE",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 0
+      },
+      {
+        "name": "DIRECTORY_TYPE",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 1
+      },
+      {
+        "name": "OS_READAHEAD",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 1073741824
+      },
+      {
+        "name": "DELETE_ON_CLOSE",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 2147483648
+      }
+    ],
+    "flags": [
+      "builtinclass",
+      "main_process_only"
+    ],
+    "methods": [
+      {
+        "flags": [],
+        "name": "append",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "appendNative",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "normalize",
+        "params": []
+      },
+      {
+        "flags": [],
+        "name": "create",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "leafName",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "setter"
+        ],
+        "name": "leafName",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hidden",
+          "hasretval"
+        ],
+        "name": "nativeLeafName",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "setter",
+          "hidden"
+        ],
+        "name": "nativeLeafName",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "copyTo",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIFile",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "CopyToNative",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIFile",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "copyToFollowingLinks",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIFile",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "copyToFollowingLinksNative",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIFile",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "moveTo",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIFile",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "moveToNative",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIFile",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "moveToFollowingLinks",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIFile",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "moveToFollowingLinksNative",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIFile",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "renameTo",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIFile",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "renameToNative",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIFile",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "remove",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "permissions",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "setter"
+        ],
+        "name": "permissions",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "permissionsOfLink",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "setter"
+        ],
+        "name": "permissionsOfLink",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "lastModifiedTime",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT64"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "setter"
+        ],
+        "name": "lastModifiedTime",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT64"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "lastModifiedTimeOfLink",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT64"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "setter"
+        ],
+        "name": "lastModifiedTimeOfLink",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT64"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "creationTime",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT64"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "creationTimeOfLink",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT64"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "fileSize",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT64"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "setter"
+        ],
+        "name": "fileSize",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT64"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "fileSizeOfLink",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT64"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "target",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hidden",
+          "hasretval"
+        ],
+        "name": "nativeTarget",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "path",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "nativePath",
+        "params": []
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "exists",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "isWritable",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "isReadable",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "isExecutable",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "isHidden",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "isDirectory",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "isFile",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "isSymlink",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "isSpecial",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "createUnique",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "clone",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsIFile",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "equals",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIFile",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "contains",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIFile",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "parent",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsIFile",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "directoryEntries",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsIDirectoryEnumerator",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "initWithPath",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "initWithNativePath",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "initWithFile",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIFile",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden",
+          "hasretval"
+        ],
+        "name": "openNSPRFileDesc",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_VOID"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden",
+          "hasretval"
+        ],
+        "name": "openANSIFileDesc",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PSTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_VOID"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden",
+          "hasretval"
+        ],
+        "name": "load",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_VOID"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "diskSpaceAvailable",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT64"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "appendRelativePath",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "appendRelativeNativePath",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "persistentDescriptor",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "setter"
+        ],
+        "name": "persistentDescriptor",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "reveal",
+        "params": []
+      },
+      {
+        "flags": [],
+        "name": "launch",
+        "params": []
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getRelativeDescriptor",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIFile",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "setRelativeDescriptor",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIFile",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getRelativePath",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIFile",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "setRelativePath",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIFile",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIFile",
+    "parent": "nsISupports",
+    "uuid": "2fa6884a-ae65-412a-9d4c-ce6e34544ba1"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "inputStreamIsBuffered",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIInputStream",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "outputStreamIsBuffered",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIOutputStream",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIIOUtil",
+    "parent": "nsISupports",
+    "uuid": "e8152f7f-4209-4c63-ad23-c3d2aa0c5a49"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "close",
+        "params": []
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "available",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT64"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden",
+          "hasretval"
+        ],
+        "name": "read",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_VOID"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden",
+          "hasretval"
+        ],
+        "name": "readSegments",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_VOID"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_VOID"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "isNonBlocking",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIInputStream",
+    "parent": "nsISupports",
+    "uuid": "53cdbc97-c2d7-4e30-b2c3-45b2ee79db18"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "priority",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "setter"
+        ],
+        "name": "priority",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIInputStreamPriority",
+    "parent": "nsISupports",
+    "uuid": "daa45b24-98ee-4eb2-9cec-aad0bc023e9d"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "source",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsIInputStream",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "setter"
+        ],
+        "name": "source",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIInputStream",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "sink",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsIOutputStream",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "setter"
+        ],
+        "name": "sink",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIOutputStream",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "eventTarget",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsIEventTarget",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "setter"
+        ],
+        "name": "eventTarget",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIEventTarget",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIInputStreamTee",
+    "parent": "nsIInputStream",
+    "uuid": "90a9d790-3bca-421e-a73b-98f68e13c917"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "readLine",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsILineInputStream",
+    "parent": "nsISupports",
+    "uuid": "c97b466c-1e6e-4773-a4ab-2b2b3190a7a6"
+  },
+  {
+    "consts": [
+      {
+        "name": "WFA_SEARCH_INDEXED",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 1
+      },
+      {
+        "name": "WFA_READONLY",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 2
+      },
+      {
+        "name": "WFA_READWRITE",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 4
+      }
+    ],
+    "flags": [
+      "builtinclass"
+    ],
+    "methods": [
+      {
+        "flags": [],
+        "name": "initWithCommandLine",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getVersionInfoField",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PSTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "canonicalPath",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hidden",
+          "hasretval"
+        ],
+        "name": "nativeCanonicalPath",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "fileAttributesWin",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "setter"
+        ],
+        "name": "fileAttributesWin",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "useDOSDevicePathSyntax",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "setter"
+        ],
+        "name": "useDOSDevicePathSyntax",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden",
+          "hasretval"
+        ],
+        "name": "openNSPRFileDescShareDelete",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_VOID"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsILocalFileWin",
+    "parent": "nsIFile",
+    "uuid": "e7a3a954-384b-4aeb-a5f7-55626b0de9be"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "count",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "appendStream",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIInputStream",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getStream",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsIInputStream",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIMultiplexInputStream",
+    "parent": "nsISupports",
+    "uuid": "a076fd12-1dd1-11b2-b19a-d53b5dffaade"
+  },
+  {
+    "consts": [],
+    "flags": [
+      "builtinclass"
+    ],
+    "methods": [
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "readObject",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsISupports",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "readID",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_NSID"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "getBuffer",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "putBuffer",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_VOID"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIObjectInputStream",
+    "parent": "nsIBinaryInputStream",
+    "uuid": "6c248606-4eae-46fa-9df0-ba58502368eb"
+  },
+  {
+    "consts": [],
+    "flags": [
+      "builtinclass"
+    ],
+    "methods": [
+      {
+        "flags": [],
+        "name": "writeObject",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsISupports",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "writeSingleRefObject",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsISupports",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "writeCompoundObject",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsISupports",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_NSID"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "writeID",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_NSID"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "getBuffer",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "putBuffer",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_VOID"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIObjectOutputStream",
+    "parent": "nsIBinaryOutputStream",
+    "uuid": "92c898ac-5fde-4b99-87b3-5d486422094b"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "close",
+        "params": []
+      },
+      {
+        "flags": [],
+        "name": "flush",
+        "params": []
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "write",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "writeFrom",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIInputStream",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden",
+          "hasretval"
+        ],
+        "name": "writeSegments",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_VOID"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_VOID"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "isNonBlocking",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIOutputStream",
+    "parent": "nsISupports",
+    "uuid": "0d0acd2a-61b4-11d4-9877-00c04fa0cf4a"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "init",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "inputStream",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsIAsyncInputStream",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "outputStream",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsIAsyncOutputStream",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIPipe",
+    "parent": "nsISupports",
+    "uuid": "25d0de93-685e-4ea4-95d3-d884e31df63c"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "search",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsISearchableInputStream",
+    "parent": "nsISupports",
+    "uuid": "8c39ef62-f7c9-11d4-98f5-001083010e9b"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "finish",
+        "params": []
+      }
+    ],
+    "name": "nsISafeOutputStream",
+    "parent": "nsISupports",
+    "uuid": "5f914307-5c34-4e1f-8e32-ec749d25b27a"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "encodeToCString",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIInputStream",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "encodeToString",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIInputStream",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIScriptableBase64Encoder",
+    "parent": "nsISupports",
+    "uuid": "9479c864-d1f9-45ab-b7b9-28b907bd2ba9"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "close",
+        "params": []
+      },
+      {
+        "flags": [],
+        "name": "init",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIInputStream",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "available",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT64"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "read",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "readBytes",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIScriptableInputStream",
+    "parent": "nsISupports",
+    "uuid": "3fce9015-472a-4080-ac3e-cd875dbe361e"
+  },
+  {
+    "consts": [
+      {
+        "name": "NS_SEEK_SET",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 0
+      },
+      {
+        "name": "NS_SEEK_CUR",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 1
+      },
+      {
+        "name": "NS_SEEK_END",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 2
+      }
+    ],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "seek",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT64"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "setEOF",
+        "params": []
+      }
+    ],
+    "name": "nsISeekableStream",
+    "parent": "nsITellableStream",
+    "uuid": "8429d350-1040-4661-8b71-f2a6ba455980"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "init",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getOutputStream",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsIOutputStream",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "newInputStream",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsIInputStream",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "length",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "setter"
+        ],
+        "name": "length",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "writeInProgress",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIStorageStream",
+    "parent": "nsISupports",
+    "uuid": "44a200fe-6c2b-4b41-b4e3-63e8c14e7c0d"
+  },
+  {
+    "consts": [],
+    "flags": [
+      "builtinclass"
+    ],
+    "methods": [
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "getBuffer",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "putBuffer",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_VOID"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "disableBuffering",
+        "params": []
+      },
+      {
+        "flags": [],
+        "name": "enableBuffering",
+        "params": []
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "unbufferedStream",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsISupports",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIStreamBufferAccess",
+    "parent": "nsISupports",
+    "uuid": "ac923b72-ac87-4892-ac7a-ca385d429435"
+  },
+  {
+    "consts": [],
+    "flags": [
+      "builtinclass"
+    ],
+    "methods": [
+      {
+        "flags": [],
+        "name": "setData",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "setUTF8Data",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "adoptData",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_VOID"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "shareData",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "SizeOfIncludingThisIfUnshared",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_VOID"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "SizeOfIncludingThisEvenIfShared",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_VOID"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIStringInputStream",
+    "parent": "nsIInputStream",
+    "uuid": "450cd2d4-f0fd-424d-b365-b1251f80fd53"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "tell",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT64"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsITellableStream",
+    "parent": "nsISupports",
+    "uuid": "ee942946-4538-45d2-bf05-ffdbf5932621"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "hidden",
+          "hasretval"
+        ],
+        "name": "read",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_UINT16"
+              },
+              "size_is": 1,
+              "tag": "TD_LEGACY_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden",
+          "hasretval"
+        ],
+        "name": "readSegments",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_VOID"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_VOID"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "readString",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "close",
+        "params": []
+      }
+    ],
+    "name": "nsIUnicharInputStream",
+    "parent": "nsISupports",
+    "uuid": "d5e3bd80-6723-4b92-b0c9-22f6162fd94f"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "readLine",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIUnicharLineInputStream",
+    "parent": "nsISupports",
+    "uuid": "67f42475-ba80-40f8-ac0b-649c89230184"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "write",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_UINT16"
+              },
+              "size_is": 0,
+              "tag": "TD_LEGACY_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "writeString",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "flush",
+        "params": []
+      },
+      {
+        "flags": [],
+        "name": "close",
+        "params": []
+      }
+    ],
+    "name": "nsIUnicharOutputStream",
+    "parent": "nsISupports",
+    "uuid": "2d00b1bb-8b21-4a63-bcc6-7213f513ac2e"
+  }
+]

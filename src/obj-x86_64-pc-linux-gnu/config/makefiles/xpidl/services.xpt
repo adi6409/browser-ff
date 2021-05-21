@@ -1,0 +1,601 @@
+[
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "register",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "mozIServicesLogSink",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "mozIAppServicesLogger",
+    "parent": "nsISupports",
+    "uuid": "446dd837-fbb0-41e4-8221-f740f672b20d"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "handleSuccess",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIVariant",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "handleError",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "mozIBridgedSyncEngineCallback",
+    "parent": "nsISupports",
+    "uuid": "9b7dd2a3-df99-4469-9ea9-61b222098695"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "handleSuccess",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_UTF8STRING"
+              },
+              "tag": "TD_ARRAY"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "handleError",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "mozIBridgedSyncEngineApplyCallback",
+    "parent": "nsISupports",
+    "uuid": "2776cdd5-799a-4009-b2f3-356d940a5244"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "storageVersion",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "allowSkippedRecord",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "logger",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "mozIServicesLogSink",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "setter"
+        ],
+        "name": "logger",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "mozIServicesLogSink",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "getLastSync",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "mozIBridgedSyncEngineCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "setLastSync",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT64"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "mozIBridgedSyncEngineCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "getSyncId",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "mozIBridgedSyncEngineCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "resetSyncId",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "mozIBridgedSyncEngineCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "ensureCurrentSyncId",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "mozIBridgedSyncEngineCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "syncStarted",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "mozIBridgedSyncEngineCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "storeIncoming",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_UTF8STRING"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "mozIBridgedSyncEngineCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "apply",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "mozIBridgedSyncEngineApplyCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "setUploaded",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT64"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_UTF8STRING"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "mozIBridgedSyncEngineCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "syncFinished",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "mozIBridgedSyncEngineCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "reset",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "mozIBridgedSyncEngineCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "wipe",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "mozIBridgedSyncEngineCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "mozIBridgedSyncEngine",
+    "parent": "nsISupports",
+    "uuid": "3b2b80be-c30e-4498-8065-01809cfe8d47"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "interrupt",
+        "params": []
+      }
+    ],
+    "name": "mozIInterruptible",
+    "parent": "nsISupports",
+    "uuid": "1c06bfd3-76b1-46fa-a64a-db682d478374"
+  },
+  {
+    "consts": [
+      {
+        "name": "LEVEL_OFF",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 0
+      },
+      {
+        "name": "LEVEL_ERROR",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 1
+      },
+      {
+        "name": "LEVEL_WARN",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 2
+      },
+      {
+        "name": "LEVEL_INFO",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 3
+      },
+      {
+        "name": "LEVEL_DEBUG",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 4
+      },
+      {
+        "name": "LEVEL_TRACE",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 5
+      }
+    ],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "maxLevel",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT16"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "setter"
+        ],
+        "name": "maxLevel",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT16"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "error",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "warn",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "debug",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "trace",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "info",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "mozIServicesLogSink",
+    "parent": "nsISupports",
+    "uuid": "c92bfe0d-50b7-4a7f-9686-fe5335a696b9"
+  }
+]

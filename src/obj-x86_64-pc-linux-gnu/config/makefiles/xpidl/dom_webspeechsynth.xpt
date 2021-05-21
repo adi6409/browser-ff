@@ -1,0 +1,547 @@
+[
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "onPause",
+        "params": []
+      },
+      {
+        "flags": [],
+        "name": "onResume",
+        "params": []
+      },
+      {
+        "flags": [],
+        "name": "onCancel",
+        "params": []
+      },
+      {
+        "flags": [],
+        "name": "onVolumeChanged",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_FLOAT"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsISpeechTaskCallback",
+    "parent": "nsISupports",
+    "uuid": "c576de0c-8a3d-4570-be7e-9876d3e5bed2"
+  },
+  {
+    "consts": [],
+    "flags": [
+      "builtinclass"
+    ],
+    "methods": [
+      {
+        "flags": [],
+        "name": "setup",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsISpeechTaskCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "dispatchStart",
+        "params": []
+      },
+      {
+        "flags": [],
+        "name": "dispatchEnd",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_FLOAT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "dispatchPause",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_FLOAT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "dispatchResume",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_FLOAT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "dispatchError",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_FLOAT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "optargc"
+        ],
+        "name": "dispatchBoundary",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_FLOAT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "optional"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "dispatchMark",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_FLOAT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsISpeechTask",
+    "parent": "nsISupports",
+    "uuid": "ad59949c-2437-4b35-8eeb-d760caab75c5"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "speak",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_FLOAT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_FLOAT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_FLOAT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsISpeechTask",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsISpeechService",
+    "parent": "nsISupports",
+    "uuid": "9b7d59db-88ff-43d0-b6ee-9f63d042d08f"
+  },
+  {
+    "consts": [],
+    "flags": [
+      "builtinclass"
+    ],
+    "methods": [
+      {
+        "flags": [],
+        "name": "addVoice",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsISpeechService",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "removeVoice",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsISpeechService",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "notifyVoicesChanged",
+        "params": []
+      },
+      {
+        "flags": [],
+        "name": "setDefaultVoice",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "voiceCount",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getVoice",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "isDefaultVoice",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "isLocalVoice",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getVoiceLang",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getVoiceName",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsISynthVoiceRegistry",
+    "parent": "nsISupports",
+    "uuid": "5d7a0b38-77e5-4ee5-897c-ce5db9b85d44"
+  }
+]

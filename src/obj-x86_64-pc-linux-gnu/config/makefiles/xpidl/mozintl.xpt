@@ -1,0 +1,407 @@
+[
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getCalendarInfo",
+        "params": [
+          {
+            "flags": [
+              "in",
+              "optional"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getDisplayNames",
+        "params": [
+          {
+            "flags": [
+              "in",
+              "optional"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "optional"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getLocaleInfo",
+        "params": [
+          {
+            "flags": [
+              "in",
+              "optional"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getAvailableLocaleDisplayNames",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getLanguageDisplayNames",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getRegionDisplayNames",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getLocaleDisplayNames",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "Collator",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "DateTimeFormat",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "ListFormat",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "Locale",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "NumberFormat",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "PluralRules",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "RelativeTimeFormat",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "mozIMozIntl",
+    "parent": "nsISupports",
+    "uuid": "7f63279a-1a29-4ae6-9e7a-dc9684a23530"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "jscontext"
+        ],
+        "name": "addGetCalendarInfo",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "jscontext"
+        ],
+        "name": "addGetDisplayNames",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "jscontext"
+        ],
+        "name": "addGetLocaleInfo",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "jscontext"
+        ],
+        "name": "addDateTimeFormatConstructor",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "mozIMozIntlHelper",
+    "parent": "nsISupports",
+    "uuid": "189eaa7d-b29a-43a9-b1fb-7658990df940"
+  }
+]

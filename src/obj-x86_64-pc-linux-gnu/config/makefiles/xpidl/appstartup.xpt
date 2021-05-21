@@ -1,0 +1,309 @@
+[
+  {
+    "consts": [
+      {
+        "name": "eConsiderQuit",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 1
+      },
+      {
+        "name": "eAttemptQuit",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 2
+      },
+      {
+        "name": "eForceQuit",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 3
+      },
+      {
+        "name": "eRestart",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 16
+      }
+    ],
+    "flags": [
+      "builtinclass"
+    ],
+    "methods": [
+      {
+        "flags": [],
+        "name": "createHiddenWindow",
+        "params": []
+      },
+      {
+        "flags": [],
+        "name": "destroyHiddenWindow",
+        "params": []
+      },
+      {
+        "flags": [],
+        "name": "run",
+        "params": []
+      },
+      {
+        "flags": [],
+        "name": "enterLastWindowClosingSurvivalArea",
+        "params": []
+      },
+      {
+        "flags": [],
+        "name": "exitLastWindowClosingSurvivalArea",
+        "params": []
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "automaticSafeModeNecessary",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "restartInSafeMode",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "createInstanceWithProfile",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIToolkitProfile",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "trackStartupCrashBegin",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "trackStartupCrashEnd",
+        "params": []
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "quit",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "optional"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "shuttingDown",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "startingUp",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "doneStartingUp",
+        "params": []
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "restarting",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "wasRestarted",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "secondsSinceLastOSRestart",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT64"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "jscontext",
+          "hasretval"
+        ],
+        "name": "getStartupInfo",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "interrupted",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "setter"
+        ],
+        "name": "interrupted",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIAppStartup",
+    "parent": "nsISupports",
+    "uuid": "6621f6d5-6c04-4a0e-9e74-447db221484e"
+  }
+]

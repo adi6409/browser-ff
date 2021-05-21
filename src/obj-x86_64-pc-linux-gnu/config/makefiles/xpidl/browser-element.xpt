@@ -1,0 +1,148 @@
+[
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "destroyFrameScripts",
+        "params": []
+      },
+      {
+        "flags": [],
+        "name": "setFrameLoader",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "nsFrameLoader.h",
+              "name": "FrameLoader",
+              "native": "nsFrameLoader",
+              "tag": "TD_DOMOBJECT"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "sendMouseEvent",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "goBack",
+        "params": []
+      },
+      {
+        "flags": [],
+        "name": "goForward",
+        "params": []
+      },
+      {
+        "flags": [],
+        "name": "reload",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "stop",
+        "params": []
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getCanGoBack",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PROMISE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getCanGoForward",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PROMISE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIBrowserElementAPI",
+    "parent": "nsISupports",
+    "uuid": "57758c10-6036-11e5-a837-0800200c9a66"
+  }
+]

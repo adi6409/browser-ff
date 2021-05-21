@@ -1,0 +1,6526 @@
+[
+  {
+    "consts": [],
+    "flags": [
+      "builtinclass"
+    ],
+    "methods": [
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "asciiHost",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "port",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "isTemporary",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "dbKey",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "hostPort",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsICertOverride",
+    "parent": "nsISupports",
+    "uuid": "ed735e24-fa55-4163-906d-17fb78851fe1"
+  },
+  {
+    "consts": [
+      {
+        "name": "ERROR_UNTRUSTED",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 1
+      },
+      {
+        "name": "ERROR_MISMATCH",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 2
+      },
+      {
+        "name": "ERROR_TIME",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 4
+      }
+    ],
+    "flags": [
+      "builtinclass"
+    ],
+    "methods": [
+      {
+        "flags": [],
+        "name": "rememberValidityOverride",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIX509Cert",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "rememberTemporaryValidityOverrideUsingFingerprint",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "hasMatchingOverride",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIX509Cert",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "clearValidityOverride",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "clearAllOverrides",
+        "params": []
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "isCertUsedForOverrides",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIX509Cert",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getOverrides",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "element": {
+                "name": "nsICertOverride",
+                "tag": "TD_INTERFACE_TYPE"
+              },
+              "tag": "TD_ARRAY"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "setDisableAllSecurityChecksAndLetAttackersInterceptMyData",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsICertOverrideService",
+    "parent": "nsISupports",
+    "uuid": "be019e47-22fc-4355-9f16-9ab047d6742d"
+  },
+  {
+    "consts": [],
+    "flags": [
+      "function"
+    ],
+    "methods": [
+      {
+        "flags": [],
+        "name": "done",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIVariant",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsICertStorageCallback",
+    "parent": "nsISupports",
+    "uuid": "3f8fe26a-a436-4ad4-9c1c-a53c60973c31"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "state",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT16"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIRevocationState",
+    "parent": "nsISupports",
+    "uuid": "96db6fd7-6b64-4a5a-955d-310bd9ca4234"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "issuer",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "serial",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIIssuerAndSerialRevocationState",
+    "parent": "nsIRevocationState",
+    "uuid": "23ce3546-f1b9-46f6-8de3-77704da5702f"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "subject",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "pubKey",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsISubjectAndPubKeyRevocationState",
+    "parent": "nsIRevocationState",
+    "uuid": "e78b51b4-6fa4-41e2-92ce-e9404f541e96"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "subject",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "spkiHash",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "state",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT16"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsICRLiteState",
+    "parent": "nsISupports",
+    "uuid": "5d0d22be-185f-4cf0-b73b-c5a911273e77"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "cert",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "subject",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "trust",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT16"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsICertInfo",
+    "parent": "nsISupports",
+    "uuid": "27b66f5e-0faf-403b-95b4-bc11691ac50d"
+  },
+  {
+    "consts": [
+      {
+        "name": "DATA_TYPE_REVOCATION",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 1
+      },
+      {
+        "name": "DATA_TYPE_CERTIFICATE",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 2
+      },
+      {
+        "name": "DATA_TYPE_CRLITE",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 3
+      },
+      {
+        "name": "DATA_TYPE_CRLITE_FILTER_FULL",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 4
+      },
+      {
+        "name": "DATA_TYPE_CRLITE_FILTER_INCREMENTAL",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 5
+      },
+      {
+        "name": "STATE_UNSET",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 0
+      },
+      {
+        "name": "STATE_ENFORCE",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 1
+      },
+      {
+        "name": "STATE_NOT_ENROLLED",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 2
+      },
+      {
+        "name": "TRUST_INHERIT",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 0
+      },
+      {
+        "name": "TRUST_ANCHOR",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 1
+      }
+    ],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "hasPriorData",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT8"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsICertStorageCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "setRevocations",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "name": "nsIRevocationState",
+                "tag": "TD_INTERFACE_TYPE"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsICertStorageCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getRevocationState",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_UINT8"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_UINT8"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_UINT8"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_UINT8"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT16"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "isBlocklistFresh",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "setCRLiteState",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "name": "nsICRLiteState",
+                "tag": "TD_INTERFACE_TYPE"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsICertStorageCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getCRLiteState",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_UINT8"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_UINT8"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT16"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "setFullCRLiteFilter",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_UINT8"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT64"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsICertStorageCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getCRLiteRevocationState",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_UINT8"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_UINT8"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_UINT8"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT64"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT16"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "addCRLiteStash",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_UINT8"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsICertStorageCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "isCertRevokedByStash",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_UINT8"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_UINT8"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "addCerts",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "name": "nsICertInfo",
+                "tag": "TD_INTERFACE_TYPE"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsICertStorageCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "removeCertsByHashes",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_CSTRING"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsICertStorageCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "findCertsBySubject",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_UINT8"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "element": {
+                "element": {
+                  "tag": "TD_UINT8"
+                },
+                "tag": "TD_ARRAY"
+              },
+              "tag": "TD_ARRAY"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "GetRemainingOperationCount",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsICertStorage",
+    "parent": "nsISupports",
+    "uuid": "327100a7-3401-45ef-b160-bf880f1016fd"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "cert",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsIX509Cert",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsICertTreeItem",
+    "parent": "nsISupports",
+    "uuid": "d0180863-606e-49e6-8324-cf45ed4dd891"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "loadCertsFromCache",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "name": "nsIX509Cert",
+                "tag": "TD_INTERFACE_TYPE"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getCert",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsIX509Cert",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getTreeItem",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsICertTreeItem",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "deleteEntryObject",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsICertTree",
+    "parent": "nsITreeView",
+    "uuid": "55d5ad6b-5572-47fe-941c-f01fe723659e"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "confirmDownloadCACert",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIInterfaceRequestor",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIX509Cert",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "setPKCS12FilePassword",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIInterfaceRequestor",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getPKCS12FilePassword",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIInterfaceRequestor",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsICertificateDialogs",
+    "parent": "nsISupports",
+    "uuid": "da871dab-f69e-4173-ab26-99fcd47b0e85"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "chooseCertificate",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIArray",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIClientAuthDialogs",
+    "parent": "nsISupports",
+    "uuid": "fa4c7520-1433-11d5-ba24-00108303b117"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "asciiHost",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "fingerprint",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "dbKey",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "entryKey",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIClientAuthRememberRecord",
+    "parent": "nsISupports",
+    "uuid": "e92825af-7e81-4b5c-b412-8e1dd36d14fe"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "forgetRememberedDecision",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getDecisions",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "element": {
+                "name": "nsIClientAuthRememberRecord",
+                "tag": "TD_INTERFACE_TYPE"
+              },
+              "tag": "TD_ARRAY"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "rememberDecision",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_VOID"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_VOID"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_VOID"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden",
+          "hasretval"
+        ],
+        "name": "hasRememberedDecision",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_VOID"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_VOID"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "clearRememberedDecisions",
+        "params": []
+      },
+      {
+        "flags": [
+          "jscontext"
+        ],
+        "name": "deleteDecisionsByHost",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIClientAuthRememberService",
+    "parent": "nsISupports",
+    "uuid": "1dbc6eb6-0972-4bdb-9dc4-acd0abf72369"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "jscontext",
+          "hasretval"
+        ],
+        "name": "asyncVerifyContentSignature",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PROMISE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIContentSignatureVerifier",
+    "parent": "nsISupports",
+    "uuid": "45a5fe2f-c350-4b86-962d-02d5aaaa955a"
+  },
+  {
+    "consts": [
+      {
+        "name": "MD5",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 2
+      },
+      {
+        "name": "SHA1",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 3
+      },
+      {
+        "name": "SHA256",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 4
+      },
+      {
+        "name": "SHA384",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 5
+      },
+      {
+        "name": "SHA512",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 6
+      }
+    ],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "init",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIKeyObject",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "update",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_UINT8"
+              },
+              "size_is": 1,
+              "tag": "TD_LEGACY_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "updateFromStream",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIInputStream",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "finish",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "reset",
+        "params": []
+      }
+    ],
+    "name": "nsICryptoHMAC",
+    "parent": "nsISupports",
+    "uuid": "8feb4c7c-1641-4a7b-bc6d-1964e2099497"
+  },
+  {
+    "consts": [
+      {
+        "name": "MD5",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 2
+      },
+      {
+        "name": "SHA1",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 3
+      },
+      {
+        "name": "SHA256",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 4
+      },
+      {
+        "name": "SHA384",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 5
+      },
+      {
+        "name": "SHA512",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 6
+      }
+    ],
+    "flags": [
+      "builtinclass"
+    ],
+    "methods": [
+      {
+        "flags": [],
+        "name": "init",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "initWithString",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "update",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_UINT8"
+              },
+              "size_is": 1,
+              "tag": "TD_LEGACY_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "updateFromStream",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIInputStream",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "finish",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsICryptoHash",
+    "parent": "nsISupports",
+    "uuid": "1e5b7c43-4688-45ce-92e1-77ed931e3bbe"
+  },
+  {
+    "consts": [
+      {
+        "name": "SYM_KEY",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 1
+      },
+      {
+        "name": "HMAC",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 257
+      }
+    ],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "initKey",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT16"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_VOID"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden",
+          "hasretval"
+        ],
+        "name": "getKeyObj",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_VOID"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getType",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT16"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIKeyObject",
+    "parent": "nsISupports",
+    "uuid": "ee2dc516-ba7b-4e77-89fe-c43b886ef715"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "keyFromString",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT16"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsIKeyObject",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIKeyObjectFactory",
+    "parent": "nsISupports",
+    "uuid": "838bdbf1-8244-448f-8bcd-cede70227d75"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "getOrCreateCert",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsILocalCertGetCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "removeCert",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsILocalCertCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "loginPromptRequired",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsILocalCertService",
+    "parent": "nsISupports",
+    "uuid": "9702fdd4-4c2c-439c-ba2e-19cda018eb99"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "handleCert",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIX509Cert",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsILocalCertGetCallback",
+    "parent": "nsISupports",
+    "uuid": "cc09633e-7c70-4093-a9cf-79ab676ca8a9"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "handleResult",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsILocalCertCallback",
+    "parent": "nsISupports",
+    "uuid": "518124e9-55e6-4e23-97c0-4995b3a1bec6"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "logoutAuthenticatedPK11",
+        "params": []
+      },
+      {
+        "flags": [
+          "hidden",
+          "hasretval"
+        ],
+        "name": "isCertTestBuiltInRoot",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_VOID"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden",
+          "hasretval"
+        ],
+        "name": "isCertContentSigningRoot",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_UINT8"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getEnterpriseRoots",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "element": {
+                "element": {
+                  "tag": "TD_UINT8"
+                },
+                "tag": "TD_ARRAY"
+              },
+              "tag": "TD_ARRAY"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getEnterpriseIntermediates",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "element": {
+                "element": {
+                  "tag": "TD_UINT8"
+                },
+                "tag": "TD_ARRAY"
+              },
+              "tag": "TD_ARRAY"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "addEnterpriseIntermediate",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_UINT8"
+              },
+              "tag": "TD_ARRAY"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "blockUntilLoadableCertsLoaded",
+        "params": []
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "checkForSmartCardChanges",
+        "params": []
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "issuerMatchesMitmCanary",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden",
+          "hasretval"
+        ],
+        "name": "hasActiveSmartCards",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden",
+          "hasretval"
+        ],
+        "name": "hasUserCertsInstalled",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden",
+          "hasretval"
+        ],
+        "name": "getDefaultCertVerifier",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_VOID"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "clearSSLExternalAndInternalSessionCache",
+        "params": []
+      }
+    ],
+    "name": "nsINSSComponent",
+    "parent": "nsISupports",
+    "uuid": "a0a8f52b-ea18-4abc-a3ca-eccf704ffe63"
+  },
+  {
+    "consts": [
+      {
+        "name": "ERROR_CLASS_SSL_PROTOCOL",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 1
+      },
+      {
+        "name": "ERROR_CLASS_BAD_CERT",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 2
+      },
+      {
+        "name": "NSS_SEC_ERROR_BASE",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": -8192
+      },
+      {
+        "name": "NSS_SEC_ERROR_LIMIT",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": -7192
+      },
+      {
+        "name": "NSS_SSL_ERROR_BASE",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": -12288
+      },
+      {
+        "name": "NSS_SSL_ERROR_LIMIT",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": -11288
+      },
+      {
+        "name": "MOZILLA_PKIX_ERROR_BASE",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": -16384
+      },
+      {
+        "name": "MOZILLA_PKIX_ERROR_LIMIT",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": -15384
+      }
+    ],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "isNSSErrorCode",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getXPCOMFromNSSError",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getErrorMessage",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getErrorClass",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsINSSErrorsService",
+    "parent": "nsISupports",
+    "uuid": "12f60021-e14b-4020-99d1-ed2c795be66a"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "NSPR_MinVersion",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "NSS_MinVersion",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "NSSUTIL_MinVersion",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "NSSSSL_MinVersion",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "NSSSMIME_MinVersion",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "NSPR_Version",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "NSS_Version",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "NSSUTIL_Version",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "NSSSSL_Version",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "NSSSMIME_Version",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsINSSVersion",
+    "parent": "nsISupports",
+    "uuid": "a8a53a2b-75cc-4c68-a9bb-9791dbddaa00"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "jscontext",
+          "hasretval"
+        ],
+        "name": "asyncGenerateSecret",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PROMISE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "jscontext",
+          "hasretval"
+        ],
+        "name": "asyncSecretAvailable",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PROMISE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "jscontext",
+          "hasretval"
+        ],
+        "name": "asyncRecoverSecret",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PROMISE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "jscontext",
+          "hasretval"
+        ],
+        "name": "asyncDeleteSecret",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PROMISE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "jscontext",
+          "hasretval"
+        ],
+        "name": "asyncEncryptBytes",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_UINT8"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PROMISE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "jscontext",
+          "hasretval"
+        ],
+        "name": "asyncDecryptBytes",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PROMISE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "jscontext",
+          "hasretval"
+        ],
+        "name": "asyncLock",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PROMISE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "jscontext",
+          "hasretval"
+        ],
+        "name": "asyncUnlock",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PROMISE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "isNSSKeyStore",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIOSKeyStore",
+    "parent": "nsISupports",
+    "uuid": "57972956-5718-42d2-8070-b3fc72212eaf"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "jscontext",
+          "hasretval"
+        ],
+        "name": "asyncReauthenticateUser",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "mozIDOMWindow",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PROMISE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIOSReauthenticator",
+    "parent": "nsISupports",
+    "uuid": "4fe082ae-6ff0-4b41-b24f-eaa664f6e46a"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "tokenName",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "isInternalKeyToken",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "tokenManID",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "tokenHWVersion",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "tokenFWVersion",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "tokenSerialNumber",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "isLoggedIn",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "login",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "logoutSimple",
+        "params": []
+      },
+      {
+        "flags": [],
+        "name": "logoutAndDropAuthenticatedResources",
+        "params": []
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "needsLogin",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "needsUserInit",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "reset",
+        "params": []
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "checkPassword",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "initPassword",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "changePassword",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "hasPassword",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIPK11Token",
+    "parent": "nsISupports",
+    "uuid": "51191434-1dd2-11b2-a17c-e49c4e99a4e3"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getInternalKeyToken",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsIPK11Token",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIPK11TokenDB",
+    "parent": "nsISupports",
+    "uuid": "4ee28c82-1dd2-11b2-aabf-bb4017abe395"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "name",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "libName",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "listSlots",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsISimpleEnumerator",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIPKCS11Module",
+    "parent": "nsISupports",
+    "uuid": "8a44bdf9-d1a5-4734-bd5a-34ed7fe564c2"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "deleteModule",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "addModule",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "listModules",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsISimpleEnumerator",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "canToggleFIPS",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "toggleFIPSMode",
+        "params": []
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "isFIPSEnabled",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIPKCS11ModuleDB",
+    "parent": "nsISupports",
+    "uuid": "ff9fbcd7-9517-4334-b97a-ceed78909974"
+  },
+  {
+    "consts": [
+      {
+        "name": "SLOT_DISABLED",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 0
+      },
+      {
+        "name": "SLOT_NOT_PRESENT",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 1
+      },
+      {
+        "name": "SLOT_UNINITIALIZED",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 2
+      },
+      {
+        "name": "SLOT_NOT_LOGGED_IN",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 3
+      },
+      {
+        "name": "SLOT_LOGGED_IN",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 4
+      },
+      {
+        "name": "SLOT_READY",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 5
+      }
+    ],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "name",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "desc",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "manID",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "HWVersion",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "FWVersion",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "status",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getToken",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsIPK11Token",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "tokenName",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIPKCS11Slot",
+    "parent": "nsISupports",
+    "uuid": "c2d4f296-ee60-11d4-998b-00b0d02354a0"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "login",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIObserver",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "slot",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsIPKCS11Slot",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getTokenName",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIProtectedAuthThread",
+    "parent": "nsISupports",
+    "uuid": "4bb27cb7-8984-4cee-8ce7-9b014c3d091b"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "encryptString",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "jscontext",
+          "hasretval"
+        ],
+        "name": "asyncEncryptStrings",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_UTF8STRING"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PROMISE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "decryptString",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "jscontext",
+          "hasretval"
+        ],
+        "name": "asyncDecryptStrings",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_CSTRING"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PROMISE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "changePassword",
+        "params": []
+      },
+      {
+        "flags": [],
+        "name": "logout",
+        "params": []
+      },
+      {
+        "flags": [],
+        "name": "logoutAndTeardown",
+        "params": []
+      }
+    ],
+    "name": "nsISecretDecoderRing",
+    "parent": "nsISupports",
+    "uuid": "0ec80360-075c-11d4-9fd4-00c04f1b83d8"
+  },
+  {
+    "consts": [
+      {
+        "name": "WARNING_ADDON_ASKING_PREVENTED",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 1
+      },
+      {
+        "name": "WARNING_ADDON_ASKING_PREVENTED_CLICK_THROUGH",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 2
+      },
+      {
+        "name": "WARNING_CONFIRM_ADDON_INSTALL",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 3
+      },
+      {
+        "name": "WARNING_CONFIRM_ADDON_INSTALL_CLICK_THROUGH",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 4
+      },
+      {
+        "name": "WARNING_CONFIRM_POST_TO_INSECURE_FROM_SECURE",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 9
+      },
+      {
+        "name": "WARNING_CONFIRM_POST_TO_INSECURE_FROM_SECURE_CLICK_THROUGH",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 10
+      },
+      {
+        "name": "WARNING_BAD_CERT_ADD_EXCEPTION_BASE",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 30
+      },
+      {
+        "name": "WARNING_BAD_CERT_ADD_EXCEPTION_FLAG_UNTRUSTED",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 1
+      },
+      {
+        "name": "WARNING_BAD_CERT_ADD_EXCEPTION_FLAG_DOMAIN",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 2
+      },
+      {
+        "name": "WARNING_BAD_CERT_ADD_EXCEPTION_FLAG_TIME",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 4
+      },
+      {
+        "name": "WARNING_BAD_CERT_CONFIRM_ADD_EXCEPTION_BASE",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 38
+      },
+      {
+        "name": "WARNING_BAD_CERT_CONFIRM_ADD_EXCEPTION_FLAG_UNTRUSTED",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 1
+      },
+      {
+        "name": "WARNING_BAD_CERT_CONFIRM_ADD_EXCEPTION_FLAG_DOMAIN",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 2
+      },
+      {
+        "name": "WARNING_BAD_CERT_CONFIRM_ADD_EXCEPTION_FLAG_TIME",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 4
+      },
+      {
+        "name": "WARNING_BAD_CERT_TOP_CLICK_VIEW_CERT",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 71
+      },
+      {
+        "name": "WARNING_BAD_CERT_TOP_DONT_REMEMBER_EXCEPTION",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 72
+      },
+      {
+        "name": "WARNING_BAD_CERT_TOP_ADD_EXCEPTION_BASE",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 76
+      },
+      {
+        "name": "WARNING_BAD_CERT_TOP_ADD_EXCEPTION_FLAG_UNTRUSTED",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 1
+      },
+      {
+        "name": "WARNING_BAD_CERT_TOP_ADD_EXCEPTION_FLAG_DOMAIN",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 2
+      },
+      {
+        "name": "WARNING_BAD_CERT_TOP_ADD_EXCEPTION_FLAG_TIME",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 4
+      },
+      {
+        "name": "WARNING_BAD_CERT_TOP_CONFIRM_ADD_EXCEPTION_BASE",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 84
+      },
+      {
+        "name": "WARNING_BAD_CERT_TOP_CONFIRM_ADD_EXCEPTION_FLAG_UNTRUSTED",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 1
+      },
+      {
+        "name": "WARNING_BAD_CERT_TOP_CONFIRM_ADD_EXCEPTION_FLAG_DOMAIN",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 2
+      },
+      {
+        "name": "WARNING_BAD_CERT_TOP_CONFIRM_ADD_EXCEPTION_FLAG_TIME",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 4
+      }
+    ],
+    "flags": [],
+    "methods": [],
+    "name": "nsISecurityUITelemetry",
+    "parent": "nsISupports",
+    "uuid": "5d1acf82-223a-46fb-a8f3-a1b16e2ceb04"
+  },
+  {
+    "consts": [
+      {
+        "name": "SECURITY_PROPERTY_UNSET",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 0
+      },
+      {
+        "name": "SECURITY_PROPERTY_SET",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 1
+      },
+      {
+        "name": "SECURITY_PROPERTY_KNOCKOUT",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 2
+      },
+      {
+        "name": "SECURITY_PROPERTY_NEGATIVE",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 3
+      }
+    ],
+    "flags": [
+      "builtinclass"
+    ],
+    "methods": [
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "hostname",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "expireTime",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT64"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "securityPropertyState",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT16"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "includeSubdomains",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "jscontext",
+          "hasretval"
+        ],
+        "name": "originAttributes",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsISiteSecurityState",
+    "parent": "nsISupports",
+    "uuid": "31313372-842c-4110-bdf1-6aea17c845ad"
+  },
+  {
+    "consts": [],
+    "flags": [
+      "builtinclass"
+    ],
+    "methods": [],
+    "name": "nsISiteHSTSState",
+    "parent": "nsISiteSecurityState",
+    "uuid": "9ff16e40-1029-496c-95c2-bc819872b216"
+  },
+  {
+    "consts": [
+      {
+        "name": "HEADER_HSTS",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 0
+      },
+      {
+        "name": "STATIC_PINNING",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 1
+      },
+      {
+        "name": "Success",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 0
+      },
+      {
+        "name": "ERROR_UNKNOWN",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 1
+      },
+      {
+        "name": "ERROR_UNTRUSTWORTHY_CONNECTION",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 2
+      },
+      {
+        "name": "ERROR_COULD_NOT_PARSE_HEADER",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 3
+      },
+      {
+        "name": "ERROR_NO_MAX_AGE",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 4
+      },
+      {
+        "name": "ERROR_MULTIPLE_MAX_AGES",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 5
+      },
+      {
+        "name": "ERROR_INVALID_MAX_AGE",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 6
+      },
+      {
+        "name": "ERROR_MULTIPLE_INCLUDE_SUBDOMAINS",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 7
+      },
+      {
+        "name": "ERROR_INVALID_INCLUDE_SUBDOMAINS",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 8
+      },
+      {
+        "name": "ERROR_COULD_NOT_SAVE_STATE",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 13
+      },
+      {
+        "name": "SOURCE_UNKNOWN",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 0
+      },
+      {
+        "name": "SOURCE_PRELOAD_LIST",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 1
+      },
+      {
+        "name": "SOURCE_ORGANIC_REQUEST",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 2
+      }
+    ],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "processHeaderNative",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIURI",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsITransportSecurityInfo",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_VOID"
+            }
+          },
+          {
+            "flags": [
+              "out",
+              "optional"
+            ],
+            "type": {
+              "tag": "TD_UINT64"
+            }
+          },
+          {
+            "flags": [
+              "out",
+              "optional"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "out",
+              "optional"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "optargc",
+          "jscontext"
+        ],
+        "name": "processHeader",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIURI",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsITransportSecurityInfo",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "optional"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          },
+          {
+            "flags": [
+              "out",
+              "optional"
+            ],
+            "type": {
+              "tag": "TD_UINT64"
+            }
+          },
+          {
+            "flags": [
+              "out",
+              "optional"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "out",
+              "optional"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "optargc",
+          "jscontext"
+        ],
+        "name": "resetState",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIURI",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "optional"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden",
+          "hasretval"
+        ],
+        "name": "isSecureURINative",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIURI",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_VOID"
+            }
+          },
+          {
+            "flags": [
+              "out",
+              "optional"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "out",
+              "optional"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "optargc",
+          "jscontext",
+          "hasretval"
+        ],
+        "name": "isSecureURI",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIURI",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "optional"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          },
+          {
+            "flags": [
+              "out",
+              "optional"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "out",
+              "optional"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "clearAll",
+        "params": []
+      },
+      {
+        "flags": [],
+        "name": "clearPreloads",
+        "params": []
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "setHSTSPreload",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT64"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "enumerate",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsISimpleEnumerator",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsISiteSecurityService",
+    "parent": "nsISupports",
+    "uuid": "275127f8-dbd7-4681-afbf-6df0c6587a01"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "displayProtectedAuth",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIInterfaceRequestor",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIProtectedAuthThread",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsITokenDialogs",
+    "parent": "nsISupports",
+    "uuid": "a1cbc159-468c-495d-8068-61dd538cbcca"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "setPassword",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIInterfaceRequestor",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIPK11Token",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsITokenPasswordDialogs",
+    "parent": "nsISupports",
+    "uuid": "87dbd64a-4466-474e-95f5-1ad1cee5702c"
+  },
+  {
+    "consts": [
+      {
+        "name": "UNKNOWN_CERT",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 0
+      },
+      {
+        "name": "CA_CERT",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 1
+      },
+      {
+        "name": "USER_CERT",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 2
+      },
+      {
+        "name": "EMAIL_CERT",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 4
+      },
+      {
+        "name": "SERVER_CERT",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 8
+      },
+      {
+        "name": "ANY_CERT",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 65535
+      }
+    ],
+    "flags": [
+      "builtinclass"
+    ],
+    "methods": [
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "emailAddress",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "isBuiltInRoot",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getEmailAddresses",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_ASTRING"
+              },
+              "tag": "TD_ARRAY"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "containsEmailAddress",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "subjectName",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "commonName",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "organization",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "organizationalUnit",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "sha256Fingerprint",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "sha1Fingerprint",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "tokenName",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "issuerName",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "serialNumber",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "issuerCommonName",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "issuerOrganization",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "issuerOrganizationUnit",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "validity",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsIX509CertValidity",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "dbKey",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "displayName",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "certType",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "keyUsages",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getRawDER",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_UINT8"
+              },
+              "tag": "TD_ARRAY"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getBase64DERString",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "equals",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIX509Cert",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "sha256SubjectPublicKeyInfoDigest",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "getCert",
+        "params": []
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "SerializeToIPC",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_VOID"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "DeserializeFromIPC",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_VOID"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_VOID"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIX509Cert",
+    "parent": "nsISupports",
+    "uuid": "bdc3979a-5422-4cd5-8589-696b6e96ea83"
+  },
+  {
+    "consts": [],
+    "flags": [
+      "function"
+    ],
+    "methods": [
+      {
+        "flags": [],
+        "name": "openSignedAppFileFinished",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIZipReader",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIX509Cert",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIOpenSignedAppFileCallback",
+    "parent": "nsISupports",
+    "uuid": "fc2b60e5-9a07-47c2-a2cd-b83b68a660ac"
+  },
+  {
+    "consts": [],
+    "flags": [
+      "function"
+    ],
+    "methods": [
+      {
+        "flags": [],
+        "name": "onResult",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIAsyncBoolCallback",
+    "parent": "nsISupports",
+    "uuid": "07c08655-8b11-4650-b6c4-0c145595ceb5"
+  },
+  {
+    "consts": [],
+    "flags": [
+      "function"
+    ],
+    "methods": [
+      {
+        "flags": [],
+        "name": "verifyCertFinished",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "name": "nsIX509Cert",
+                "tag": "TD_INTERFACE_TYPE"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsICertVerificationCallback",
+    "parent": "nsISupports",
+    "uuid": "49e16fc8-efac-4f57-8361-956ef6b960a4"
+  },
+  {
+    "consts": [
+      {
+        "name": "UNTRUSTED",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 0
+      },
+      {
+        "name": "TRUSTED_SSL",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 1
+      },
+      {
+        "name": "TRUSTED_EMAIL",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 2
+      },
+      {
+        "name": "Success",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 0
+      },
+      {
+        "name": "ERROR_UNKNOWN",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 1
+      },
+      {
+        "name": "ERROR_PKCS12_NOSMARTCARD_EXPORT",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 2
+      },
+      {
+        "name": "ERROR_PKCS12_RESTORE_FAILED",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 3
+      },
+      {
+        "name": "ERROR_PKCS12_BACKUP_FAILED",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 4
+      },
+      {
+        "name": "ERROR_PKCS12_CERT_COLLISION",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 5
+      },
+      {
+        "name": "ERROR_BAD_PASSWORD",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 6
+      },
+      {
+        "name": "ERROR_DECODE_ERROR",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 7
+      },
+      {
+        "name": "ERROR_PKCS12_DUPLICATE_DATA",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 8
+      },
+      {
+        "name": "AppXPCShellRoot",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 6
+      },
+      {
+        "name": "AddonsPublicRoot",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 7
+      },
+      {
+        "name": "AddonsStageRoot",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 8
+      },
+      {
+        "name": "FLAG_LOCAL_ONLY",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 1
+      },
+      {
+        "name": "FLAG_MUST_BE_EV",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 2
+      }
+    ],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "findCertByDBKey",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsIX509Cert",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "importCertificates",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_UINT8"
+              },
+              "size_is": 1,
+              "tag": "TD_LEGACY_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIInterfaceRequestor",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "importEmailCertificate",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_UINT8"
+              },
+              "size_is": 1,
+              "tag": "TD_LEGACY_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIInterfaceRequestor",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "importUserCertificate",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_UINT8"
+              },
+              "size_is": 1,
+              "tag": "TD_LEGACY_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIInterfaceRequestor",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "deleteCertificate",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIX509Cert",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "setCertTrust",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIX509Cert",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "setCertTrustFromString",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIX509Cert",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "isCertTrusted",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIX509Cert",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "importCertsFromFile",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIFile",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "importPKCS12File",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIFile",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "exportPKCS12File",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIFile",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "name": "nsIX509Cert",
+                "tag": "TD_INTERFACE_TYPE"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "constructX509FromBase64",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsIX509Cert",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "constructX509",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_UINT8"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsIX509Cert",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "openSignedAppFileAsync",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIFile",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIOpenSignedAppFileCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "addCert",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsIX509Cert",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "asyncVerifyCertAtTime",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIX509Cert",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT64"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT64"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsICertVerificationCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "clearOCSPCache",
+        "params": []
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "addCertFromBase64",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsIX509Cert",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getCerts",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "element": {
+                "name": "nsIX509Cert",
+                "tag": "TD_INTERFACE_TYPE"
+              },
+              "tag": "TD_ARRAY"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "asPKCS7Blob",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "name": "nsIX509Cert",
+                "tag": "TD_INTERFACE_TYPE"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "asyncHasThirdPartyRoots",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIAsyncBoolCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIX509CertDB",
+    "parent": "nsISupports",
+    "uuid": "5c16cd9b-5a73-47f1-ab0f-11ede7495cce"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "notBefore",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT64"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "notBeforeLocalTime",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "notBeforeLocalDay",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "notBeforeGMT",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "notAfter",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT64"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "notAfterLocalTime",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "notAfterLocalDay",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "notAfterGMT",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIX509CertValidity",
+    "parent": "nsISupports",
+    "uuid": "e701dfd8-1dd1-11b2-a172-ffa6cc6156ad"
+  }
+]

@@ -1,0 +1,2913 @@
+[
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "strReadOnly",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "boolReadOnly",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "shortReadOnly",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT16"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "longReadOnly",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "floatReadOnly",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_FLOAT"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "charReadOnly",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CHAR"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "timeReadOnly",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT64"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIXPCTestObjectReadOnly",
+    "parent": "nsISupports",
+    "uuid": "42fbd9f6-b12d-47ef-b7a1-02d73c11fe53"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "stringProperty",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "setter"
+        ],
+        "name": "stringProperty",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "booleanProperty",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "setter"
+        ],
+        "name": "booleanProperty",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "shortProperty",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT16"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "setter"
+        ],
+        "name": "shortProperty",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT16"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "longProperty",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "setter"
+        ],
+        "name": "longProperty",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "floatProperty",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_FLOAT"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "setter"
+        ],
+        "name": "floatProperty",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_FLOAT"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "charProperty",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CHAR"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "setter"
+        ],
+        "name": "charProperty",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CHAR"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "timeProperty",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT64"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "setter"
+        ],
+        "name": "timeProperty",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT64"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIXPCTestObjectReadWrite",
+    "parent": "nsISupports",
+    "uuid": "f07529b0-a479-4954-aba5-ab3142c6b1cb"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "jscontext",
+          "hasretval"
+        ],
+        "name": "addArgs",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "jscontext",
+          "hasretval"
+        ],
+        "name": "addSubMulArgs",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "jscontext",
+          "hasretval"
+        ],
+        "name": "addVals",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "jscontext",
+          "hasretval"
+        ],
+        "name": "methodNoArgs",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "jscontext"
+        ],
+        "name": "methodNoArgsNoRetVal",
+        "params": []
+      },
+      {
+        "flags": [
+          "jscontext",
+          "hasretval"
+        ],
+        "name": "addMany",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "jscontext",
+          "hasretval"
+        ],
+        "name": "valProperty",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "setter",
+          "jscontext"
+        ],
+        "name": "valProperty",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "jscontext",
+          "hasretval"
+        ],
+        "name": "uintProperty",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "setter",
+          "jscontext"
+        ],
+        "name": "uintProperty",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "optargc"
+        ],
+        "name": "methodWithOptionalArgc",
+        "params": []
+      }
+    ],
+    "name": "nsIXPCTestBug809674",
+    "parent": "nsISupports",
+    "uuid": "2df46559-da21-49bf-b863-0d7b7bbcbc73"
+  },
+  {
+    "consts": [
+      {
+        "name": "testConst",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 1
+      },
+      {
+        "name": "shouldBe1Explicit",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 1
+      },
+      {
+        "name": "shouldBe2Explicit",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 2
+      },
+      {
+        "name": "shouldBe4Explicit",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 4
+      },
+      {
+        "name": "shouldBe8Explicit",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 8
+      },
+      {
+        "name": "shouldBe12Explicit",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 12
+      },
+      {
+        "name": "shouldBe0Implicit",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 0
+      },
+      {
+        "name": "shouldBe1Implicit",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 1
+      },
+      {
+        "name": "shouldBe2Implicit",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 2
+      },
+      {
+        "name": "shouldBe3Implicit",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 3
+      },
+      {
+        "name": "shouldBe5Implicit",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 5
+      },
+      {
+        "name": "shouldBe6Implicit",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 6
+      },
+      {
+        "name": "shouldBe2AgainImplicit",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 2
+      },
+      {
+        "name": "shouldBe3AgainImplicit",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 3
+      }
+    ],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "testCEnumInput",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT8"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "testCEnumOutput",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT8"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIXPCTestCEnums",
+    "parent": "nsISupports",
+    "uuid": "6a2f918e-cda2-11e8-bc9a-a34c716d1f2a"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "name",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "setter"
+        ],
+        "name": "name",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PSTRING"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIXPCTestInterfaceA",
+    "parent": "nsISupports",
+    "uuid": "3c8fd2f5-970c-42c6-b5dd-cda1c16dcfd8"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "name",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "setter"
+        ],
+        "name": "name",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PSTRING"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIXPCTestInterfaceB",
+    "parent": "nsISupports",
+    "uuid": "ff528c3a-2410-46de-acaa-449aa6403a33"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "someInteger",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "setter"
+        ],
+        "name": "someInteger",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIXPCTestInterfaceC",
+    "parent": "nsISupports",
+    "uuid": "401cf1b4-355b-4cee-b7b3-c7973aee49bd"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "testBoolean",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "testOctet",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT8"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT8"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT8"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "testShort",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT16"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT16"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT16"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "testLong",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "testLongLong",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT64"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT64"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT64"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "testUnsignedShort",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT16"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT16"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT16"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "testUnsignedLong",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "testUnsignedLongLong",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT64"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT64"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT64"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "testFloat",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_FLOAT"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_FLOAT"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_FLOAT"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "testDouble",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_DOUBLE"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_FLOAT"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_DOUBLE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "testChar",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CHAR"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CHAR"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CHAR"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "testString",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PSTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "testWchar",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_WCHAR"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_WCHAR"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_WCHAR"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "testWstring",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "testAString",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "testAUTF8String",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "testACString",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "testJsval",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "testShortSequence",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_INT16"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_INT16"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_INT16"
+              },
+              "tag": "TD_ARRAY"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "testDoubleSequence",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_DOUBLE"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_DOUBLE"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_DOUBLE"
+              },
+              "tag": "TD_ARRAY"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "testInterfaceSequence",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "name": "nsIXPCTestInterfaceA",
+                "tag": "TD_INTERFACE_TYPE"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "element": {
+                "name": "nsIXPCTestInterfaceA",
+                "tag": "TD_INTERFACE_TYPE"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "element": {
+                "name": "nsIXPCTestInterfaceA",
+                "tag": "TD_INTERFACE_TYPE"
+              },
+              "tag": "TD_ARRAY"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "testAStringSequence",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_ASTRING"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_ASTRING"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_ASTRING"
+              },
+              "tag": "TD_ARRAY"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "testACStringSequence",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_CSTRING"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_CSTRING"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_CSTRING"
+              },
+              "tag": "TD_ARRAY"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "testJsvalSequence",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_JSVAL"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_JSVAL"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_JSVAL"
+              },
+              "tag": "TD_ARRAY"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "testSequenceSequence",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "element": {
+                  "tag": "TD_INT16"
+                },
+                "tag": "TD_ARRAY"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "element": {
+                "element": {
+                  "tag": "TD_INT16"
+                },
+                "tag": "TD_ARRAY"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "element": {
+                "element": {
+                  "tag": "TD_INT16"
+                },
+                "tag": "TD_ARRAY"
+              },
+              "tag": "TD_ARRAY"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "testInterfaceIsSequence",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_NSIDPTR"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "iid_is": 0,
+                "tag": "TD_INTERFACE_IS_TYPE"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_NSIDPTR"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "element": {
+                "iid_is": 2,
+                "tag": "TD_INTERFACE_IS_TYPE"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_NSIDPTR"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "element": {
+                "iid_is": 4,
+                "tag": "TD_INTERFACE_IS_TYPE"
+              },
+              "tag": "TD_ARRAY"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "testOptionalSequence",
+        "params": [
+          {
+            "flags": [
+              "in",
+              "optional"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_UINT8"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_UINT8"
+              },
+              "tag": "TD_ARRAY"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "testShortArray",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_INT16"
+              },
+              "size_is": 0,
+              "tag": "TD_LEGACY_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_INT16"
+              },
+              "size_is": 2,
+              "tag": "TD_LEGACY_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_INT16"
+              },
+              "size_is": 4,
+              "tag": "TD_LEGACY_ARRAY"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "testDoubleArray",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_DOUBLE"
+              },
+              "size_is": 0,
+              "tag": "TD_LEGACY_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_DOUBLE"
+              },
+              "size_is": 2,
+              "tag": "TD_LEGACY_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_DOUBLE"
+              },
+              "size_is": 4,
+              "tag": "TD_LEGACY_ARRAY"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "testStringArray",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_PSTRING"
+              },
+              "size_is": 0,
+              "tag": "TD_LEGACY_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_PSTRING"
+              },
+              "size_is": 2,
+              "tag": "TD_LEGACY_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_PSTRING"
+              },
+              "size_is": 4,
+              "tag": "TD_LEGACY_ARRAY"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "testWstringArray",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_PWSTRING"
+              },
+              "size_is": 0,
+              "tag": "TD_LEGACY_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_PWSTRING"
+              },
+              "size_is": 2,
+              "tag": "TD_LEGACY_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_PWSTRING"
+              },
+              "size_is": 4,
+              "tag": "TD_LEGACY_ARRAY"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "testInterfaceArray",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "name": "nsIXPCTestInterfaceA",
+                "tag": "TD_INTERFACE_TYPE"
+              },
+              "size_is": 0,
+              "tag": "TD_LEGACY_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "element": {
+                "name": "nsIXPCTestInterfaceA",
+                "tag": "TD_INTERFACE_TYPE"
+              },
+              "size_is": 2,
+              "tag": "TD_LEGACY_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "element": {
+                "name": "nsIXPCTestInterfaceA",
+                "tag": "TD_INTERFACE_TYPE"
+              },
+              "size_is": 4,
+              "tag": "TD_LEGACY_ARRAY"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "testByteArrayOptionalLength",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_UINT8"
+              },
+              "size_is": 1,
+              "tag": "TD_LEGACY_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "optional"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "testSizedString",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "size_is": 0,
+              "tag": "TD_PSTRING_SIZE_IS"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "size_is": 2,
+              "tag": "TD_PSTRING_SIZE_IS"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "size_is": 4,
+              "tag": "TD_PSTRING_SIZE_IS"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "testSizedWstring",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "size_is": 0,
+              "tag": "TD_PWSTRING_SIZE_IS"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "size_is": 2,
+              "tag": "TD_PWSTRING_SIZE_IS"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "size_is": 4,
+              "tag": "TD_PWSTRING_SIZE_IS"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "testInterfaceIs",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_NSIDPTR"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "iid_is": 0,
+              "tag": "TD_INTERFACE_IS_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_NSIDPTR"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "iid_is": 2,
+              "tag": "TD_INTERFACE_IS_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_NSIDPTR"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "iid_is": 4,
+              "tag": "TD_INTERFACE_IS_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "testInterfaceIsArray",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_NSIDPTR"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "iid_is": 1,
+                "tag": "TD_INTERFACE_IS_TYPE"
+              },
+              "size_is": 0,
+              "tag": "TD_LEGACY_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_NSIDPTR"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "element": {
+                "iid_is": 4,
+                "tag": "TD_INTERFACE_IS_TYPE"
+              },
+              "size_is": 3,
+              "tag": "TD_LEGACY_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_NSIDPTR"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "element": {
+                "iid_is": 7,
+                "tag": "TD_INTERFACE_IS_TYPE"
+              },
+              "size_is": 6,
+              "tag": "TD_LEGACY_ARRAY"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "testJsvalArray",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_JSVAL"
+              },
+              "size_is": 0,
+              "tag": "TD_LEGACY_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_JSVAL"
+              },
+              "size_is": 2,
+              "tag": "TD_LEGACY_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_JSVAL"
+              },
+              "size_is": 4,
+              "tag": "TD_LEGACY_ARRAY"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "testOutAString",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "testStringArrayOptionalSize",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_PSTRING"
+              },
+              "size_is": 1,
+              "tag": "TD_LEGACY_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "optional"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "testOmittedOptionalOut",
+        "params": [
+          {
+            "flags": [
+              "out",
+              "optional"
+            ],
+            "type": {
+              "name": "nsIURI",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIXPCTestParams",
+    "parent": "nsISupports",
+    "uuid": "812145c7-9fcc-425e-a878-36ad1b7730b7"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "callChild",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIXPCTestReturnCodeParent",
+    "parent": "nsISupports",
+    "uuid": "479e4532-95cf-48b8-a99b-8a5881e47138"
+  },
+  {
+    "consts": [
+      {
+        "name": "CHILD_SHOULD_THROW",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 0
+      },
+      {
+        "name": "CHILD_SHOULD_RETURN_SUCCESS",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 1
+      },
+      {
+        "name": "CHILD_SHOULD_RETURN_RESULTCODE",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 2
+      },
+      {
+        "name": "CHILD_SHOULD_NEST_RESULTCODES",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 3
+      }
+    ],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "doIt",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIXPCTestReturnCodeChild",
+    "parent": "nsISupports",
+    "uuid": "672cfd34-1fd1-455d-9901-d879fa6fdb95"
+  },
+  {
+    "consts": [],
+    "flags": [
+      "function"
+    ],
+    "methods": [
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "echo",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PSTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PSTRING"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIXPCTestFunctionInterface",
+    "parent": "nsISupports",
+    "uuid": "d58a82ab-d8f7-4ca9-9273-b3290d42a0cf"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "doubleWrapFunction",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIXPCTestFunctionInterface",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsIXPCTestFunctionInterface",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIXPCTestUtils",
+    "parent": "nsISupports",
+    "uuid": "1e9cddeb-510d-449a-b152-3c1b5b31d41d"
+  }
+]

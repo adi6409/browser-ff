@@ -1,0 +1,2885 @@
+[
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "GetInt",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "SetInt",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "SetNumberStrings",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "GetString",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "SetString",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "objects",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsIMutableArray",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "setter"
+        ],
+        "name": "objects",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIMutableArray",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIDialogParamBlock",
+    "parent": "nsISupports",
+    "uuid": "f76c0901-437a-11d3-b7a0-e35db351b4bc"
+  },
+  {
+    "consts": [],
+    "flags": [
+      "builtinclass"
+    ],
+    "methods": [
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "parent",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/BrowsingContext.h",
+              "name": "BrowsingContext",
+              "native": "mozilla::dom::BrowsingContext",
+              "tag": "TD_DOMOBJECT"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "isRemote",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "forceNoOpener",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "isForPrinting",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "isForWindowDotPrint",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "getNextRemoteBrowser",
+        "params": []
+      },
+      {
+        "flags": [
+          "getter",
+          "jscontext",
+          "hasretval"
+        ],
+        "name": "originAttributes",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "binaryGetOriginAttributes",
+        "params": []
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "browsingContextReadyCallback",
+        "params": []
+      }
+    ],
+    "name": "nsIOpenWindowInfo",
+    "parent": "nsISupports",
+    "uuid": "30359edb-126c-4f65-ae80-07fb158697f9"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "asyncBeforeUnloadCheck",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/BrowsingContext.h",
+              "name": "BrowsingContext",
+              "native": "mozilla::dom::BrowsingContext",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PROMISE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "confirmRepost",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/BrowsingContext.h",
+              "name": "BrowsingContext",
+              "native": "mozilla::dom::BrowsingContext",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "confirmFolderUpload",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/BrowsingContext.h",
+              "name": "BrowsingContext",
+              "native": "mozilla::dom::BrowsingContext",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIPromptCollection",
+    "parent": "nsISupports",
+    "uuid": "7913837c-9623-11ea-bb37-0242ac130002"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getPrompt",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "mozIDOMWindowProxy",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_NSID"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "iid_is": 1,
+              "tag": "TD_INTERFACE_IS_TYPE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIPromptFactory",
+    "parent": "nsISupports",
+    "uuid": "2803541c-c96a-4ff1-bd7c-9cb566d46aeb"
+  },
+  {
+    "consts": [
+      {
+        "name": "BUTTON_POS_0",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 1
+      },
+      {
+        "name": "BUTTON_POS_1",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 256
+      },
+      {
+        "name": "BUTTON_POS_2",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 65536
+      },
+      {
+        "name": "BUTTON_TITLE_OK",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 1
+      },
+      {
+        "name": "BUTTON_TITLE_CANCEL",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 2
+      },
+      {
+        "name": "BUTTON_TITLE_YES",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 3
+      },
+      {
+        "name": "BUTTON_TITLE_NO",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 4
+      },
+      {
+        "name": "BUTTON_TITLE_SAVE",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 5
+      },
+      {
+        "name": "BUTTON_TITLE_DONT_SAVE",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 6
+      },
+      {
+        "name": "BUTTON_TITLE_REVERT",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 7
+      },
+      {
+        "name": "BUTTON_TITLE_IS_STRING",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 127
+      },
+      {
+        "name": "BUTTON_POS_0_DEFAULT",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 0
+      },
+      {
+        "name": "BUTTON_POS_1_DEFAULT",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 16777216
+      },
+      {
+        "name": "BUTTON_POS_2_DEFAULT",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 33554432
+      },
+      {
+        "name": "BUTTON_DELAY_ENABLE",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 67108864
+      },
+      {
+        "name": "STD_OK_CANCEL_BUTTONS",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 513
+      },
+      {
+        "name": "STD_YES_NO_BUTTONS",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 1027
+      },
+      {
+        "name": "MODAL_TYPE_CONTENT",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 1
+      },
+      {
+        "name": "MODAL_TYPE_TAB",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 2
+      },
+      {
+        "name": "MODAL_TYPE_WINDOW",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 3
+      }
+    ],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "alert",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "mozIDOMWindowProxy",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "alertBC",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/BrowsingContext.h",
+              "name": "BrowsingContext",
+              "native": "mozilla::dom::BrowsingContext",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "asyncAlert",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/BrowsingContext.h",
+              "name": "BrowsingContext",
+              "native": "mozilla::dom::BrowsingContext",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PROMISE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "alertCheck",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "mozIDOMWindowProxy",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "alertCheckBC",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/BrowsingContext.h",
+              "name": "BrowsingContext",
+              "native": "mozilla::dom::BrowsingContext",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "asyncAlertCheck",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/BrowsingContext.h",
+              "name": "BrowsingContext",
+              "native": "mozilla::dom::BrowsingContext",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PROMISE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "confirm",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "mozIDOMWindowProxy",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "confirmBC",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/BrowsingContext.h",
+              "name": "BrowsingContext",
+              "native": "mozilla::dom::BrowsingContext",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "asyncConfirm",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/BrowsingContext.h",
+              "name": "BrowsingContext",
+              "native": "mozilla::dom::BrowsingContext",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PROMISE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "confirmCheck",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "mozIDOMWindowProxy",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "confirmCheckBC",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/BrowsingContext.h",
+              "name": "BrowsingContext",
+              "native": "mozilla::dom::BrowsingContext",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "asyncConfirmCheck",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/BrowsingContext.h",
+              "name": "BrowsingContext",
+              "native": "mozilla::dom::BrowsingContext",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PROMISE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "confirmEx",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "mozIDOMWindowProxy",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "confirmExBC",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/BrowsingContext.h",
+              "name": "BrowsingContext",
+              "native": "mozilla::dom::BrowsingContext",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "asyncConfirmEx",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/BrowsingContext.h",
+              "name": "BrowsingContext",
+              "native": "mozilla::dom::BrowsingContext",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "optional"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PROMISE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "prompt",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "mozIDOMWindowProxy",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "promptBC",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/BrowsingContext.h",
+              "name": "BrowsingContext",
+              "native": "mozilla::dom::BrowsingContext",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "asyncPrompt",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/BrowsingContext.h",
+              "name": "BrowsingContext",
+              "native": "mozilla::dom::BrowsingContext",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PROMISE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "promptUsernameAndPassword",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "mozIDOMWindowProxy",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "promptUsernameAndPasswordBC",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/BrowsingContext.h",
+              "name": "BrowsingContext",
+              "native": "mozilla::dom::BrowsingContext",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "asyncPromptUsernameAndPassword",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/BrowsingContext.h",
+              "name": "BrowsingContext",
+              "native": "mozilla::dom::BrowsingContext",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PROMISE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "promptPassword",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "mozIDOMWindowProxy",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "promptPasswordBC",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/BrowsingContext.h",
+              "name": "BrowsingContext",
+              "native": "mozilla::dom::BrowsingContext",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "asyncPromptPassword",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/BrowsingContext.h",
+              "name": "BrowsingContext",
+              "native": "mozilla::dom::BrowsingContext",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PROMISE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "select",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "mozIDOMWindowProxy",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_ASTRING"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "selectBC",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/BrowsingContext.h",
+              "name": "BrowsingContext",
+              "native": "mozilla::dom::BrowsingContext",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_ASTRING"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "asyncSelect",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/BrowsingContext.h",
+              "name": "BrowsingContext",
+              "native": "mozilla::dom::BrowsingContext",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_ASTRING"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PROMISE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "promptAuth",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "mozIDOMWindowProxy",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIChannel",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIAuthInformation",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "promptAuthBC",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/BrowsingContext.h",
+              "name": "BrowsingContext",
+              "native": "mozilla::dom::BrowsingContext",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIChannel",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIAuthInformation",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "asyncPromptAuth",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/BrowsingContext.h",
+              "name": "BrowsingContext",
+              "native": "mozilla::dom::BrowsingContext",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIChannel",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIAuthInformation",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PROMISE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIPromptService",
+    "parent": "nsISupports",
+    "uuid": "404ebfa2-d8f4-4c94-8416-e65a55f9df5a"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "openWindow",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "mozIDOMWindowProxy",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsISupports",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "mozIDOMWindowProxy",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "registerNotification",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIObserver",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "unregisterNotification",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIObserver",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getWindowEnumerator",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsISimpleEnumerator",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getNewPrompter",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "mozIDOMWindowProxy",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsIPrompt",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getNewAuthPrompter",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "mozIDOMWindowProxy",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsIAuthPrompt",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "setWindowCreator",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIWindowCreator",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "hasWindowCreator",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getChromeForWindow",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "mozIDOMWindowProxy",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsIWebBrowserChrome",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getWindowByName",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "mozIDOMWindowProxy",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "mozIDOMWindowProxy",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "activeWindow",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "mozIDOMWindowProxy",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIWindowWatcher",
+    "parent": "nsISupports",
+    "uuid": "641fe945-6902-4b3f-87c2-0daef32499b3"
+  }
+]

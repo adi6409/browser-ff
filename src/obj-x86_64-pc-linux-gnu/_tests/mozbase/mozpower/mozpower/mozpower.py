@@ -1,0 +1,1 @@
+/worker/build/testing/mozbase/mozpower/mozpower/mozpower.py

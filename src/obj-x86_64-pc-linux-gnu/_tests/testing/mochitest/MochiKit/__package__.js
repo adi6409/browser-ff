@@ -1,0 +1,1 @@
+/worker/build/testing/mochitest/MochiKit/__package__.js

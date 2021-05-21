@@ -1,0 +1,1 @@
+/worker/build/testing/mozbase/mozprofile/tests/test_chrome_profile.py

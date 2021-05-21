@@ -1,0 +1,4 @@
+[
+    "-fprofile-use=/worker/build/obj-x86_64-pc-linux-gnu/instrumented/merged.profdata",
+    "-Wno-error=backend-plugin"
+]

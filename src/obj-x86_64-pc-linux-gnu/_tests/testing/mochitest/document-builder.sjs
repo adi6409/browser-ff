@@ -1,0 +1,1 @@
+/worker/build/testing/mochitest/document-builder.sjs

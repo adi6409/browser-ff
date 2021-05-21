@@ -1,0 +1,4 @@
+[build]
+args = [
+    '-x', 'c++', '-fno-sized-deallocation', '-fno-aligned-new', '-DTRACING=1', '-DIMPL_LIBXUL', '-DMOZILLA_INTERNAL_API', '-DRUST_BINDGEN', '-DOS_POSIX=1', '-DOS_LINUX=1', '-std=gnu++17', '-I/worker/build/obj-x86_64-pc-linux-gnu/dist/include/nspr', '-I/worker/build/obj-x86_64-pc-linux-gnu/dist/include/nss', '-I/worker/build/obj-x86_64-pc-linux-gnu/dist/include/cairo'
+]

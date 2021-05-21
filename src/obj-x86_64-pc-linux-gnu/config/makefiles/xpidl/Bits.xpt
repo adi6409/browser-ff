@@ -1,0 +1,1240 @@
+[
+  {
+    "consts": [
+      {
+        "name": "ERROR_TYPE_SUCCESS",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 0
+      },
+      {
+        "name": "ERROR_TYPE_UNKNOWN",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 1
+      },
+      {
+        "name": "ERROR_TYPE_METHOD_THREW",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 2
+      },
+      {
+        "name": "ERROR_TYPE_METHOD_TIMEOUT",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 3
+      },
+      {
+        "name": "ERROR_TYPE_NULL_ARGUMENT",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 4
+      },
+      {
+        "name": "ERROR_TYPE_INVALID_ARGUMENT",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 5
+      },
+      {
+        "name": "ERROR_TYPE_NOT_INITIALIZED",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 6
+      },
+      {
+        "name": "ERROR_TYPE_NO_UTF8_CONVERSION",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 7
+      },
+      {
+        "name": "ERROR_TYPE_INVALID_GUID",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 8
+      },
+      {
+        "name": "ERROR_TYPE_PIPE_NOT_CONNECTED",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 9
+      },
+      {
+        "name": "ERROR_TYPE_PIPE_TIMEOUT",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 10
+      },
+      {
+        "name": "ERROR_TYPE_PIPE_BAD_WRITE_COUNT",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 11
+      },
+      {
+        "name": "ERROR_TYPE_PIPE_API_ERROR",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 12
+      },
+      {
+        "name": "ERROR_TYPE_FAILED_TO_CREATE_BITS_JOB",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 13
+      },
+      {
+        "name": "ERROR_TYPE_FAILED_TO_ADD_FILE_TO_JOB",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 14
+      },
+      {
+        "name": "ERROR_TYPE_FAILED_TO_APPLY_BITS_JOB_SETTINGS",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 15
+      },
+      {
+        "name": "ERROR_TYPE_FAILED_TO_RESUME_BITS_JOB",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 16
+      },
+      {
+        "name": "ERROR_TYPE_OTHER_BITS_ERROR",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 17
+      },
+      {
+        "name": "ERROR_TYPE_OTHER_BITS_CLIENT_ERROR",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 18
+      },
+      {
+        "name": "ERROR_TYPE_BITS_JOB_NOT_FOUND",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 19
+      },
+      {
+        "name": "ERROR_TYPE_FAILED_TO_GET_BITS_JOB",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 20
+      },
+      {
+        "name": "ERROR_TYPE_FAILED_TO_SUSPEND_BITS_JOB",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 21
+      },
+      {
+        "name": "ERROR_TYPE_FAILED_TO_COMPLETE_BITS_JOB",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 22
+      },
+      {
+        "name": "ERROR_TYPE_PARTIALLY_COMPLETED_BITS_JOB",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 23
+      },
+      {
+        "name": "ERROR_TYPE_FAILED_TO_CANCEL_BITS_JOB",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 24
+      },
+      {
+        "name": "ERROR_TYPE_MISSING_RESULT_DATA",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 25
+      },
+      {
+        "name": "ERROR_TYPE_MISSING_CALLBACK",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 26
+      },
+      {
+        "name": "ERROR_TYPE_CALLBACK_ON_WRONG_THREAD",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 27
+      },
+      {
+        "name": "ERROR_TYPE_MISSING_BITS_SERVICE",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 28
+      },
+      {
+        "name": "ERROR_TYPE_BITS_SERVICE_ON_WRONG_THREAD",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 29
+      },
+      {
+        "name": "ERROR_TYPE_MISSING_BITS_REQUEST",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 30
+      },
+      {
+        "name": "ERROR_TYPE_BITS_REQUEST_ON_WRONG_THREAD",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 31
+      },
+      {
+        "name": "ERROR_TYPE_MISSING_OBSERVER",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 32
+      },
+      {
+        "name": "ERROR_TYPE_OBSERVER_ON_WRONG_THREAD",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 33
+      },
+      {
+        "name": "ERROR_TYPE_MISSING_CONTEXT",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 34
+      },
+      {
+        "name": "ERROR_TYPE_CONTEXT_ON_WRONG_THREAD",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 35
+      },
+      {
+        "name": "ERROR_TYPE_FAILED_TO_START_THREAD",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 36
+      },
+      {
+        "name": "ERROR_TYPE_FAILED_TO_CONSTRUCT_TASK_RUNNABLE",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 37
+      },
+      {
+        "name": "ERROR_TYPE_FAILED_TO_DISPATCH_RUNNABLE",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 38
+      },
+      {
+        "name": "ERROR_TYPE_TRANSFER_ALREADY_COMPLETE",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 39
+      },
+      {
+        "name": "ERROR_TYPE_OPERATION_ALREADY_IN_PROGRESS",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 40
+      },
+      {
+        "name": "ERROR_TYPE_MISSING_BITS_CLIENT",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 41
+      },
+      {
+        "name": "ERROR_TYPE_FAILED_TO_GET_JOB_STATUS",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 42
+      },
+      {
+        "name": "ERROR_TYPE_BITS_STATE_ERROR",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 43
+      },
+      {
+        "name": "ERROR_TYPE_BITS_STATE_TRANSIENT_ERROR",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 44
+      },
+      {
+        "name": "ERROR_TYPE_BITS_STATE_CANCELLED",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 45
+      },
+      {
+        "name": "ERROR_TYPE_BITS_STATE_UNEXPECTED",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 46
+      },
+      {
+        "name": "ERROR_TYPE_VERIFICATION_FAILURE",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 47
+      },
+      {
+        "name": "ERROR_TYPE_ACCESS_DENIED_EXPECTED",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 48
+      },
+      {
+        "name": "ERROR_TYPE_FAILED_TO_CONNECT_TO_BCM",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 49
+      },
+      {
+        "name": "ERROR_TYPE_USE_AFTER_REQUEST_SHUTDOWN",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 50
+      },
+      {
+        "name": "ERROR_ACTION_UNKNOWN",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 1
+      },
+      {
+        "name": "ERROR_ACTION_NONE",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 2
+      },
+      {
+        "name": "ERROR_ACTION_START_DOWNLOAD",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 3
+      },
+      {
+        "name": "ERROR_ACTION_MONITOR_DOWNLOAD",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 4
+      },
+      {
+        "name": "ERROR_ACTION_CHANGE_MONITOR_INTERVAL",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 5
+      },
+      {
+        "name": "ERROR_ACTION_CANCEL",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 6
+      },
+      {
+        "name": "ERROR_ACTION_SET_PRIORITY",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 7
+      },
+      {
+        "name": "ERROR_ACTION_COMPLETE",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 8
+      },
+      {
+        "name": "ERROR_ACTION_SUSPEND",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 9
+      },
+      {
+        "name": "ERROR_ACTION_RESUME",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 10
+      },
+      {
+        "name": "ERROR_ACTION_SET_NO_PROGRESS_TIMEOUT",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 11
+      },
+      {
+        "name": "ERROR_STAGE_UNKNOWN",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 1
+      },
+      {
+        "name": "ERROR_STAGE_PRETASK",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 2
+      },
+      {
+        "name": "ERROR_STAGE_COMMAND_THREAD",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 3
+      },
+      {
+        "name": "ERROR_STAGE_AGENT_COMMUNICATION",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 4
+      },
+      {
+        "name": "ERROR_STAGE_BITS_CLIENT",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 5
+      },
+      {
+        "name": "ERROR_STAGE_MAIN_THREAD",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 6
+      },
+      {
+        "name": "ERROR_STAGE_MONITOR",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 7
+      },
+      {
+        "name": "ERROR_STAGE_VERIFICATION",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 8
+      },
+      {
+        "name": "ERROR_CODE_TYPE_NONE",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 1
+      },
+      {
+        "name": "ERROR_CODE_TYPE_NSRESULT",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 2
+      },
+      {
+        "name": "ERROR_CODE_TYPE_HRESULT",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 3
+      },
+      {
+        "name": "ERROR_CODE_TYPE_STRING",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 4
+      },
+      {
+        "name": "ERROR_CODE_TYPE_EXCEPTION",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 5
+      },
+      {
+        "name": "PROXY_NONE",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 1
+      },
+      {
+        "name": "PROXY_PRECONFIG",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 2
+      },
+      {
+        "name": "PROXY_AUTODETECT",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 3
+      }
+    ],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "initialized",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "init",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "startDownload",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIRequestObserver",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsISupports",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIBitsNewRequestCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "monitorDownload",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIRequestObserver",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsISupports",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIBitsNewRequestCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIBits",
+    "parent": "nsISupports",
+    "uuid": "495d6f3d-9748-4d30-8ce5-0290c0001edf"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "success",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIBitsRequest",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "failure",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "failureNsresult",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "failureHresult",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "failureString",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIBitsNewRequestCallback",
+    "parent": "nsISupports",
+    "uuid": "aa12e433-5b9f-452d-b5c9-840a9541328b"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "bitsId",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "transferError",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "changeMonitorInterval",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIBitsCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "cancelAsync",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIBitsCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "setPriorityHigh",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIBitsCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "setPriorityLow",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIBitsCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "setNoProgressTimeout",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIBitsCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "complete",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIBitsCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "suspendAsync",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIBitsCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "resumeAsync",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIBitsCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIBitsRequest",
+    "parent": "nsIRequest",
+    "uuid": "ab9da0e9-06bf-4e73-bb1b-c0f2ea9ecc3e"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "success",
+        "params": []
+      },
+      {
+        "flags": [],
+        "name": "failure",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "failureNsresult",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "failureHresult",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "failureString",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIBitsCallback",
+    "parent": "nsISupports",
+    "uuid": "ea657e66-6bad-4e41-84d9-c6d107e9799d"
+  }
+]

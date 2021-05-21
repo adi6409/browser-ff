@@ -1,0 +1,287 @@
+[
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "autoCompleteSearchAsync",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/HTMLInputElement.h",
+              "name": "HTMLInputElement",
+              "native": "mozilla::dom::HTMLInputElement",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIAutoCompleteResult",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIAutoCompleteResult",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIFormAutoCompleteObserver",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "optional"
+            ],
+            "type": {
+              "name": "nsIPropertyBag2",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "stopAutoCompleteSearch",
+        "params": []
+      }
+    ],
+    "name": "nsIFormAutoComplete",
+    "parent": "nsISupports",
+    "uuid": "bfd9b82b-0ab3-4b6b-9e54-aa961ff4b732"
+  },
+  {
+    "consts": [],
+    "flags": [
+      "function"
+    ],
+    "methods": [
+      {
+        "flags": [],
+        "name": "onSearchCompletion",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIAutoCompleteResult",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIFormAutoCompleteObserver",
+    "parent": "nsISupports",
+    "uuid": "604419ab-55a0-4831-9eca-1b9e67cc4751"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "focusedInput",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/HTMLInputElement.h",
+              "name": "HTMLInputElement",
+              "native": "mozilla::dom::HTMLInputElement",
+              "tag": "TD_DOMOBJECT"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "passwordPopupAutomaticallyOpened",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "attachPopupElementToDocument",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/Document.h",
+              "name": "Document",
+              "native": "mozilla::dom::Document",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/Element.h",
+              "name": "Element",
+              "native": "mozilla::dom::Element",
+              "tag": "TD_DOMOBJECT"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "detachFromDocument",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/Document.h",
+              "name": "Document",
+              "native": "mozilla::dom::Document",
+              "tag": "TD_DOMOBJECT"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "markAsLoginManagerField",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/HTMLInputElement.h",
+              "name": "HTMLInputElement",
+              "native": "mozilla::dom::HTMLInputElement",
+              "tag": "TD_DOMOBJECT"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "markAsAutofillField",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/HTMLInputElement.h",
+              "name": "HTMLInputElement",
+              "native": "mozilla::dom::HTMLInputElement",
+              "tag": "TD_DOMOBJECT"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "showPopup",
+        "params": []
+      }
+    ],
+    "name": "nsIFormFillController",
+    "parent": "nsISupports",
+    "uuid": "07f0a0dc-f6e9-4cdd-a55f-56d770523a4c"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "autoCompleteSearch",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/HTMLInputElement.h",
+              "name": "HTMLInputElement",
+              "native": "mozilla::dom::HTMLInputElement",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsIAutoCompleteResult",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIInputListAutoComplete",
+    "parent": "nsISupports",
+    "uuid": "0e33de3e-4faf-4a1a-b96e-24115b8bfd45"
+  }
+]

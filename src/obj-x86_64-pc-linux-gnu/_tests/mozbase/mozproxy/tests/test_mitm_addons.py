@@ -1,0 +1,1 @@
+/worker/build/testing/mozbase/mozproxy/tests/test_mitm_addons.py

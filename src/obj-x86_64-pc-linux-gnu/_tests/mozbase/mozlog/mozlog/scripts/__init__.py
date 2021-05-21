@@ -1,0 +1,1 @@
+/worker/build/testing/mozbase/mozlog/mozlog/scripts/__init__.py

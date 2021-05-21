@@ -1,0 +1,1 @@
+/worker/build/uriloader/exthandler/tests/HandlerServiceTestUtils.jsm

@@ -1,0 +1,1321 @@
+[
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "performSecurityCheck",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIChannel",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIStreamListener",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsIStreamListener",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIContentSecurityManager",
+    "parent": "nsISupports",
+    "uuid": "3a9a1818-2ae8-4ec5-a340-8b29d31fca3b"
+  },
+  {
+    "consts": [
+      {
+        "name": "NO_DIRECTIVE",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 0
+      },
+      {
+        "name": "DEFAULT_SRC_DIRECTIVE",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 1
+      },
+      {
+        "name": "SCRIPT_SRC_DIRECTIVE",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 2
+      },
+      {
+        "name": "OBJECT_SRC_DIRECTIVE",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 3
+      },
+      {
+        "name": "STYLE_SRC_DIRECTIVE",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 4
+      },
+      {
+        "name": "IMG_SRC_DIRECTIVE",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 5
+      },
+      {
+        "name": "MEDIA_SRC_DIRECTIVE",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 6
+      },
+      {
+        "name": "FRAME_SRC_DIRECTIVE",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 7
+      },
+      {
+        "name": "FONT_SRC_DIRECTIVE",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 8
+      },
+      {
+        "name": "CONNECT_SRC_DIRECTIVE",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 9
+      },
+      {
+        "name": "REPORT_URI_DIRECTIVE",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 10
+      },
+      {
+        "name": "FRAME_ANCESTORS_DIRECTIVE",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 11
+      },
+      {
+        "name": "REFLECTED_XSS_DIRECTIVE",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 12
+      },
+      {
+        "name": "BASE_URI_DIRECTIVE",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 13
+      },
+      {
+        "name": "FORM_ACTION_DIRECTIVE",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 14
+      },
+      {
+        "name": "WEB_MANIFEST_SRC_DIRECTIVE",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 15
+      },
+      {
+        "name": "UPGRADE_IF_INSECURE_DIRECTIVE",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 16
+      },
+      {
+        "name": "CHILD_SRC_DIRECTIVE",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 17
+      },
+      {
+        "name": "BLOCK_ALL_MIXED_CONTENT",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 18
+      },
+      {
+        "name": "SANDBOX_DIRECTIVE",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 19
+      },
+      {
+        "name": "WORKER_SRC_DIRECTIVE",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 20
+      },
+      {
+        "name": "NAVIGATE_TO_DIRECTIVE",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 21
+      },
+      {
+        "name": "VIOLATION_TYPE_INLINE_SCRIPT",
+        "type": {
+          "tag": "TD_UINT16"
+        },
+        "value": 1
+      },
+      {
+        "name": "VIOLATION_TYPE_EVAL",
+        "type": {
+          "tag": "TD_UINT16"
+        },
+        "value": 2
+      },
+      {
+        "name": "VIOLATION_TYPE_INLINE_STYLE",
+        "type": {
+          "tag": "TD_UINT16"
+        },
+        "value": 3
+      },
+      {
+        "name": "VIOLATION_TYPE_NONCE_SCRIPT",
+        "type": {
+          "tag": "TD_UINT16"
+        },
+        "value": 4
+      },
+      {
+        "name": "VIOLATION_TYPE_NONCE_STYLE",
+        "type": {
+          "tag": "TD_UINT16"
+        },
+        "value": 5
+      },
+      {
+        "name": "VIOLATION_TYPE_HASH_SCRIPT",
+        "type": {
+          "tag": "TD_UINT16"
+        },
+        "value": 6
+      },
+      {
+        "name": "VIOLATION_TYPE_HASH_STYLE",
+        "type": {
+          "tag": "TD_UINT16"
+        },
+        "value": 7
+      },
+      {
+        "name": "VIOLATION_TYPE_REQUIRE_SRI_FOR_STYLE",
+        "type": {
+          "tag": "TD_UINT16"
+        },
+        "value": 8
+      },
+      {
+        "name": "VIOLATION_TYPE_REQUIRE_SRI_FOR_SCRIPT",
+        "type": {
+          "tag": "TD_UINT16"
+        },
+        "value": 9
+      }
+    ],
+    "flags": [
+      "builtinclass"
+    ],
+    "methods": [
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getPolicy",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "GetPolicy",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "policyCount",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "upgradeInsecureRequests",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "blockAllMixedContent",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "enforcesFrameAncestors",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "appendPolicy",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getAllowsInline",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT8"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/Element.h",
+              "name": "Element",
+              "native": "mozilla::dom::Element",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsICSPEventListener",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getAllowsNavigateTo",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIURI",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getAllowsEval",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getCSPSandboxFlags",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "logViolationDetails",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT16"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/Element.h",
+              "name": "Element",
+              "native": "mozilla::dom::Element",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsICSPEventListener",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "optional"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "optional"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "setRequestContextWithDocument",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/Document.h",
+              "name": "Document",
+              "native": "mozilla::dom::Document",
+              "tag": "TD_DOMOBJECT"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "setRequestContextWithPrincipal",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIPrincipal",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIURI",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT64"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hidden",
+          "hasretval"
+        ],
+        "name": "requestPrincipal",
+        "params": []
+      },
+      {
+        "flags": [
+          "getter",
+          "hidden",
+          "hasretval"
+        ],
+        "name": "selfURI",
+        "params": []
+      },
+      {
+        "flags": [
+          "getter",
+          "hidden",
+          "hasretval"
+        ],
+        "name": "referrer",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hidden",
+          "hasretval"
+        ],
+        "name": "innerWindowID",
+        "params": []
+      },
+      {
+        "flags": [
+          "getter",
+          "hidden",
+          "hasretval"
+        ],
+        "name": "skipAllowInlineStyleCheck",
+        "params": []
+      },
+      {
+        "flags": [
+          "setter",
+          "hidden"
+        ],
+        "name": "skipAllowInlineStyleCheck",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "ensureEventTarget",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIEventTarget",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "permitsAncestry",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsILoadInfo",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "permits",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/Element.h",
+              "name": "Element",
+              "native": "mozilla::dom::Element",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsICSPEventListener",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIURI",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT8"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "shouldLoad",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT8"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsICSPEventListener",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIURI",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIURI",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT16"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "toJSON",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIContentSecurityPolicy",
+    "parent": "nsISerializable",
+    "uuid": "1d632008-6c97-48ae-a51c-16e2daa0f4f6"
+  },
+  {
+    "consts": [],
+    "flags": [
+      "function"
+    ],
+    "methods": [
+      {
+        "flags": [],
+        "name": "onCSPViolationEvent",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsICSPEventListener",
+    "parent": "nsISupports",
+    "uuid": "c3163b14-3a8f-46dd-a4af-bd04680364cd"
+  },
+  {
+    "consts": [
+      {
+        "name": "EMPTY",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 0
+      },
+      {
+        "name": "NO_REFERRER_WHEN_DOWNGRADE",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 1
+      },
+      {
+        "name": "NO_REFERRER",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 2
+      },
+      {
+        "name": "ORIGIN",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 3
+      },
+      {
+        "name": "ORIGIN_WHEN_CROSS_ORIGIN",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 4
+      },
+      {
+        "name": "UNSAFE_URL",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 5
+      },
+      {
+        "name": "SAME_ORIGIN",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 6
+      },
+      {
+        "name": "STRICT_ORIGIN",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 7
+      },
+      {
+        "name": "STRICT_ORIGIN_WHEN_CROSS_ORIGIN",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 8
+      }
+    ],
+    "flags": [
+      "builtinclass"
+    ],
+    "methods": [
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "originalReferrer",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsIURI",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "jscontext",
+          "hasretval"
+        ],
+        "name": "referrerPolicy",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT8"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "binaryReferrerPolicy",
+        "params": []
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getReferrerPolicyString",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "sendReferrer",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "computedReferrerSpec",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "GetComputedReferrer",
+        "params": []
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "equals",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIReferrerInfo",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "init",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT8"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "optional"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "optional"
+            ],
+            "type": {
+              "name": "nsIURI",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "initWithDocument",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/Document.h",
+              "name": "Document",
+              "native": "mozilla::dom::Document",
+              "tag": "TD_DOMOBJECT"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "initWithElement",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/Element.h",
+              "name": "Element",
+              "native": "mozilla::dom::Element",
+              "tag": "TD_DOMOBJECT"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIReferrerInfo",
+    "parent": "nsISerializable",
+    "uuid": "081cdc36-f2e2-4f94-87bf-78578f06f1eb"
+  },
+  {
+    "consts": [
+      {
+        "name": "LOAD_INSECURE_DEFAULT",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 0
+      },
+      {
+        "name": "LOAD_INSECURE_ALLOW",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 1
+      },
+      {
+        "name": "LOAD_INSECURE_BLOCK",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 2
+      },
+      {
+        "name": "LOAD_INSECURE_ALLOW_SESSION",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 9
+      }
+    ],
+    "flags": [],
+    "methods": [],
+    "name": "nsIHttpsOnlyModePermission",
+    "parent": "nsISupports",
+    "uuid": "73f4f039-d6ff-41a7-9eb3-00db57b0b7f4"
+  }
+]

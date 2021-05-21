@@ -1,0 +1,8 @@
+5
+5en-US/branding/**/*.ftl/worker/build/browser/branding/dot/locales/en-US/**/*.ftlen-US/branding
+5en-US/browser/**/*.ftl/worker/build/browser/locales/en-US/browser/**/*.ftlen-US/browser
+5en-US/devtools/client/*.ftl/worker/build/devtools/client/locales/en-US/*.ftlen-US/devtools/client
+5en-US/devtools/startup/*.ftl/worker/build/devtools/startup/locales/en-US/*.ftlen-US/devtools/startup
+1en-US/preview/interventions.ftl/worker/build/browser/components/urlbar/content/interventions.ftl
+1en-US/preview/ion.ftl/worker/build/browser/components/ion/content/ion.ftl
+1en-US/preview/protections.ftl/worker/build/browser/components/protections/content/protections.ftl

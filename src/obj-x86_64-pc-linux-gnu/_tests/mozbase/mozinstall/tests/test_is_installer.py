@@ -1,0 +1,1 @@
+/worker/build/testing/mozbase/mozinstall/tests/test_is_installer.py

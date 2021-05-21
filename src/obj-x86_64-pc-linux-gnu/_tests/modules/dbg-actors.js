@@ -1,0 +1,1 @@
+/worker/build/testing/xpcshell/dbg-actors.js

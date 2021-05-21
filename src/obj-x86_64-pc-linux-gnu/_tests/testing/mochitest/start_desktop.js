@@ -1,0 +1,1 @@
+/worker/build/testing/mochitest/start_desktop.js

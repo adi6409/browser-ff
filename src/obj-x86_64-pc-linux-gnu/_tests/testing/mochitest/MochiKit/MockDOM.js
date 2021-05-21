@@ -1,0 +1,1 @@
+/worker/build/testing/mochitest/MochiKit/MockDOM.js

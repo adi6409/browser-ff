@@ -1,0 +1,5 @@
+[
+    "-lgthread-2.0",
+    "-pthread",
+    "-lglib-2.0"
+]

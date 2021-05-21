@@ -1,0 +1,3 @@
+[
+    "-I/worker/build/obj-x86_64-pc-linux-gnu/dist/include/nss"
+]

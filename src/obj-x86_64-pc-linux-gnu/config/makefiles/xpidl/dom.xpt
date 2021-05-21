@@ -1,0 +1,3683 @@
+[
+  {
+    "consts": [],
+    "flags": [
+      "builtinclass"
+    ],
+    "methods": [],
+    "name": "mozIDOMWindow",
+    "parent": "nsISupports",
+    "uuid": "75fbabd6-7a2e-4787-aa33-449a33512135"
+  },
+  {
+    "consts": [],
+    "flags": [
+      "builtinclass"
+    ],
+    "methods": [],
+    "name": "mozIDOMWindowProxy",
+    "parent": "nsISupports",
+    "uuid": "53ca090c-e739-48b9-8911-208c72f9191e"
+  },
+  {
+    "consts": [
+      {
+        "name": "TYPE_INVALID",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 0
+      },
+      {
+        "name": "TYPE_OTHER",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 1
+      },
+      {
+        "name": "TYPE_SCRIPT",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 2
+      },
+      {
+        "name": "TYPE_IMAGE",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 3
+      },
+      {
+        "name": "TYPE_STYLESHEET",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 4
+      },
+      {
+        "name": "TYPE_OBJECT",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 5
+      },
+      {
+        "name": "TYPE_DOCUMENT",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 6
+      },
+      {
+        "name": "TYPE_SUBDOCUMENT",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 7
+      },
+      {
+        "name": "TYPE_PING",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 10
+      },
+      {
+        "name": "TYPE_XMLHTTPREQUEST",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 11
+      },
+      {
+        "name": "TYPE_OBJECT_SUBREQUEST",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 12
+      },
+      {
+        "name": "TYPE_DTD",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 13
+      },
+      {
+        "name": "TYPE_FONT",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 14
+      },
+      {
+        "name": "TYPE_MEDIA",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 15
+      },
+      {
+        "name": "TYPE_WEBSOCKET",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 16
+      },
+      {
+        "name": "TYPE_CSP_REPORT",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 17
+      },
+      {
+        "name": "TYPE_XSLT",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 18
+      },
+      {
+        "name": "TYPE_BEACON",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 19
+      },
+      {
+        "name": "TYPE_FETCH",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 20
+      },
+      {
+        "name": "TYPE_IMAGESET",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 21
+      },
+      {
+        "name": "TYPE_WEB_MANIFEST",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 22
+      },
+      {
+        "name": "TYPE_INTERNAL_SCRIPT",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 23
+      },
+      {
+        "name": "TYPE_INTERNAL_WORKER",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 24
+      },
+      {
+        "name": "TYPE_INTERNAL_SHARED_WORKER",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 25
+      },
+      {
+        "name": "TYPE_INTERNAL_EMBED",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 26
+      },
+      {
+        "name": "TYPE_INTERNAL_OBJECT",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 27
+      },
+      {
+        "name": "TYPE_INTERNAL_FRAME",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 28
+      },
+      {
+        "name": "TYPE_INTERNAL_IFRAME",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 29
+      },
+      {
+        "name": "TYPE_INTERNAL_AUDIO",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 30
+      },
+      {
+        "name": "TYPE_INTERNAL_VIDEO",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 31
+      },
+      {
+        "name": "TYPE_INTERNAL_TRACK",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 32
+      },
+      {
+        "name": "TYPE_INTERNAL_XMLHTTPREQUEST",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 33
+      },
+      {
+        "name": "TYPE_INTERNAL_EVENTSOURCE",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 34
+      },
+      {
+        "name": "TYPE_INTERNAL_SERVICE_WORKER",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 35
+      },
+      {
+        "name": "TYPE_INTERNAL_SCRIPT_PRELOAD",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 36
+      },
+      {
+        "name": "TYPE_INTERNAL_IMAGE",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 37
+      },
+      {
+        "name": "TYPE_INTERNAL_IMAGE_PRELOAD",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 38
+      },
+      {
+        "name": "TYPE_INTERNAL_STYLESHEET",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 39
+      },
+      {
+        "name": "TYPE_INTERNAL_STYLESHEET_PRELOAD",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 40
+      },
+      {
+        "name": "TYPE_INTERNAL_IMAGE_FAVICON",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 41
+      },
+      {
+        "name": "TYPE_INTERNAL_WORKER_IMPORT_SCRIPTS",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 42
+      },
+      {
+        "name": "TYPE_SAVEAS_DOWNLOAD",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 43
+      },
+      {
+        "name": "TYPE_SPECULATIVE",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 44
+      },
+      {
+        "name": "TYPE_INTERNAL_MODULE",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 45
+      },
+      {
+        "name": "TYPE_INTERNAL_MODULE_PRELOAD",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 46
+      },
+      {
+        "name": "TYPE_INTERNAL_DTD",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 47
+      },
+      {
+        "name": "TYPE_INTERNAL_FORCE_ALLOWED_DTD",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 48
+      },
+      {
+        "name": "TYPE_INTERNAL_AUDIOWORKLET",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 49
+      },
+      {
+        "name": "TYPE_INTERNAL_PAINTWORKLET",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 50
+      },
+      {
+        "name": "TYPE_INTERNAL_FONT_PRELOAD",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 51
+      },
+      {
+        "name": "TYPE_INTERNAL_CHROMEUTILS_COMPILED_SCRIPT",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 52
+      },
+      {
+        "name": "TYPE_INTERNAL_FRAME_MESSAGEMANAGER_SCRIPT",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 53
+      },
+      {
+        "name": "TYPE_INTERNAL_FETCH_PRELOAD",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 54
+      },
+      {
+        "name": "REJECT_REQUEST",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": -1
+      },
+      {
+        "name": "REJECT_TYPE",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": -2
+      },
+      {
+        "name": "REJECT_SERVER",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": -3
+      },
+      {
+        "name": "REJECT_OTHER",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": -4
+      },
+      {
+        "name": "REJECT_POLICY",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": -5
+      },
+      {
+        "name": "ACCEPT",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 1
+      }
+    ],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "shouldLoad",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIURI",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsILoadInfo",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT16"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "shouldProcess",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIURI",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsILoadInfo",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT16"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIContentPolicy",
+    "parent": "nsISupports",
+    "uuid": "caad4f1f-d047-46ac-ae9d-dc598e4fb91b"
+  },
+  {
+    "consts": [],
+    "flags": [
+      "builtinclass"
+    ],
+    "methods": [
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "createRequest",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "mozIDOMWindow",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/DOMRequest.h",
+              "name": "DOMRequest",
+              "native": "mozilla::dom::DOMRequest",
+              "tag": "TD_DOMOBJECT"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "fireSuccess",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/DOMRequest.h",
+              "name": "DOMRequest",
+              "native": "mozilla::dom::DOMRequest",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "fireError",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/DOMRequest.h",
+              "name": "DOMRequest",
+              "native": "mozilla::dom::DOMRequest",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "fireSuccessAsync",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/DOMRequest.h",
+              "name": "DOMRequest",
+              "native": "mozilla::dom::DOMRequest",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "fireErrorAsync",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/DOMRequest.h",
+              "name": "DOMRequest",
+              "native": "mozilla::dom::DOMRequest",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIDOMRequestService",
+    "parent": "nsISupports",
+    "uuid": "9a57e5de-ce93-45fa-8145-755722834f7c"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "url",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "name",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "type",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIDroppedLinkItem",
+    "parent": "nsISupports",
+    "uuid": "69e14f91-2e09-4ca6-a511-a715c99a2804"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "canDropLink",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/DragEvent.h",
+              "name": "DragEvent",
+              "native": "mozilla::dom::DragEvent",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "dropLink",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/DragEvent.h",
+              "name": "DragEvent",
+              "native": "mozilla::dom::DragEvent",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "optional"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "dropLinks",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/DragEvent.h",
+              "name": "DragEvent",
+              "native": "mozilla::dom::DragEvent",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "optional"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "element": {
+                "name": "nsIDroppedLinkItem",
+                "tag": "TD_INTERFACE_TYPE"
+              },
+              "tag": "TD_ARRAY"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "validateURIsForDrop",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/DragEvent.h",
+              "name": "DragEvent",
+              "native": "mozilla::dom::DragEvent",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "tag": "TD_ASTRING"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "optional"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "queryLinks",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/DataTransfer.h",
+              "name": "DataTransfer",
+              "native": "mozilla::dom::DataTransfer",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "element": {
+                "name": "nsIDroppedLinkItem",
+                "tag": "TD_INTERFACE_TYPE"
+              },
+              "tag": "TD_ARRAY"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getTriggeringPrincipal",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/DragEvent.h",
+              "name": "DragEvent",
+              "native": "mozilla::dom::DragEvent",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsIPrincipal",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getCSP",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/DragEvent.h",
+              "name": "DragEvent",
+              "native": "mozilla::dom::DragEvent",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsIContentSecurityPolicy",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIDroppedLinkHandler",
+    "parent": "nsISupports",
+    "uuid": "21b5c25a-28a9-47bd-8431-fa9116305ded"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "eventSourceConnectionOpened",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT64"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "eventSourceConnectionClosed",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT64"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "eventReceived",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT64"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_DOUBLE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIEventSourceEventListener",
+    "parent": "nsISupports",
+    "uuid": "d2cc6222-b7f2-490d-adc2-497d89878fa2"
+  },
+  {
+    "consts": [],
+    "flags": [
+      "builtinclass"
+    ],
+    "methods": [
+      {
+        "flags": [],
+        "name": "addListener",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT64"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIEventSourceEventListener",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "removeListener",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT64"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIEventSourceEventListener",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "hasListenerFor",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT64"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIEventSourceEventService",
+    "parent": "nsISupports",
+    "uuid": "c0378840-8a74-4b0a-9225-c3a0ac1fac41"
+  },
+  {
+    "consts": [
+      {
+        "name": "UNKNOWN_REQUEST",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": -1
+      },
+      {
+        "name": "CURRENT_REQUEST",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 0
+      },
+      {
+        "name": "PENDING_REQUEST",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 1
+      }
+    ],
+    "flags": [
+      "builtinclass"
+    ],
+    "methods": [
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "setLoadingEnabled",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "addNativeObserver",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "imgINotificationObserver",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "removeNativeObserver",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "imgINotificationObserver",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden",
+          "hasretval"
+        ],
+        "name": "getRequest",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "imgIRequest",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "frameCreated",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIFrame",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "frameDestroyed",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIFrame",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden",
+          "hasretval"
+        ],
+        "name": "getRequestType",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "imgIRequest",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hidden",
+          "hasretval"
+        ],
+        "name": "currentURI",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsIURI",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden",
+          "hasretval"
+        ],
+        "name": "loadImageWithChannel",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIChannel",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsIStreamListener",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "forceImageState",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT64"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "onVisibilityChange",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_VOID"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_VOID"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIImageLoadingContent",
+    "parent": "imgINotificationObserver",
+    "uuid": "0357123d-9224-4d12-a47e-868c32689777"
+  },
+  {
+    "consts": [],
+    "flags": [
+      "builtinclass"
+    ],
+    "methods": [],
+    "name": "nsIMessageSender",
+    "parent": "nsISupports",
+    "uuid": "bb5d79e4-e73c-45e7-9651-4d718f4b994c"
+  },
+  {
+    "consts": [
+      {
+        "name": "TYPE_LOADING",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 0
+      },
+      {
+        "name": "TYPE_IMAGE",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 1
+      },
+      {
+        "name": "TYPE_PLUGIN",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 2
+      },
+      {
+        "name": "TYPE_FAKE_PLUGIN",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 3
+      },
+      {
+        "name": "TYPE_DOCUMENT",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 4
+      },
+      {
+        "name": "TYPE_NULL",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 5
+      },
+      {
+        "name": "PLUGIN_ACTIVE",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 255
+      },
+      {
+        "name": "PLUGIN_UNSUPPORTED",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 0
+      },
+      {
+        "name": "PLUGIN_ALTERNATE",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 1
+      },
+      {
+        "name": "PLUGIN_DISABLED",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 2
+      },
+      {
+        "name": "PLUGIN_BLOCKLISTED",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 3
+      },
+      {
+        "name": "PLUGIN_OUTDATED",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 4
+      },
+      {
+        "name": "PLUGIN_CRASHED",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 5
+      },
+      {
+        "name": "PLUGIN_CLICK_TO_PLAY",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 8
+      },
+      {
+        "name": "PLUGIN_VULNERABLE_UPDATABLE",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 9
+      },
+      {
+        "name": "PLUGIN_VULNERABLE_NO_UPDATE",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 10
+      },
+      {
+        "name": "PLUGIN_CLICK_TO_PLAY_QUIET",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 11
+      },
+      {
+        "name": "PLUGIN_BLOCK_ALL",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 12
+      },
+      {
+        "name": "PLUGIN_PERMISSION_PROMPT_ACTION_QUIET",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 8
+      }
+    ],
+    "flags": [
+      "builtinclass"
+    ],
+    "methods": [
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "actualType",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "displayedType",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getContentTypeForMIMEType",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hidden",
+          "hasretval"
+        ],
+        "name": "pluginInstance",
+        "params": []
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "pluginDestroyed",
+        "params": []
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "pluginCrashed",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIPluginTag",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "reload",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "activated",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "stopPluginInstance",
+        "params": []
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "syncStartPluginInstance",
+        "params": []
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "asyncStartPluginInstance",
+        "params": []
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "initializeFromChannel",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIRequest",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "srcURI",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsIURI",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "skipFakePlugins",
+        "params": []
+      },
+      {
+        "flags": [
+          "hidden",
+          "hasretval"
+        ],
+        "name": "upgradeLoadToDocument",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIChannel",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/BrowsingContext.h",
+              "name": "BrowsingContext",
+              "native": "mozilla::dom::BrowsingContext",
+              "tag": "TD_DOMOBJECT"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIObjectLoadingContent",
+    "parent": "nsISupports",
+    "uuid": "2eb3195e-3eea-4083-bb1d-d2d70fa35ccb"
+  },
+  {
+    "consts": [
+      {
+        "name": "NOT_INITIALIZED",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 0
+      },
+      {
+        "name": "POST_ORDER_ITERATOR",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 1
+      },
+      {
+        "name": "PRE_ORDER_ITERATOR",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 2
+      },
+      {
+        "name": "SUBTREE_ITERATOR",
+        "type": {
+          "tag": "TD_UINT8"
+        },
+        "value": 3
+      }
+    ],
+    "flags": [
+      "builtinclass"
+    ],
+    "methods": [
+      {
+        "flags": [],
+        "name": "initWithRootNode",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT8"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "nsINode.h",
+              "name": "Node",
+              "native": "nsINode",
+              "tag": "TD_DOMOBJECT"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "initWithRange",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT8"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "nsRange.h",
+              "name": "Range",
+              "native": "nsRange",
+              "tag": "TD_DOMOBJECT"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "initWithPositions",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT8"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "nsINode.h",
+              "name": "Node",
+              "native": "nsINode",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "nsINode.h",
+              "name": "Node",
+              "native": "nsINode",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "first",
+        "params": []
+      },
+      {
+        "flags": [],
+        "name": "last",
+        "params": []
+      },
+      {
+        "flags": [],
+        "name": "next",
+        "params": []
+      },
+      {
+        "flags": [],
+        "name": "prev",
+        "params": []
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "currentNode",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "headerFile": "nsINode.h",
+              "name": "Node",
+              "native": "nsINode",
+              "tag": "TD_DOMOBJECT"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "isDone",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "positionAt",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "nsINode.h",
+              "name": "Node",
+              "native": "nsINode",
+              "tag": "TD_DOMOBJECT"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIScriptableContentIterator",
+    "parent": "nsISupports",
+    "uuid": "9f25fb2a-265f-44f9-a122-62bbf443239e"
+  },
+  {
+    "consts": [
+      {
+        "name": "SELECTION_NONE",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 0
+      },
+      {
+        "name": "SELECTION_NORMAL",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 1
+      },
+      {
+        "name": "SELECTION_SPELLCHECK",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 2
+      },
+      {
+        "name": "SELECTION_IME_RAWINPUT",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 3
+      },
+      {
+        "name": "SELECTION_IME_SELECTEDRAWTEXT",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 4
+      },
+      {
+        "name": "SELECTION_IME_CONVERTEDTEXT",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 5
+      },
+      {
+        "name": "SELECTION_IME_SELECTEDCONVERTEDTEXT",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 6
+      },
+      {
+        "name": "SELECTION_ACCESSIBILITY",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 7
+      },
+      {
+        "name": "SELECTION_FIND",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 8
+      },
+      {
+        "name": "SELECTION_URLSECONDARY",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 9
+      },
+      {
+        "name": "SELECTION_URLSTRIKEOUT",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 10
+      },
+      {
+        "name": "NUM_SELECTIONTYPES",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 11
+      },
+      {
+        "name": "SELECTION_ANCHOR_REGION",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 0
+      },
+      {
+        "name": "SELECTION_FOCUS_REGION",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 1
+      },
+      {
+        "name": "SELECTION_WHOLE_SELECTION",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 2
+      },
+      {
+        "name": "NUM_SELECTION_REGIONS",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 3
+      },
+      {
+        "name": "SELECTION_OFF",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 0
+      },
+      {
+        "name": "SELECTION_HIDDEN",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 1
+      },
+      {
+        "name": "SELECTION_ON",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 2
+      },
+      {
+        "name": "SELECTION_DISABLED",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 3
+      },
+      {
+        "name": "SELECTION_ATTENTION",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 4
+      },
+      {
+        "name": "SCROLL_SYNCHRONOUS",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 2
+      },
+      {
+        "name": "SCROLL_FIRST_ANCESTOR_ONLY",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 4
+      },
+      {
+        "name": "SCROLL_CENTER_VERTICALLY",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 16
+      },
+      {
+        "name": "SCROLL_OVERFLOW_HIDDEN",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 32
+      },
+      {
+        "name": "SCROLL_FOR_CARET_MOVE",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 64
+      },
+      {
+        "name": "MOVE_LEFT",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 0
+      },
+      {
+        "name": "MOVE_RIGHT",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 1
+      },
+      {
+        "name": "MOVE_UP",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 2
+      },
+      {
+        "name": "MOVE_DOWN",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 3
+      }
+    ],
+    "flags": [
+      "builtinclass"
+    ],
+    "methods": [
+      {
+        "flags": [],
+        "name": "setDisplaySelection",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT16"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getDisplaySelection",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT16"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getSelection",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT16"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/Selection.h",
+              "name": "Selection",
+              "native": "mozilla::dom::Selection",
+              "tag": "TD_DOMOBJECT"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "getDOMSelection",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT16"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "selectionWillTakeFocus",
+        "params": []
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "selectionWillLoseFocus",
+        "params": []
+      },
+      {
+        "flags": [],
+        "name": "scrollSelectionIntoView",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT16"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT16"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT16"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "repaintSelection",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT16"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "setCaretEnabled",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "setCaretReadOnly",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getCaretEnabled",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "caretVisible",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "setCaretVisibilityDuringSelection",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "characterMove",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "physicalMove",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT16"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT16"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "wordMove",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "lineMove",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "intraLineMove",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "pageMove",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "completeScroll",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "completeMove",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "scrollPage",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "scrollLine",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "scrollCharacter",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "checkVisibility",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "nsINode.h",
+              "name": "Node",
+              "native": "nsINode",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT16"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT16"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden",
+          "hasretval"
+        ],
+        "name": "checkVisibilityContent",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIContent",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT16"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT16"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsISelectionController",
+    "parent": "nsISelectionDisplay",
+    "uuid": "3801c9d4-8e69-4bfc-9edb-b58278621f8f"
+  },
+  {
+    "consts": [
+      {
+        "name": "DISPLAY_TEXT",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 1
+      },
+      {
+        "name": "DISPLAY_IMAGES",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 2
+      },
+      {
+        "name": "DISPLAY_FRAMES",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 4
+      },
+      {
+        "name": "DISPLAY_ALL",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 7
+      }
+    ],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "setSelectionFlags",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT16"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getSelectionFlags",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT16"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsISelectionDisplay",
+    "parent": "nsISupports",
+    "uuid": "0ddf9e1c-1dd2-11b2-a183-908a08aa75ae"
+  },
+  {
+    "consts": [
+      {
+        "name": "NO_REASON",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 0
+      },
+      {
+        "name": "DRAG_REASON",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 1
+      },
+      {
+        "name": "MOUSEDOWN_REASON",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 2
+      },
+      {
+        "name": "MOUSEUP_REASON",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 4
+      },
+      {
+        "name": "KEYPRESS_REASON",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 8
+      },
+      {
+        "name": "SELECTALL_REASON",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 16
+      },
+      {
+        "name": "COLLAPSETOSTART_REASON",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 32
+      },
+      {
+        "name": "COLLAPSETOEND_REASON",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 64
+      },
+      {
+        "name": "IME_REASON",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 128
+      },
+      {
+        "name": "JS_REASON",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 256
+      }
+    ],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "notifySelectionChanged",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/Document.h",
+              "name": "Document",
+              "native": "mozilla::dom::Document",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/Selection.h",
+              "name": "Selection",
+              "native": "mozilla::dom::Selection",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT16"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsISelectionListener",
+    "parent": "nsISupports",
+    "uuid": "45686299-ae2b-46bc-9502-c56c35691ab9"
+  },
+  {
+    "consts": [],
+    "flags": [
+      "function"
+    ],
+    "methods": [
+      {
+        "flags": [],
+        "name": "handleSlowScriptDebug",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIDOMWindow",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsISlowScriptDebugCallback",
+    "parent": "nsISupports",
+    "uuid": "f7dbb80c-5d1e-4fd9-b55c-a9ffda4a75b1"
+  },
+  {
+    "consts": [],
+    "flags": [
+      "function"
+    ],
+    "methods": [
+      {
+        "flags": [],
+        "name": "finishDebuggerStartup",
+        "params": []
+      }
+    ],
+    "name": "nsISlowScriptDebuggerStartupCallback",
+    "parent": "nsISupports",
+    "uuid": "b1c6ecd0-8fa4-11e4-b4a9-0800200c9a66"
+  },
+  {
+    "consts": [],
+    "flags": [
+      "function"
+    ],
+    "methods": [
+      {
+        "flags": [],
+        "name": "handleSlowScriptDebug",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/EventTarget.h",
+              "name": "EventTarget",
+              "native": "mozilla::dom::EventTarget",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsISlowScriptDebuggerStartupCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsISlowScriptDebugRemoteCallback",
+    "parent": "nsISupports",
+    "uuid": "dbee14b0-8fa0-11e4-b4a9-0800200c9a66"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "activationHandler",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsISlowScriptDebugCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "setter"
+        ],
+        "name": "activationHandler",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsISlowScriptDebugCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "remoteActivationHandler",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsISlowScriptDebugRemoteCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "setter"
+        ],
+        "name": "remoteActivationHandler",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsISlowScriptDebugRemoteCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsISlowScriptDebug",
+    "parent": "nsISupports",
+    "uuid": "f75d4164-3aa7-4395-ba44-a5f95b2e8427"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getEvents",
+        "params": [
+          {
+            "flags": [
+              "in",
+              "optional"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "recordEvent",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "clearEvents",
+        "params": [
+          {
+            "flags": [
+              "in",
+              "optional"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIConsoleAPIStorage",
+    "parent": "nsISupports",
+    "uuid": "9e32a7b6-c4d1-4d9a-87b9-1ef6b75c27a9"
+  },
+  {
+    "consts": [],
+    "flags": [
+      "builtinclass"
+    ],
+    "methods": [
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "GetInternalStream",
+        "params": []
+      }
+    ],
+    "name": "mozIRemoteLazyInputStream",
+    "parent": "nsISupports",
+    "uuid": "4125585f-b0c2-4964-a83c-4b0d99f26d49"
+  },
+  {
+    "consts": [],
+    "flags": [
+      "builtinclass"
+    ],
+    "methods": [
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "childID",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT64"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "jscontext",
+          "hasretval"
+        ],
+        "name": "getActor",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/JSProcessActorChild.h",
+              "name": "JSProcessActorChild",
+              "native": "mozilla::dom::JSProcessActorChild",
+              "tag": "TD_DOMOBJECT"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "canSend",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "AsContentChild",
+        "params": []
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "AsJSActorManager",
+        "params": []
+      }
+    ],
+    "name": "nsIDOMProcessChild",
+    "parent": "nsISupports",
+    "uuid": "b0c6e5f3-02f1-4f11-a0af-336fc231f3bf"
+  },
+  {
+    "consts": [],
+    "flags": [
+      "builtinclass"
+    ],
+    "methods": [
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "childID",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT64"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "osPid",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "jscontext",
+          "hasretval"
+        ],
+        "name": "getActor",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/JSProcessActorParent.h",
+              "name": "JSProcessActorParent",
+              "native": "mozilla::dom::JSProcessActorParent",
+              "tag": "TD_DOMOBJECT"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "canSend",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "AsContentParent",
+        "params": []
+      },
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "AsJSActorManager",
+        "params": []
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "remoteType",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIDOMProcessParent",
+    "parent": "nsISupports",
+    "uuid": "81fc08b9-c901-471f-ab0d-876362eba770"
+  },
+  {
+    "consts": [
+      {
+        "name": "SLOW_SCRIPT",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 1
+      },
+      {
+        "name": "PLUGIN_HANG",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 2
+      }
+    ],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "hangType",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "scriptBrowser",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/Element.h",
+              "name": "Element",
+              "native": "mozilla::dom::Element",
+              "tag": "TD_DOMOBJECT"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "scriptFileName",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "hangDuration",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_DOUBLE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "addonId",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "pluginName",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "childID",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT64"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "userCanceled",
+        "params": []
+      },
+      {
+        "flags": [],
+        "name": "terminateScript",
+        "params": []
+      },
+      {
+        "flags": [],
+        "name": "terminateGlobal",
+        "params": []
+      },
+      {
+        "flags": [],
+        "name": "terminatePlugin",
+        "params": []
+      },
+      {
+        "flags": [],
+        "name": "beginStartingDebugger",
+        "params": []
+      },
+      {
+        "flags": [],
+        "name": "endStartingDebugger",
+        "params": []
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "isReportForBrowser",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "nsFrameLoader.h",
+              "name": "FrameLoader",
+              "native": "nsFrameLoader",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIHangReport",
+    "parent": "nsISupports",
+    "uuid": "5fcffbb9-be62-49b1-b8a1-36e820787a74"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "scriptAvailable",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIScriptElement",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIURI",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "scriptEvaluated",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIScriptElement",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIScriptLoaderObserver",
+    "parent": "nsISupports",
+    "uuid": "7b787204-76fb-4764-96f1-fb7a666db4f4"
+  }
+]

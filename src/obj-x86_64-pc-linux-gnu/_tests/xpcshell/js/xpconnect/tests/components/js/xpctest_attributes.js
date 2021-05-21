@@ -1,0 +1,1 @@
+/worker/build/js/xpconnect/tests/components/js/xpctest_attributes.js

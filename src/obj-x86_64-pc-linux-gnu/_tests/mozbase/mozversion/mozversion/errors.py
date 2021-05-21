@@ -1,0 +1,1 @@
+/worker/build/testing/mozbase/mozversion/mozversion/errors.py

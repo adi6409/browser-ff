@@ -1,0 +1,1 @@
+/worker/build/toolkit/components/places/tests/browser/redirect_thrice.sjs

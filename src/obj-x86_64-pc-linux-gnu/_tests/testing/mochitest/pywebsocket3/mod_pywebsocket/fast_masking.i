@@ -1,0 +1,1 @@
+/worker/build/testing/mochitest/pywebsocket3/mod_pywebsocket/fast_masking.i

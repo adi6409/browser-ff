@@ -1,0 +1,27 @@
+[
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "isDefaultApplication",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIToolkitShellService",
+    "parent": "nsISupports",
+    "uuid": "9246cad6-926a-4c17-88b0-ecba8078d143"
+  }
+]

@@ -1,0 +1,1 @@
+"-shared -Wl,-z,defs -Wl,--gc-sections"

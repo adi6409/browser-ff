@@ -1,0 +1,5 @@
+INPUT("TestAUSReadStrings.o")
+INPUT("../common/city.o")
+INPUT("../common/commonupdatedir.o")
+INPUT("../common/readstrings.o")
+INPUT("../common/updatecommon.o")

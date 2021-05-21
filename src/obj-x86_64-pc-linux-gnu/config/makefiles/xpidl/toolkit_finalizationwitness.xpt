@@ -1,0 +1,44 @@
+[
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "jscontext",
+          "hasretval"
+        ],
+        "name": "make",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PSTRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PWSTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIFinalizationWitnessService",
+    "parent": "nsISupports",
+    "uuid": "15686f9d-483e-4361-98cd-37f1e8f1e61d"
+  }
+]

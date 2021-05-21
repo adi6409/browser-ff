@@ -1,0 +1,34 @@
+# THIS FILE WAS AUTOMATICALLY GENERATED. DO NOT MODIFY BY HAND.
+DEPTH := ../..
+topobjdir := /worker/build/obj-x86_64-pc-linux-gnu
+topsrcdir := /worker/build
+srcdir := /worker/build/media/libvpx
+srcdir_rel := ../../../media/libvpx
+relativesrcdir := media/libvpx
+include $(DEPTH)/config/autoconf.mk
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+# Set up the libvpx assembler config.
+
+include $(topsrcdir)/config/rules.mk
+
+ifeq ($(CPU_ARCH),arm)
+ifdef GNU_AS
+# The ARM asm is written in ARM RVCT syntax, but we actually build it with
+# gas using GNU syntax. Add some rules to perform the conversion.
+
+# Previously used $(dir $(ASFILES)) to figure out which directories to generate.
+# However, .S (as opposed to .s) files are not added to ASFILES. There is only
+# one directory with arm assembly currently so enumerate it manually.
+GENERATED_DIRS += libvpx/vpx_dsp/arm
+
+libvpx/vpx_dsp/arm/%.asm.S: $(srcdir)/libvpx/vpx_dsp/arm/%.asm $(call mkdir_deps,libvpx/vpx_dsp/arm)
+	$(PERL) $(topsrcdir)/media/libvpx/libvpx/build/make/ads2gas.pl < $< > $@
+
+$(addsuffix .$(OBJ_SUFFIX), idct4x4_add_neon.asm idct8x8_add_neon.asm idct16x16_add_neon.asm): libvpx/vpx_dsp/arm/idct_neon.asm.S
+endif
+endif
+
+include $(topsrcdir)/config/recurse.mk

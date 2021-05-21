@@ -1,0 +1,75 @@
+[
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "lastModifiedTime",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_INT64"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "setter"
+        ],
+        "name": "lastModifiedTime",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT64"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIFTPChannel",
+    "parent": "nsISupports",
+    "uuid": "07f0d5cd-1fd5-4aa3-b6fc-665bdc5dbf9f"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "OnFTPControlLog",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_PSTRING"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIFTPEventSink",
+    "parent": "nsISupports",
+    "uuid": "455d4234-0330-43d2-bbfb-99afbecbfeb0"
+  }
+]

@@ -1,0 +1,193 @@
+[
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "canSetDesktopBackground",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIGNOMEShellService",
+    "parent": "nsIShellService",
+    "uuid": "2ce5c803-edcd-443d-98eb-ceba86d02d13"
+  },
+  {
+    "consts": [
+      {
+        "name": "BACKGROUND_TILE",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 1
+      },
+      {
+        "name": "BACKGROUND_STRETCH",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 2
+      },
+      {
+        "name": "BACKGROUND_CENTER",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 3
+      },
+      {
+        "name": "BACKGROUND_FILL",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 4
+      },
+      {
+        "name": "BACKGROUND_FIT",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 5
+      },
+      {
+        "name": "BACKGROUND_SPAN",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 6
+      }
+    ],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "isDefaultBrowser",
+        "params": [
+          {
+            "flags": [
+              "in",
+              "optional"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "setDefaultBrowser",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "setDesktopBackground",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "headerFile": "mozilla/dom/Element.h",
+              "name": "Element",
+              "native": "mozilla::dom::Element",
+              "tag": "TD_DOMOBJECT"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_CSTRING"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "desktopBackgroundColor",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "setter"
+        ],
+        "name": "desktopBackgroundColor",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIShellService",
+    "parent": "nsISupports",
+    "uuid": "2d1a95e4-5bd8-4eeb-b0a8-c1455fd2a357"
+  }
+]

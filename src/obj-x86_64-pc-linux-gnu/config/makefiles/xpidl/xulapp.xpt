@@ -1,0 +1,90 @@
+[
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "start",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "enable",
+        "params": []
+      },
+      {
+        "flags": [],
+        "name": "onLastWindowClosing",
+        "params": []
+      },
+      {
+        "flags": [],
+        "name": "ReOpen",
+        "params": []
+      }
+    ],
+    "name": "nsINativeAppSupport",
+    "parent": "nsISupports",
+    "uuid": "5fdf8480-1f98-11d4-8077-00600811a9c3"
+  },
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "setUserDataDirectory",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIFile",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getInstallHash",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIXREDirProvider",
+    "parent": "nsISupports",
+    "uuid": "f6ee3c0a-5119-47fc-b1a7-ace9e1111fff"
+  }
+]

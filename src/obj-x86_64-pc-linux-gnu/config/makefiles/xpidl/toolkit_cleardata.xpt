@@ -1,0 +1,474 @@
+[
+  {
+    "consts": [
+      {
+        "name": "CLEAR_COOKIES",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 1
+      },
+      {
+        "name": "CLEAR_NETWORK_CACHE",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 2
+      },
+      {
+        "name": "CLEAR_IMAGE_CACHE",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 4
+      },
+      {
+        "name": "CLEAR_PLUGIN_DATA",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 8
+      },
+      {
+        "name": "CLEAR_DOWNLOADS",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 16
+      },
+      {
+        "name": "CLEAR_PASSWORDS",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 32
+      },
+      {
+        "name": "CLEAR_MEDIA_DEVICES",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 64
+      },
+      {
+        "name": "CLEAR_APPCACHE",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 128
+      },
+      {
+        "name": "CLEAR_DOM_QUOTA",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 256
+      },
+      {
+        "name": "CLEAR_PREDICTOR_NETWORK_DATA",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 512
+      },
+      {
+        "name": "CLEAR_DOM_PUSH_NOTIFICATIONS",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 1024
+      },
+      {
+        "name": "CLEAR_HISTORY",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 2048
+      },
+      {
+        "name": "CLEAR_SESSION_HISTORY",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 4096
+      },
+      {
+        "name": "CLEAR_AUTH_TOKENS",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 8192
+      },
+      {
+        "name": "CLEAR_AUTH_CACHE",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 16384
+      },
+      {
+        "name": "CLEAR_PERMISSIONS",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 32768
+      },
+      {
+        "name": "CLEAR_CONTENT_PREFERENCES",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 65536
+      },
+      {
+        "name": "CLEAR_SECURITY_SETTINGS",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 131072
+      },
+      {
+        "name": "CLEAR_EME",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 262144
+      },
+      {
+        "name": "CLEAR_REPORTS",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 524288
+      },
+      {
+        "name": "CLEAR_STORAGE_ACCESS",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 1048576
+      },
+      {
+        "name": "CLEAR_CERT_EXCEPTIONS",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 2097152
+      },
+      {
+        "name": "CLEAR_CONTENT_BLOCKING_RECORDS",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 4194304
+      },
+      {
+        "name": "CLEAR_CSS_CACHE",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 8388608
+      },
+      {
+        "name": "CLEAR_ALL",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 16777215
+      },
+      {
+        "name": "CLEAR_ALL_CACHES",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 8388614
+      },
+      {
+        "name": "CLEAR_DOM_STORAGES",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 525696
+      },
+      {
+        "name": "CLEAR_FORGET_ABOUT_SITE",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 11509695
+      }
+    ],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "deleteDataFromLocalFiles",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIClearDataCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "deleteDataFromHost",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UTF8STRING"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIClearDataCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "deleteDataFromPrincipal",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIPrincipal",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIClearDataCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "deleteDataInTimeRange",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT64"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT64"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIClearDataCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "deleteData",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIClearDataCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "deleteDataFromOriginAttributesPattern",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_JSVAL"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "optional"
+            ],
+            "type": {
+              "name": "nsIClearDataCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "deleteUserInteractionForClearingHistory",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "element": {
+                "name": "nsIPrincipal",
+                "tag": "TD_INTERFACE_TYPE"
+              },
+              "tag": "TD_ARRAY"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "optional"
+            ],
+            "type": {
+              "tag": "TD_INT64"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "optional"
+            ],
+            "type": {
+              "name": "nsIClearDataCallback",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIClearDataService",
+    "parent": "nsISupports",
+    "uuid": "6ef3ef16-a502-4576-9fb4-919f1c40bf61"
+  },
+  {
+    "consts": [],
+    "flags": [
+      "function"
+    ],
+    "methods": [
+      {
+        "flags": [],
+        "name": "onDataDeleted",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIClearDataCallback",
+    "parent": "nsISupports",
+    "uuid": "e225517b-24c5-498a-b9fb-9993e341a398"
+  }
+]

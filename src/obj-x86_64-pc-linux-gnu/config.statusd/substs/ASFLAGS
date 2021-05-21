@@ -1,0 +1,7 @@
+[
+    "-fPIC",
+    "-Wa,--noexecstack",
+    "-include",
+    "/worker/build/obj-x86_64-pc-linux-gnu/mozilla-config.h",
+    "-DMOZILLA_CLIENT"
+]

@@ -1,0 +1,1 @@
+/worker/build/testing/mozbase/mozgeckoprofiler/mozgeckoprofiler/symbolicationRequest.py

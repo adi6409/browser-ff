@@ -1,0 +1,1 @@
+/worker/build/testing/mozbase/mozversion/tests/test_binary.py

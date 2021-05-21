@@ -1,0 +1,1 @@
+/worker/build/testing/mozbase/manifestparser/tests/test_convert_symlinks.py

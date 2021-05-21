@@ -1,0 +1,34 @@
+[
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [],
+        "name": "method1",
+        "params": []
+      }
+    ],
+    "name": "nsIScriptableOK",
+    "parent": "nsISupports",
+    "uuid": "93142a4f-e4cf-424a-b833-e638f87d2607"
+  },
+  {
+    "consts": [],
+    "flags": [
+      "builtinclass"
+    ],
+    "methods": [
+      {
+        "flags": [
+          "hidden"
+        ],
+        "name": "method2",
+        "params": []
+      }
+    ],
+    "name": "nsIScriptableWithNotXPCOM",
+    "parent": "nsISupports",
+    "uuid": "237d01a3-771e-4c6e-adf9-c97f9aab2950"
+  }
+]

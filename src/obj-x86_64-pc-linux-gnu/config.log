@@ -1,0 +1,3040 @@
+DEBUG: python3: running with pid 10926
+DEBUG: python3: sys.executable: '/worker/build/obj-x86_64-pc-linux-gnu/_virtualenvs/init_py3/bin/python'
+DEBUG: python3: executable from configuration: None
+DEBUG: python3: found executable: '/worker/build/obj-x86_64-pc-linux-gnu/_virtualenvs/init_py3/bin/python'
+DEBUG: python3: venv is up to date
+INFO: Adding configure options from /worker/build/mozconfig
+INFO:   --enable-update-channel=release
+INFO:   --with-branding=browser/branding/dot
+INFO:   --with-app-name=konke
+INFO:   --enable-update-channel=release
+INFO:   --with-branding=browser/branding/dot
+INFO:   --with-app-name=konke
+INFO:   --enable-application=browser
+INFO:   --enable-hardening
+INFO:   --enable-rust-simd
+INFO:   --enable-release
+INFO:   --enable-optimize
+INFO:   --with-ccache=sccache
+INFO:   --disable-debug
+INFO:   --enable-updater
+INFO:   MOZ_STUB_INSTALLER=1
+INFO:   MOZ_SOURCE_CHANGESET=4cb323df9d20bb505ed2a55cea67f941e4652f73
+INFO:   MOZ_APP_DISPLAYNAME=Konke Browser
+INFO:   MOZ_APP_VENDOR=konke HQ
+INFO:   MOZ_USER_DIR=Konke Browser
+INFO:   MOZ_MACBUNDLE_ID=co.konkehq.browser
+INFO:   MOZ_DISTRIBUTION_ID=co.konkehq.browser
+INFO:   MOZ_SOURCE_REPO=https://github.com/dothq/browser-desktop
+INFO:   MOZ_INCLUDE_SOURCE_INFO=1
+INFO:   MOZ_APP_BASENAME=Konke
+INFO:   MOZ_APP_PROFILE=dot
+INFO: checking for vcs source checkout... 
+INFO: git
+INFO: checking for a shell... 
+INFO: /usr/sbin/sh
+INFO: checking for host system type... 
+DEBUG: Executing: `/usr/sbin/sh /worker/build/build/moz.configure/../autoconf/config.guess`
+INFO: x86_64-pc-linux-gnu
+INFO: checking for target system type... 
+INFO: x86_64-pc-linux-gnu
+INFO: checking whether cross compiling... 
+INFO: no
+INFO: checking for Python 3... 
+INFO: /worker/build/obj-x86_64-pc-linux-gnu/_virtualenvs/init_py3/bin/python (3.9.5)
+INFO: checking for git... 
+DEBUG: git: Looking for git
+INFO: /usr/sbin/git
+INFO: checking for Git version... 
+DEBUG: Executing: `/usr/sbin/git --version`
+INFO: 2.31.1
+INFO: checking for sparse checkout... 
+INFO: no
+DEBUG: Prioritizing system over mozbuild state dir in toolchain paths because you are building in release mode.
+INFO: checking for wget... 
+DEBUG: wget: Looking for wget
+INFO: /usr/sbin/wget
+INFO: checking for yasm... 
+DEBUG: yasm: Looking for yasm
+INFO: /usr/sbin/yasm
+INFO: checking yasm version... 
+DEBUG: Executing: `/usr/sbin/yasm --version`
+INFO: 1.3.0
+INFO: checking for ccache... 
+DEBUG: ccache: Looking for sccache
+INFO: /home/worker/.mozbuild/sccache/sccache
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache --version`
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache --version`
+INFO: checking for the target C compiler... 
+DEBUG: _cc: Looking for clang
+INFO: /home/worker/.mozbuild/clang/bin/clang
+INFO: checking whether the target C compiler can be used... 
+DEBUG: Creating `/tmp/conftest.87uo2pk3.c` with content:
+DEBUG: | #if defined(_MSC_VER) && defined(__clang__) && defined(_MT)
+DEBUG: | %COMPILER "clang-cl"
+DEBUG: | %VERSION __clang_major__.__clang_minor__.__clang_patchlevel__
+DEBUG: | #elif defined(__clang__)
+DEBUG: | %COMPILER "clang"
+DEBUG: | %VERSION __clang_major__.__clang_minor__.__clang_patchlevel__
+DEBUG: | #  ifdef __apple_build_version__
+DEBUG: | %XCODE 1
+DEBUG: | #  endif
+DEBUG: | #elif defined(__GNUC__) && !defined(__MINGW32__)
+DEBUG: | %COMPILER "gcc"
+DEBUG: | %VERSION __GNUC__.__GNUC_MINOR__.__GNUC_PATCHLEVEL__
+DEBUG: | #endif
+DEBUG: | 
+DEBUG: | #if __cplusplus
+DEBUG: | %cplusplus __cplusplus
+DEBUG: | #elif __STDC_VERSION__
+DEBUG: | %STDC_VERSION __STDC_VERSION__
+DEBUG: | #endif
+DEBUG: | #if __i386__ || _M_IX86
+DEBUG: | %CPU "x86"
+DEBUG: | #elif __x86_64__ || _M_X64
+DEBUG: | %CPU "x86_64"
+DEBUG: | #elif __arm__ || _M_ARM
+DEBUG: | %CPU "arm"
+DEBUG: | #elif __aarch64__ || _M_ARM64
+DEBUG: | %CPU "aarch64"
+DEBUG: | #elif __ia64__
+DEBUG: | %CPU "ia64"
+DEBUG: | #elif __s390x__
+DEBUG: | %CPU "s390x"
+DEBUG: | #elif __s390__
+DEBUG: | %CPU "s390"
+DEBUG: | #elif __powerpc64__
+DEBUG: | %CPU "ppc64"
+DEBUG: | #elif __powerpc__
+DEBUG: | %CPU "ppc"
+DEBUG: | #elif __alpha__
+DEBUG: | %CPU "Alpha"
+DEBUG: | #elif __hppa__
+DEBUG: | %CPU "hppa"
+DEBUG: | #elif __sparc__ && __arch64__
+DEBUG: | %CPU "sparc64"
+DEBUG: | #elif __sparc__
+DEBUG: | %CPU "sparc"
+DEBUG: | #elif __m68k__
+DEBUG: | %CPU "m68k"
+DEBUG: | #elif __mips64
+DEBUG: | %CPU "mips64"
+DEBUG: | #elif __mips__
+DEBUG: | %CPU "mips32"
+DEBUG: | #elif __riscv && __riscv_xlen == 64
+DEBUG: | %CPU "riscv64"
+DEBUG: | #elif __sh__
+DEBUG: | %CPU "sh4"
+DEBUG: | #endif
+DEBUG: | #if __APPLE__
+DEBUG: | %KERNEL "Darwin"
+DEBUG: | #elif __DragonFly__
+DEBUG: | %KERNEL "DragonFly"
+DEBUG: | #elif __FreeBSD__
+DEBUG: | %KERNEL "FreeBSD"
+DEBUG: | #elif __FreeBSD_kernel__
+DEBUG: | %KERNEL "kFreeBSD"
+DEBUG: | #elif __linux__
+DEBUG: | %KERNEL "Linux"
+DEBUG: | #elif __NetBSD__
+DEBUG: | %KERNEL "NetBSD"
+DEBUG: | #elif __OpenBSD__
+DEBUG: | %KERNEL "OpenBSD"
+DEBUG: | #elif __sun__
+DEBUG: | %KERNEL "SunOS"
+DEBUG: | #elif _WIN32 || __CYGWIN__
+DEBUG: | %KERNEL "WINNT"
+DEBUG: | #endif
+DEBUG: | #if __ANDROID__
+DEBUG: | %OS "Android"
+DEBUG: | #endif
+DEBUG: | #if __BYTE_ORDER__ == __ORDER_LITTLE_ENDIAN__
+DEBUG: | %ENDIANNESS "little"
+DEBUG: | #elif __BYTE_ORDER__ == __ORDER_BIG_ENDIAN__
+DEBUG: | %ENDIANNESS "big"
+DEBUG: | #endif
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang /tmp/conftest.87uo2pk3.c -E`
+DEBUG: COMPILER = clang
+DEBUG: VERSION = 11.0.1
+DEBUG: STDC_VERSION = 201710L
+DEBUG: CPU = x86_64
+DEBUG: KERNEL = Linux
+DEBUG: ENDIANNESS = little
+DEBUG: Creating `/tmp/conftest.93jppell.c` with content:
+DEBUG: | #if defined(_MSC_VER) && defined(__clang__) && defined(_MT)
+DEBUG: | %COMPILER "clang-cl"
+DEBUG: | %VERSION __clang_major__.__clang_minor__.__clang_patchlevel__
+DEBUG: | #elif defined(__clang__)
+DEBUG: | %COMPILER "clang"
+DEBUG: | %VERSION __clang_major__.__clang_minor__.__clang_patchlevel__
+DEBUG: | #  ifdef __apple_build_version__
+DEBUG: | %XCODE 1
+DEBUG: | #  endif
+DEBUG: | #elif defined(__GNUC__) && !defined(__MINGW32__)
+DEBUG: | %COMPILER "gcc"
+DEBUG: | %VERSION __GNUC__.__GNUC_MINOR__.__GNUC_PATCHLEVEL__
+DEBUG: | #endif
+DEBUG: | 
+DEBUG: | #if __cplusplus
+DEBUG: | %cplusplus __cplusplus
+DEBUG: | #elif __STDC_VERSION__
+DEBUG: | %STDC_VERSION __STDC_VERSION__
+DEBUG: | #endif
+DEBUG: | #if __i386__ || _M_IX86
+DEBUG: | %CPU "x86"
+DEBUG: | #elif __x86_64__ || _M_X64
+DEBUG: | %CPU "x86_64"
+DEBUG: | #elif __arm__ || _M_ARM
+DEBUG: | %CPU "arm"
+DEBUG: | #elif __aarch64__ || _M_ARM64
+DEBUG: | %CPU "aarch64"
+DEBUG: | #elif __ia64__
+DEBUG: | %CPU "ia64"
+DEBUG: | #elif __s390x__
+DEBUG: | %CPU "s390x"
+DEBUG: | #elif __s390__
+DEBUG: | %CPU "s390"
+DEBUG: | #elif __powerpc64__
+DEBUG: | %CPU "ppc64"
+DEBUG: | #elif __powerpc__
+DEBUG: | %CPU "ppc"
+DEBUG: | #elif __alpha__
+DEBUG: | %CPU "Alpha"
+DEBUG: | #elif __hppa__
+DEBUG: | %CPU "hppa"
+DEBUG: | #elif __sparc__ && __arch64__
+DEBUG: | %CPU "sparc64"
+DEBUG: | #elif __sparc__
+DEBUG: | %CPU "sparc"
+DEBUG: | #elif __m68k__
+DEBUG: | %CPU "m68k"
+DEBUG: | #elif __mips64
+DEBUG: | %CPU "mips64"
+DEBUG: | #elif __mips__
+DEBUG: | %CPU "mips32"
+DEBUG: | #elif __riscv && __riscv_xlen == 64
+DEBUG: | %CPU "riscv64"
+DEBUG: | #elif __sh__
+DEBUG: | %CPU "sh4"
+DEBUG: | #endif
+DEBUG: | #if __APPLE__
+DEBUG: | %KERNEL "Darwin"
+DEBUG: | #elif __DragonFly__
+DEBUG: | %KERNEL "DragonFly"
+DEBUG: | #elif __FreeBSD__
+DEBUG: | %KERNEL "FreeBSD"
+DEBUG: | #elif __FreeBSD_kernel__
+DEBUG: | %KERNEL "kFreeBSD"
+DEBUG: | #elif __linux__
+DEBUG: | %KERNEL "Linux"
+DEBUG: | #elif __NetBSD__
+DEBUG: | %KERNEL "NetBSD"
+DEBUG: | #elif __OpenBSD__
+DEBUG: | %KERNEL "OpenBSD"
+DEBUG: | #elif __sun__
+DEBUG: | %KERNEL "SunOS"
+DEBUG: | #elif _WIN32 || __CYGWIN__
+DEBUG: | %KERNEL "WINNT"
+DEBUG: | #endif
+DEBUG: | #if __ANDROID__
+DEBUG: | %OS "Android"
+DEBUG: | #endif
+DEBUG: | #if __BYTE_ORDER__ == __ORDER_LITTLE_ENDIAN__
+DEBUG: | %ENDIANNESS "little"
+DEBUG: | #elif __BYTE_ORDER__ == __ORDER_BIG_ENDIAN__
+DEBUG: | %ENDIANNESS "big"
+DEBUG: | #endif
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 /tmp/conftest.93jppell.c -E`
+DEBUG: COMPILER = clang
+DEBUG: VERSION = 11.0.1
+DEBUG: STDC_VERSION = 199901L
+DEBUG: CPU = x86_64
+DEBUG: KERNEL = Linux
+DEBUG: ENDIANNESS = little
+INFO: yes
+INFO: checking the target C compiler version... 
+INFO: 11.0.1
+INFO: checking the target C compiler works... 
+DEBUG: Creating `/tmp/conftest.lhigiu9d.c` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 /tmp/conftest.lhigiu9d.c -c`
+INFO: yes
+INFO: checking for the target C++ compiler... 
+DEBUG: _cxx: Looking for /home/worker/.mozbuild/clang/bin/clang++
+INFO: /home/worker/.mozbuild/clang/bin/clang++
+INFO: checking whether the target C++ compiler can be used... 
+DEBUG: Creating `/tmp/conftest.tobbyo39.cpp` with content:
+DEBUG: | #if defined(_MSC_VER) && defined(__clang__) && defined(_MT)
+DEBUG: | %COMPILER "clang-cl"
+DEBUG: | %VERSION __clang_major__.__clang_minor__.__clang_patchlevel__
+DEBUG: | #elif defined(__clang__)
+DEBUG: | %COMPILER "clang"
+DEBUG: | %VERSION __clang_major__.__clang_minor__.__clang_patchlevel__
+DEBUG: | #  ifdef __apple_build_version__
+DEBUG: | %XCODE 1
+DEBUG: | #  endif
+DEBUG: | #elif defined(__GNUC__) && !defined(__MINGW32__)
+DEBUG: | %COMPILER "gcc"
+DEBUG: | %VERSION __GNUC__.__GNUC_MINOR__.__GNUC_PATCHLEVEL__
+DEBUG: | #endif
+DEBUG: | 
+DEBUG: | #if __cplusplus
+DEBUG: | %cplusplus __cplusplus
+DEBUG: | #elif __STDC_VERSION__
+DEBUG: | %STDC_VERSION __STDC_VERSION__
+DEBUG: | #endif
+DEBUG: | #if __i386__ || _M_IX86
+DEBUG: | %CPU "x86"
+DEBUG: | #elif __x86_64__ || _M_X64
+DEBUG: | %CPU "x86_64"
+DEBUG: | #elif __arm__ || _M_ARM
+DEBUG: | %CPU "arm"
+DEBUG: | #elif __aarch64__ || _M_ARM64
+DEBUG: | %CPU "aarch64"
+DEBUG: | #elif __ia64__
+DEBUG: | %CPU "ia64"
+DEBUG: | #elif __s390x__
+DEBUG: | %CPU "s390x"
+DEBUG: | #elif __s390__
+DEBUG: | %CPU "s390"
+DEBUG: | #elif __powerpc64__
+DEBUG: | %CPU "ppc64"
+DEBUG: | #elif __powerpc__
+DEBUG: | %CPU "ppc"
+DEBUG: | #elif __alpha__
+DEBUG: | %CPU "Alpha"
+DEBUG: | #elif __hppa__
+DEBUG: | %CPU "hppa"
+DEBUG: | #elif __sparc__ && __arch64__
+DEBUG: | %CPU "sparc64"
+DEBUG: | #elif __sparc__
+DEBUG: | %CPU "sparc"
+DEBUG: | #elif __m68k__
+DEBUG: | %CPU "m68k"
+DEBUG: | #elif __mips64
+DEBUG: | %CPU "mips64"
+DEBUG: | #elif __mips__
+DEBUG: | %CPU "mips32"
+DEBUG: | #elif __riscv && __riscv_xlen == 64
+DEBUG: | %CPU "riscv64"
+DEBUG: | #elif __sh__
+DEBUG: | %CPU "sh4"
+DEBUG: | #endif
+DEBUG: | #if __APPLE__
+DEBUG: | %KERNEL "Darwin"
+DEBUG: | #elif __DragonFly__
+DEBUG: | %KERNEL "DragonFly"
+DEBUG: | #elif __FreeBSD__
+DEBUG: | %KERNEL "FreeBSD"
+DEBUG: | #elif __FreeBSD_kernel__
+DEBUG: | %KERNEL "kFreeBSD"
+DEBUG: | #elif __linux__
+DEBUG: | %KERNEL "Linux"
+DEBUG: | #elif __NetBSD__
+DEBUG: | %KERNEL "NetBSD"
+DEBUG: | #elif __OpenBSD__
+DEBUG: | %KERNEL "OpenBSD"
+DEBUG: | #elif __sun__
+DEBUG: | %KERNEL "SunOS"
+DEBUG: | #elif _WIN32 || __CYGWIN__
+DEBUG: | %KERNEL "WINNT"
+DEBUG: | #endif
+DEBUG: | #if __ANDROID__
+DEBUG: | %OS "Android"
+DEBUG: | #endif
+DEBUG: | #if __BYTE_ORDER__ == __ORDER_LITTLE_ENDIAN__
+DEBUG: | %ENDIANNESS "little"
+DEBUG: | #elif __BYTE_ORDER__ == __ORDER_BIG_ENDIAN__
+DEBUG: | %ENDIANNESS "big"
+DEBUG: | #endif
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ /tmp/conftest.tobbyo39.cpp -E`
+DEBUG: COMPILER = clang
+DEBUG: VERSION = 11.0.1
+DEBUG: cplusplus = 201402L
+DEBUG: CPU = x86_64
+DEBUG: KERNEL = Linux
+DEBUG: ENDIANNESS = little
+DEBUG: Creating `/tmp/conftest.1xlvl2ko.cpp` with content:
+DEBUG: | #if defined(_MSC_VER) && defined(__clang__) && defined(_MT)
+DEBUG: | %COMPILER "clang-cl"
+DEBUG: | %VERSION __clang_major__.__clang_minor__.__clang_patchlevel__
+DEBUG: | #elif defined(__clang__)
+DEBUG: | %COMPILER "clang"
+DEBUG: | %VERSION __clang_major__.__clang_minor__.__clang_patchlevel__
+DEBUG: | #  ifdef __apple_build_version__
+DEBUG: | %XCODE 1
+DEBUG: | #  endif
+DEBUG: | #elif defined(__GNUC__) && !defined(__MINGW32__)
+DEBUG: | %COMPILER "gcc"
+DEBUG: | %VERSION __GNUC__.__GNUC_MINOR__.__GNUC_PATCHLEVEL__
+DEBUG: | #endif
+DEBUG: | 
+DEBUG: | #if __cplusplus
+DEBUG: | %cplusplus __cplusplus
+DEBUG: | #elif __STDC_VERSION__
+DEBUG: | %STDC_VERSION __STDC_VERSION__
+DEBUG: | #endif
+DEBUG: | #if __i386__ || _M_IX86
+DEBUG: | %CPU "x86"
+DEBUG: | #elif __x86_64__ || _M_X64
+DEBUG: | %CPU "x86_64"
+DEBUG: | #elif __arm__ || _M_ARM
+DEBUG: | %CPU "arm"
+DEBUG: | #elif __aarch64__ || _M_ARM64
+DEBUG: | %CPU "aarch64"
+DEBUG: | #elif __ia64__
+DEBUG: | %CPU "ia64"
+DEBUG: | #elif __s390x__
+DEBUG: | %CPU "s390x"
+DEBUG: | #elif __s390__
+DEBUG: | %CPU "s390"
+DEBUG: | #elif __powerpc64__
+DEBUG: | %CPU "ppc64"
+DEBUG: | #elif __powerpc__
+DEBUG: | %CPU "ppc"
+DEBUG: | #elif __alpha__
+DEBUG: | %CPU "Alpha"
+DEBUG: | #elif __hppa__
+DEBUG: | %CPU "hppa"
+DEBUG: | #elif __sparc__ && __arch64__
+DEBUG: | %CPU "sparc64"
+DEBUG: | #elif __sparc__
+DEBUG: | %CPU "sparc"
+DEBUG: | #elif __m68k__
+DEBUG: | %CPU "m68k"
+DEBUG: | #elif __mips64
+DEBUG: | %CPU "mips64"
+DEBUG: | #elif __mips__
+DEBUG: | %CPU "mips32"
+DEBUG: | #elif __riscv && __riscv_xlen == 64
+DEBUG: | %CPU "riscv64"
+DEBUG: | #elif __sh__
+DEBUG: | %CPU "sh4"
+DEBUG: | #endif
+DEBUG: | #if __APPLE__
+DEBUG: | %KERNEL "Darwin"
+DEBUG: | #elif __DragonFly__
+DEBUG: | %KERNEL "DragonFly"
+DEBUG: | #elif __FreeBSD__
+DEBUG: | %KERNEL "FreeBSD"
+DEBUG: | #elif __FreeBSD_kernel__
+DEBUG: | %KERNEL "kFreeBSD"
+DEBUG: | #elif __linux__
+DEBUG: | %KERNEL "Linux"
+DEBUG: | #elif __NetBSD__
+DEBUG: | %KERNEL "NetBSD"
+DEBUG: | #elif __OpenBSD__
+DEBUG: | %KERNEL "OpenBSD"
+DEBUG: | #elif __sun__
+DEBUG: | %KERNEL "SunOS"
+DEBUG: | #elif _WIN32 || __CYGWIN__
+DEBUG: | %KERNEL "WINNT"
+DEBUG: | #endif
+DEBUG: | #if __ANDROID__
+DEBUG: | %OS "Android"
+DEBUG: | #endif
+DEBUG: | #if __BYTE_ORDER__ == __ORDER_LITTLE_ENDIAN__
+DEBUG: | %ENDIANNESS "little"
+DEBUG: | #elif __BYTE_ORDER__ == __ORDER_BIG_ENDIAN__
+DEBUG: | %ENDIANNESS "big"
+DEBUG: | #endif
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.1xlvl2ko.cpp -E`
+DEBUG: COMPILER = clang
+DEBUG: VERSION = 11.0.1
+DEBUG: cplusplus = 201703L
+DEBUG: CPU = x86_64
+DEBUG: KERNEL = Linux
+DEBUG: ENDIANNESS = little
+INFO: yes
+INFO: checking the target C++ compiler version... 
+INFO: 11.0.1
+INFO: checking the target C++ compiler works... 
+DEBUG: Creating `/tmp/conftest.q7pm4oro.cpp` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.q7pm4oro.cpp -c`
+INFO: yes
+INFO: checking for the host C compiler... 
+DEBUG: _host_cc: Looking for /home/worker/.mozbuild/clang/bin/clang
+INFO: /home/worker/.mozbuild/clang/bin/clang
+INFO: checking whether the host C compiler can be used... 
+DEBUG: Creating `/tmp/conftest.lyk_mdlm.c` with content:
+DEBUG: | #if defined(_MSC_VER) && defined(__clang__) && defined(_MT)
+DEBUG: | %COMPILER "clang-cl"
+DEBUG: | %VERSION __clang_major__.__clang_minor__.__clang_patchlevel__
+DEBUG: | #elif defined(__clang__)
+DEBUG: | %COMPILER "clang"
+DEBUG: | %VERSION __clang_major__.__clang_minor__.__clang_patchlevel__
+DEBUG: | #  ifdef __apple_build_version__
+DEBUG: | %XCODE 1
+DEBUG: | #  endif
+DEBUG: | #elif defined(__GNUC__) && !defined(__MINGW32__)
+DEBUG: | %COMPILER "gcc"
+DEBUG: | %VERSION __GNUC__.__GNUC_MINOR__.__GNUC_PATCHLEVEL__
+DEBUG: | #endif
+DEBUG: | 
+DEBUG: | #if __cplusplus
+DEBUG: | %cplusplus __cplusplus
+DEBUG: | #elif __STDC_VERSION__
+DEBUG: | %STDC_VERSION __STDC_VERSION__
+DEBUG: | #endif
+DEBUG: | #if __i386__ || _M_IX86
+DEBUG: | %CPU "x86"
+DEBUG: | #elif __x86_64__ || _M_X64
+DEBUG: | %CPU "x86_64"
+DEBUG: | #elif __arm__ || _M_ARM
+DEBUG: | %CPU "arm"
+DEBUG: | #elif __aarch64__ || _M_ARM64
+DEBUG: | %CPU "aarch64"
+DEBUG: | #elif __ia64__
+DEBUG: | %CPU "ia64"
+DEBUG: | #elif __s390x__
+DEBUG: | %CPU "s390x"
+DEBUG: | #elif __s390__
+DEBUG: | %CPU "s390"
+DEBUG: | #elif __powerpc64__
+DEBUG: | %CPU "ppc64"
+DEBUG: | #elif __powerpc__
+DEBUG: | %CPU "ppc"
+DEBUG: | #elif __alpha__
+DEBUG: | %CPU "Alpha"
+DEBUG: | #elif __hppa__
+DEBUG: | %CPU "hppa"
+DEBUG: | #elif __sparc__ && __arch64__
+DEBUG: | %CPU "sparc64"
+DEBUG: | #elif __sparc__
+DEBUG: | %CPU "sparc"
+DEBUG: | #elif __m68k__
+DEBUG: | %CPU "m68k"
+DEBUG: | #elif __mips64
+DEBUG: | %CPU "mips64"
+DEBUG: | #elif __mips__
+DEBUG: | %CPU "mips32"
+DEBUG: | #elif __riscv && __riscv_xlen == 64
+DEBUG: | %CPU "riscv64"
+DEBUG: | #elif __sh__
+DEBUG: | %CPU "sh4"
+DEBUG: | #endif
+DEBUG: | #if __APPLE__
+DEBUG: | %KERNEL "Darwin"
+DEBUG: | #elif __DragonFly__
+DEBUG: | %KERNEL "DragonFly"
+DEBUG: | #elif __FreeBSD__
+DEBUG: | %KERNEL "FreeBSD"
+DEBUG: | #elif __FreeBSD_kernel__
+DEBUG: | %KERNEL "kFreeBSD"
+DEBUG: | #elif __linux__
+DEBUG: | %KERNEL "Linux"
+DEBUG: | #elif __NetBSD__
+DEBUG: | %KERNEL "NetBSD"
+DEBUG: | #elif __OpenBSD__
+DEBUG: | %KERNEL "OpenBSD"
+DEBUG: | #elif __sun__
+DEBUG: | %KERNEL "SunOS"
+DEBUG: | #elif _WIN32 || __CYGWIN__
+DEBUG: | %KERNEL "WINNT"
+DEBUG: | #endif
+DEBUG: | #if __ANDROID__
+DEBUG: | %OS "Android"
+DEBUG: | #endif
+DEBUG: | #if __BYTE_ORDER__ == __ORDER_LITTLE_ENDIAN__
+DEBUG: | %ENDIANNESS "little"
+DEBUG: | #elif __BYTE_ORDER__ == __ORDER_BIG_ENDIAN__
+DEBUG: | %ENDIANNESS "big"
+DEBUG: | #endif
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang /tmp/conftest.lyk_mdlm.c -E`
+DEBUG: COMPILER = clang
+DEBUG: VERSION = 11.0.1
+DEBUG: STDC_VERSION = 201710L
+DEBUG: CPU = x86_64
+DEBUG: KERNEL = Linux
+DEBUG: ENDIANNESS = little
+DEBUG: Creating `/tmp/conftest.s4ioye8e.c` with content:
+DEBUG: | #if defined(_MSC_VER) && defined(__clang__) && defined(_MT)
+DEBUG: | %COMPILER "clang-cl"
+DEBUG: | %VERSION __clang_major__.__clang_minor__.__clang_patchlevel__
+DEBUG: | #elif defined(__clang__)
+DEBUG: | %COMPILER "clang"
+DEBUG: | %VERSION __clang_major__.__clang_minor__.__clang_patchlevel__
+DEBUG: | #  ifdef __apple_build_version__
+DEBUG: | %XCODE 1
+DEBUG: | #  endif
+DEBUG: | #elif defined(__GNUC__) && !defined(__MINGW32__)
+DEBUG: | %COMPILER "gcc"
+DEBUG: | %VERSION __GNUC__.__GNUC_MINOR__.__GNUC_PATCHLEVEL__
+DEBUG: | #endif
+DEBUG: | 
+DEBUG: | #if __cplusplus
+DEBUG: | %cplusplus __cplusplus
+DEBUG: | #elif __STDC_VERSION__
+DEBUG: | %STDC_VERSION __STDC_VERSION__
+DEBUG: | #endif
+DEBUG: | #if __i386__ || _M_IX86
+DEBUG: | %CPU "x86"
+DEBUG: | #elif __x86_64__ || _M_X64
+DEBUG: | %CPU "x86_64"
+DEBUG: | #elif __arm__ || _M_ARM
+DEBUG: | %CPU "arm"
+DEBUG: | #elif __aarch64__ || _M_ARM64
+DEBUG: | %CPU "aarch64"
+DEBUG: | #elif __ia64__
+DEBUG: | %CPU "ia64"
+DEBUG: | #elif __s390x__
+DEBUG: | %CPU "s390x"
+DEBUG: | #elif __s390__
+DEBUG: | %CPU "s390"
+DEBUG: | #elif __powerpc64__
+DEBUG: | %CPU "ppc64"
+DEBUG: | #elif __powerpc__
+DEBUG: | %CPU "ppc"
+DEBUG: | #elif __alpha__
+DEBUG: | %CPU "Alpha"
+DEBUG: | #elif __hppa__
+DEBUG: | %CPU "hppa"
+DEBUG: | #elif __sparc__ && __arch64__
+DEBUG: | %CPU "sparc64"
+DEBUG: | #elif __sparc__
+DEBUG: | %CPU "sparc"
+DEBUG: | #elif __m68k__
+DEBUG: | %CPU "m68k"
+DEBUG: | #elif __mips64
+DEBUG: | %CPU "mips64"
+DEBUG: | #elif __mips__
+DEBUG: | %CPU "mips32"
+DEBUG: | #elif __riscv && __riscv_xlen == 64
+DEBUG: | %CPU "riscv64"
+DEBUG: | #elif __sh__
+DEBUG: | %CPU "sh4"
+DEBUG: | #endif
+DEBUG: | #if __APPLE__
+DEBUG: | %KERNEL "Darwin"
+DEBUG: | #elif __DragonFly__
+DEBUG: | %KERNEL "DragonFly"
+DEBUG: | #elif __FreeBSD__
+DEBUG: | %KERNEL "FreeBSD"
+DEBUG: | #elif __FreeBSD_kernel__
+DEBUG: | %KERNEL "kFreeBSD"
+DEBUG: | #elif __linux__
+DEBUG: | %KERNEL "Linux"
+DEBUG: | #elif __NetBSD__
+DEBUG: | %KERNEL "NetBSD"
+DEBUG: | #elif __OpenBSD__
+DEBUG: | %KERNEL "OpenBSD"
+DEBUG: | #elif __sun__
+DEBUG: | %KERNEL "SunOS"
+DEBUG: | #elif _WIN32 || __CYGWIN__
+DEBUG: | %KERNEL "WINNT"
+DEBUG: | #endif
+DEBUG: | #if __ANDROID__
+DEBUG: | %OS "Android"
+DEBUG: | #endif
+DEBUG: | #if __BYTE_ORDER__ == __ORDER_LITTLE_ENDIAN__
+DEBUG: | %ENDIANNESS "little"
+DEBUG: | #elif __BYTE_ORDER__ == __ORDER_BIG_ENDIAN__
+DEBUG: | %ENDIANNESS "big"
+DEBUG: | #endif
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 /tmp/conftest.s4ioye8e.c -E`
+DEBUG: COMPILER = clang
+DEBUG: VERSION = 11.0.1
+DEBUG: STDC_VERSION = 199901L
+DEBUG: CPU = x86_64
+DEBUG: KERNEL = Linux
+DEBUG: ENDIANNESS = little
+INFO: yes
+INFO: checking the host C compiler version... 
+INFO: 11.0.1
+INFO: checking the host C compiler works... 
+DEBUG: Creating `/tmp/conftest.li105u5j.c` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 /tmp/conftest.li105u5j.c -c`
+INFO: yes
+INFO: checking for the host C++ compiler... 
+DEBUG: _host_cxx: Looking for /home/worker/.mozbuild/clang/bin/clang++
+INFO: /home/worker/.mozbuild/clang/bin/clang++
+INFO: checking whether the host C++ compiler can be used... 
+DEBUG: Creating `/tmp/conftest.9_qvj3m8.cpp` with content:
+DEBUG: | #if defined(_MSC_VER) && defined(__clang__) && defined(_MT)
+DEBUG: | %COMPILER "clang-cl"
+DEBUG: | %VERSION __clang_major__.__clang_minor__.__clang_patchlevel__
+DEBUG: | #elif defined(__clang__)
+DEBUG: | %COMPILER "clang"
+DEBUG: | %VERSION __clang_major__.__clang_minor__.__clang_patchlevel__
+DEBUG: | #  ifdef __apple_build_version__
+DEBUG: | %XCODE 1
+DEBUG: | #  endif
+DEBUG: | #elif defined(__GNUC__) && !defined(__MINGW32__)
+DEBUG: | %COMPILER "gcc"
+DEBUG: | %VERSION __GNUC__.__GNUC_MINOR__.__GNUC_PATCHLEVEL__
+DEBUG: | #endif
+DEBUG: | 
+DEBUG: | #if __cplusplus
+DEBUG: | %cplusplus __cplusplus
+DEBUG: | #elif __STDC_VERSION__
+DEBUG: | %STDC_VERSION __STDC_VERSION__
+DEBUG: | #endif
+DEBUG: | #if __i386__ || _M_IX86
+DEBUG: | %CPU "x86"
+DEBUG: | #elif __x86_64__ || _M_X64
+DEBUG: | %CPU "x86_64"
+DEBUG: | #elif __arm__ || _M_ARM
+DEBUG: | %CPU "arm"
+DEBUG: | #elif __aarch64__ || _M_ARM64
+DEBUG: | %CPU "aarch64"
+DEBUG: | #elif __ia64__
+DEBUG: | %CPU "ia64"
+DEBUG: | #elif __s390x__
+DEBUG: | %CPU "s390x"
+DEBUG: | #elif __s390__
+DEBUG: | %CPU "s390"
+DEBUG: | #elif __powerpc64__
+DEBUG: | %CPU "ppc64"
+DEBUG: | #elif __powerpc__
+DEBUG: | %CPU "ppc"
+DEBUG: | #elif __alpha__
+DEBUG: | %CPU "Alpha"
+DEBUG: | #elif __hppa__
+DEBUG: | %CPU "hppa"
+DEBUG: | #elif __sparc__ && __arch64__
+DEBUG: | %CPU "sparc64"
+DEBUG: | #elif __sparc__
+DEBUG: | %CPU "sparc"
+DEBUG: | #elif __m68k__
+DEBUG: | %CPU "m68k"
+DEBUG: | #elif __mips64
+DEBUG: | %CPU "mips64"
+DEBUG: | #elif __mips__
+DEBUG: | %CPU "mips32"
+DEBUG: | #elif __riscv && __riscv_xlen == 64
+DEBUG: | %CPU "riscv64"
+DEBUG: | #elif __sh__
+DEBUG: | %CPU "sh4"
+DEBUG: | #endif
+DEBUG: | #if __APPLE__
+DEBUG: | %KERNEL "Darwin"
+DEBUG: | #elif __DragonFly__
+DEBUG: | %KERNEL "DragonFly"
+DEBUG: | #elif __FreeBSD__
+DEBUG: | %KERNEL "FreeBSD"
+DEBUG: | #elif __FreeBSD_kernel__
+DEBUG: | %KERNEL "kFreeBSD"
+DEBUG: | #elif __linux__
+DEBUG: | %KERNEL "Linux"
+DEBUG: | #elif __NetBSD__
+DEBUG: | %KERNEL "NetBSD"
+DEBUG: | #elif __OpenBSD__
+DEBUG: | %KERNEL "OpenBSD"
+DEBUG: | #elif __sun__
+DEBUG: | %KERNEL "SunOS"
+DEBUG: | #elif _WIN32 || __CYGWIN__
+DEBUG: | %KERNEL "WINNT"
+DEBUG: | #endif
+DEBUG: | #if __ANDROID__
+DEBUG: | %OS "Android"
+DEBUG: | #endif
+DEBUG: | #if __BYTE_ORDER__ == __ORDER_LITTLE_ENDIAN__
+DEBUG: | %ENDIANNESS "little"
+DEBUG: | #elif __BYTE_ORDER__ == __ORDER_BIG_ENDIAN__
+DEBUG: | %ENDIANNESS "big"
+DEBUG: | #endif
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ /tmp/conftest.9_qvj3m8.cpp -E`
+DEBUG: COMPILER = clang
+DEBUG: VERSION = 11.0.1
+DEBUG: cplusplus = 201402L
+DEBUG: CPU = x86_64
+DEBUG: KERNEL = Linux
+DEBUG: ENDIANNESS = little
+DEBUG: Creating `/tmp/conftest.fpxb8ahj.cpp` with content:
+DEBUG: | #if defined(_MSC_VER) && defined(__clang__) && defined(_MT)
+DEBUG: | %COMPILER "clang-cl"
+DEBUG: | %VERSION __clang_major__.__clang_minor__.__clang_patchlevel__
+DEBUG: | #elif defined(__clang__)
+DEBUG: | %COMPILER "clang"
+DEBUG: | %VERSION __clang_major__.__clang_minor__.__clang_patchlevel__
+DEBUG: | #  ifdef __apple_build_version__
+DEBUG: | %XCODE 1
+DEBUG: | #  endif
+DEBUG: | #elif defined(__GNUC__) && !defined(__MINGW32__)
+DEBUG: | %COMPILER "gcc"
+DEBUG: | %VERSION __GNUC__.__GNUC_MINOR__.__GNUC_PATCHLEVEL__
+DEBUG: | #endif
+DEBUG: | 
+DEBUG: | #if __cplusplus
+DEBUG: | %cplusplus __cplusplus
+DEBUG: | #elif __STDC_VERSION__
+DEBUG: | %STDC_VERSION __STDC_VERSION__
+DEBUG: | #endif
+DEBUG: | #if __i386__ || _M_IX86
+DEBUG: | %CPU "x86"
+DEBUG: | #elif __x86_64__ || _M_X64
+DEBUG: | %CPU "x86_64"
+DEBUG: | #elif __arm__ || _M_ARM
+DEBUG: | %CPU "arm"
+DEBUG: | #elif __aarch64__ || _M_ARM64
+DEBUG: | %CPU "aarch64"
+DEBUG: | #elif __ia64__
+DEBUG: | %CPU "ia64"
+DEBUG: | #elif __s390x__
+DEBUG: | %CPU "s390x"
+DEBUG: | #elif __s390__
+DEBUG: | %CPU "s390"
+DEBUG: | #elif __powerpc64__
+DEBUG: | %CPU "ppc64"
+DEBUG: | #elif __powerpc__
+DEBUG: | %CPU "ppc"
+DEBUG: | #elif __alpha__
+DEBUG: | %CPU "Alpha"
+DEBUG: | #elif __hppa__
+DEBUG: | %CPU "hppa"
+DEBUG: | #elif __sparc__ && __arch64__
+DEBUG: | %CPU "sparc64"
+DEBUG: | #elif __sparc__
+DEBUG: | %CPU "sparc"
+DEBUG: | #elif __m68k__
+DEBUG: | %CPU "m68k"
+DEBUG: | #elif __mips64
+DEBUG: | %CPU "mips64"
+DEBUG: | #elif __mips__
+DEBUG: | %CPU "mips32"
+DEBUG: | #elif __riscv && __riscv_xlen == 64
+DEBUG: | %CPU "riscv64"
+DEBUG: | #elif __sh__
+DEBUG: | %CPU "sh4"
+DEBUG: | #endif
+DEBUG: | #if __APPLE__
+DEBUG: | %KERNEL "Darwin"
+DEBUG: | #elif __DragonFly__
+DEBUG: | %KERNEL "DragonFly"
+DEBUG: | #elif __FreeBSD__
+DEBUG: | %KERNEL "FreeBSD"
+DEBUG: | #elif __FreeBSD_kernel__
+DEBUG: | %KERNEL "kFreeBSD"
+DEBUG: | #elif __linux__
+DEBUG: | %KERNEL "Linux"
+DEBUG: | #elif __NetBSD__
+DEBUG: | %KERNEL "NetBSD"
+DEBUG: | #elif __OpenBSD__
+DEBUG: | %KERNEL "OpenBSD"
+DEBUG: | #elif __sun__
+DEBUG: | %KERNEL "SunOS"
+DEBUG: | #elif _WIN32 || __CYGWIN__
+DEBUG: | %KERNEL "WINNT"
+DEBUG: | #endif
+DEBUG: | #if __ANDROID__
+DEBUG: | %OS "Android"
+DEBUG: | #endif
+DEBUG: | #if __BYTE_ORDER__ == __ORDER_LITTLE_ENDIAN__
+DEBUG: | %ENDIANNESS "little"
+DEBUG: | #elif __BYTE_ORDER__ == __ORDER_BIG_ENDIAN__
+DEBUG: | %ENDIANNESS "big"
+DEBUG: | #endif
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.fpxb8ahj.cpp -E`
+DEBUG: COMPILER = clang
+DEBUG: VERSION = 11.0.1
+DEBUG: cplusplus = 201703L
+DEBUG: CPU = x86_64
+DEBUG: KERNEL = Linux
+DEBUG: ENDIANNESS = little
+INFO: yes
+INFO: checking the host C++ compiler version... 
+INFO: 11.0.1
+INFO: checking the host C++ compiler works... 
+DEBUG: Creating `/tmp/conftest.brpxnb5q.cpp` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.brpxnb5q.cpp -c`
+INFO: yes
+INFO: checking for 64-bit OS... 
+DEBUG: Creating `/tmp/conftest.llsd3_56.cpp` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | static_assert(sizeof(void *) == 8, "")
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.llsd3_56.cpp -c`
+INFO: yes
+INFO: checking for new enough STL headers from libstdc++... 
+DEBUG: Creating `/tmp/conftest.g8dcsr10.cpp` with content:
+DEBUG: | #include <cstddef>
+DEBUG: |                 int
+DEBUG: |                 main(void)
+DEBUG: |                 {
+DEBUG: |                 #if defined(__GLIBCXX__) && !defined(_GLIBCXX_RELEASE)
+DEBUG: | #  error libstdc++ not new enough
+DEBUG: | #endif
+DEBUG: | #if defined(_GLIBCXX_RELEASE)
+DEBUG: | #  if _GLIBCXX_RELEASE < 7
+DEBUG: | #    error libstdc++ not new enough
+DEBUG: | #  else
+DEBUG: |      (void) 0
+DEBUG: | #  endif
+DEBUG: | #endif
+DEBUG: |                   ;
+DEBUG: |                   return 0;
+DEBUG: |                 }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.g8dcsr10.cpp -c`
+INFO: yes
+INFO: checking for nasm... 
+DEBUG: nasm: Looking for nasm
+INFO: /usr/sbin/nasm
+INFO: checking nasm version... 
+DEBUG: Executing: `/usr/sbin/nasm -v`
+INFO: 2.15.05
+INFO: checking for linker... 
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -Wl,--version`
+INFO: bfd
+INFO: checking for the assembler... 
+DEBUG: _as: Looking for /home/worker/.mozbuild/clang/bin/clang
+INFO: /home/worker/.mozbuild/clang/bin/clang
+DEBUG: Executing: `/home/worker/.mozbuild/clang/bin/clang --print-prog-name=llvm-ar`
+INFO: checking for ar... 
+DEBUG: ar: Looking for /home/worker/.mozbuild/clang/bin/llvm-ar
+INFO: /home/worker/.mozbuild/clang/bin/llvm-ar
+DEBUG: Executing: `/home/worker/.mozbuild/clang/bin/clang --print-prog-name=llvm-nm`
+INFO: checking for nm... 
+DEBUG: nm: Looking for /home/worker/.mozbuild/clang/bin/llvm-nm
+INFO: /home/worker/.mozbuild/clang/bin/llvm-nm
+INFO: checking for pkg_config... 
+DEBUG: pkg_config: Looking for pkg-config
+INFO: /usr/sbin/pkg-config
+INFO: checking for pkg-config version... 
+DEBUG: Executing: `/usr/sbin/pkg-config --version`
+INFO: 1.7.3
+INFO: checking for stdint.h... 
+DEBUG: Creating `/tmp/conftest.jlsdnj4b.cpp` with content:
+DEBUG: | #include <stdint.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.jlsdnj4b.cpp -c`
+INFO: yes
+INFO: checking for inttypes.h... 
+DEBUG: Creating `/tmp/conftest.6povsw04.cpp` with content:
+DEBUG: | #include <inttypes.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.6povsw04.cpp -c`
+INFO: yes
+INFO: checking for malloc.h... 
+DEBUG: Creating `/tmp/conftest.5ve5f410.cpp` with content:
+DEBUG: | #include <malloc.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.5ve5f410.cpp -c`
+INFO: yes
+INFO: checking for alloca.h... 
+DEBUG: Creating `/tmp/conftest.kxjm5hue.cpp` with content:
+DEBUG: | #include <alloca.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.kxjm5hue.cpp -c`
+INFO: yes
+INFO: checking for sys/byteorder.h... 
+DEBUG: Creating `/tmp/conftest.h6k55k8u.cpp` with content:
+DEBUG: | #include <sys/byteorder.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.h6k55k8u.cpp -c`
+DEBUG: The command returned non-zero exit status 1.
+DEBUG: Its error output was:
+DEBUG: | /tmp/conftest.h6k55k8u.cpp:1:10: fatal error: 'sys/byteorder.h' file not found
+DEBUG: | #include <sys/byteorder.h>
+DEBUG: |          ^~~~~~~~~~~~~~~~~
+DEBUG: | 1 error generated.
+INFO: no
+INFO: checking for getopt.h... 
+DEBUG: Creating `/tmp/conftest.doccnh_u.cpp` with content:
+DEBUG: | #include <getopt.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.doccnh_u.cpp -c`
+INFO: yes
+INFO: checking for unistd.h... 
+DEBUG: Creating `/tmp/conftest.ipb1jcm_.cpp` with content:
+DEBUG: | #include <unistd.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.ipb1jcm_.cpp -c`
+INFO: yes
+INFO: checking for nl_types.h... 
+DEBUG: Creating `/tmp/conftest.acxkr9lj.cpp` with content:
+DEBUG: | #include <nl_types.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.acxkr9lj.cpp -c`
+INFO: yes
+INFO: checking for cpuid.h... 
+DEBUG: Creating `/tmp/conftest.v473t2nn.cpp` with content:
+DEBUG: | #include <cpuid.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.v473t2nn.cpp -c`
+INFO: yes
+INFO: checking for fts.h... 
+DEBUG: Creating `/tmp/conftest.id8gojii.cpp` with content:
+DEBUG: | #include <fts.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.id8gojii.cpp -c`
+INFO: yes
+INFO: checking for sys/statvfs.h... 
+DEBUG: Creating `/tmp/conftest.hl1xmeyc.cpp` with content:
+DEBUG: | #include <sys/statvfs.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.hl1xmeyc.cpp -c`
+INFO: yes
+INFO: checking for sys/statfs.h... 
+DEBUG: Creating `/tmp/conftest.7j3nqd69.cpp` with content:
+DEBUG: | #include <sys/statfs.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.7j3nqd69.cpp -c`
+INFO: yes
+INFO: checking for sys/vfs.h... 
+DEBUG: Creating `/tmp/conftest.jet6fim3.cpp` with content:
+DEBUG: | #include <sys/vfs.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.jet6fim3.cpp -c`
+INFO: yes
+INFO: checking for sys/mount.h... 
+DEBUG: Creating `/tmp/conftest.x3yvwbey.cpp` with content:
+DEBUG: | #include <sys/mount.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.x3yvwbey.cpp -c`
+INFO: yes
+INFO: checking for sys/quota.h... 
+DEBUG: Creating `/tmp/conftest.hqucyfht.cpp` with content:
+DEBUG: | #include <sys/quota.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | quotactl(0, nullptr, 0, (caddr_t)nullptr);
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.hqucyfht.cpp -c`
+INFO: yes
+INFO: checking for linux/quota.h... 
+DEBUG: Creating `/tmp/conftest.1t2p6mvl.cpp` with content:
+DEBUG: | #include <sys/socket.h>
+DEBUG: | #include <linux/quota.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.1t2p6mvl.cpp -c`
+INFO: yes
+INFO: checking for linux/if_addr.h... 
+DEBUG: Creating `/tmp/conftest.s3dcz0px.cpp` with content:
+DEBUG: | #include <sys/socket.h>
+DEBUG: | #include <linux/if_addr.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.s3dcz0px.cpp -c`
+INFO: yes
+INFO: checking for linux/rtnetlink.h... 
+DEBUG: Creating `/tmp/conftest.ess3qek4.cpp` with content:
+DEBUG: | #include <sys/socket.h>
+DEBUG: | #include <linux/rtnetlink.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.ess3qek4.cpp -c`
+INFO: yes
+INFO: checking for sys/queue.h... 
+DEBUG: Creating `/tmp/conftest.163tsj6s.cpp` with content:
+DEBUG: | #include <sys/queue.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.163tsj6s.cpp -c`
+INFO: yes
+INFO: checking for sys/types.h... 
+DEBUG: Creating `/tmp/conftest.35b0p97a.cpp` with content:
+DEBUG: | #include <sys/types.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.35b0p97a.cpp -c`
+INFO: yes
+INFO: checking for netinet/in.h... 
+DEBUG: Creating `/tmp/conftest.1ua7a3un.cpp` with content:
+DEBUG: | #include <netinet/in.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.1ua7a3un.cpp -c`
+INFO: yes
+INFO: checking for byteswap.h... 
+DEBUG: Creating `/tmp/conftest.kij3nsf2.cpp` with content:
+DEBUG: | #include <byteswap.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.kij3nsf2.cpp -c`
+INFO: yes
+INFO: checking for memfd_create in sys/mman.h... 
+DEBUG: Creating `/tmp/conftest.2fs5jaz_.cpp` with content:
+DEBUG: | #include <sys/mman.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | memfd_create("", 0);
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.2fs5jaz_.cpp -c`
+INFO: yes
+INFO: checking for linux/perf_event.h... 
+DEBUG: Creating `/tmp/conftest.jyc5ucwj.cpp` with content:
+DEBUG: | #include <linux/perf_event.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.jyc5ucwj.cpp -c`
+INFO: yes
+INFO: checking for perf_event_open system call... 
+DEBUG: Creating `/tmp/conftest.vseiijr2.cpp` with content:
+DEBUG: | #include <asm/unistd.h>
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | return sizeof(__NR_perf_event_open);
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.vseiijr2.cpp -c`
+INFO: yes
+INFO: checking whether the C compiler supports -Wbitfield-enum-conversion... 
+DEBUG: Creating `/tmp/conftest.4fo0x54w.c` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 /tmp/conftest.4fo0x54w.c -Werror -Wbitfield-enum-conversion -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C++ compiler supports -Wbitfield-enum-conversion... 
+DEBUG: Creating `/tmp/conftest.m8js8v2q.cpp` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.m8js8v2q.cpp -Werror -Wbitfield-enum-conversion -Wno-error=unused-command-line-argument -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C compiler supports -Wshadow-field-in-constructor-modified... 
+DEBUG: Creating `/tmp/conftest.p5z6x9tk.c` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 /tmp/conftest.p5z6x9tk.c -Werror -Wshadow-field-in-constructor-modified -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C++ compiler supports -Wshadow-field-in-constructor-modified... 
+DEBUG: Creating `/tmp/conftest.a95ir2js.cpp` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.a95ir2js.cpp -Werror -Wshadow-field-in-constructor-modified -Wno-error=unused-command-line-argument -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C compiler supports -Wunreachable-code-return... 
+DEBUG: Creating `/tmp/conftest.a3exa1lr.c` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 /tmp/conftest.a3exa1lr.c -Werror -Wunreachable-code-return -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C++ compiler supports -Wunreachable-code-return... 
+DEBUG: Creating `/tmp/conftest.558zde4n.cpp` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.558zde4n.cpp -Werror -Wunreachable-code-return -Wno-error=unused-command-line-argument -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C compiler supports -Wclass-varargs... 
+DEBUG: Creating `/tmp/conftest.kxjeq6tv.c` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 /tmp/conftest.kxjeq6tv.c -Werror -Wclass-varargs -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C++ compiler supports -Wclass-varargs... 
+DEBUG: Creating `/tmp/conftest.bnh4l23u.cpp` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.bnh4l23u.cpp -Werror -Wclass-varargs -Wno-error=unused-command-line-argument -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C++ compiler supports -Wempty-init-stmt... 
+DEBUG: Creating `/tmp/conftest.h1c7aga4.cpp` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.h1c7aga4.cpp -Werror -Wempty-init-stmt -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C compiler supports -Wfloat-overflow-conversion... 
+DEBUG: Creating `/tmp/conftest.v3t_mu5i.c` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 /tmp/conftest.v3t_mu5i.c -Werror -Wfloat-overflow-conversion -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C++ compiler supports -Wfloat-overflow-conversion... 
+DEBUG: Creating `/tmp/conftest.bit89goz.cpp` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.bit89goz.cpp -Werror -Wfloat-overflow-conversion -Wno-error=unused-command-line-argument -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C compiler supports -Wfloat-zero-conversion... 
+DEBUG: Creating `/tmp/conftest.ed6kgfh_.c` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 /tmp/conftest.ed6kgfh_.c -Werror -Wfloat-zero-conversion -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C++ compiler supports -Wfloat-zero-conversion... 
+DEBUG: Creating `/tmp/conftest.dhjvtlq2.cpp` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.dhjvtlq2.cpp -Werror -Wfloat-zero-conversion -Wno-error=unused-command-line-argument -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C compiler supports -Wloop-analysis... 
+DEBUG: Creating `/tmp/conftest.8hkn4n7d.c` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 /tmp/conftest.8hkn4n7d.c -Werror -Wloop-analysis -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C++ compiler supports -Wloop-analysis... 
+DEBUG: Creating `/tmp/conftest.oxef1hpc.cpp` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.oxef1hpc.cpp -Werror -Wloop-analysis -Wno-error=unused-command-line-argument -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C compiler supports -Wno-range-loop-analysis... 
+DEBUG: Creating `/tmp/conftest.civbcs1j.c` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 /tmp/conftest.civbcs1j.c -Werror -Wrange-loop-analysis -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C++ compiler supports -Wno-range-loop-analysis... 
+DEBUG: Creating `/tmp/conftest.x0ph6v8e.cpp` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.x0ph6v8e.cpp -Werror -Wrange-loop-analysis -Wno-error=unused-command-line-argument -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C++ compiler supports -Wc++2a-compat... 
+DEBUG: Creating `/tmp/conftest.1rnlztmn.cpp` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.1rnlztmn.cpp -Werror -Wc++2a-compat -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C++ compiler supports -Wcomma... 
+DEBUG: Creating `/tmp/conftest.zzmn8vxf.cpp` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.zzmn8vxf.cpp -Werror -Wcomma -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C compiler supports -Wduplicated-cond... 
+DEBUG: Creating `/tmp/conftest.izeq67uf.c` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 /tmp/conftest.izeq67uf.c -Werror -Wduplicated-cond -Wno-error=unused-command-line-argument -c`
+DEBUG: The command returned non-zero exit status 1.
+DEBUG: Its error output was:
+DEBUG: | error: unknown warning option '-Wduplicated-cond' [-Werror,-Wunknown-warning-option]
+INFO: no
+INFO: checking whether the C++ compiler supports -Wduplicated-cond... 
+DEBUG: Creating `/tmp/conftest.rmbz19q7.cpp` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.rmbz19q7.cpp -Werror -Wduplicated-cond -Wno-error=unused-command-line-argument -Wno-error=unused-command-line-argument -c`
+DEBUG: The command returned non-zero exit status 1.
+DEBUG: Its error output was:
+DEBUG: | error: unknown warning option '-Wduplicated-cond' [-Werror,-Wunknown-warning-option]
+INFO: no
+INFO: checking whether the C++ compiler supports -Wimplicit-fallthrough... 
+DEBUG: Creating `/tmp/conftest.2gr3chf2.cpp` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.2gr3chf2.cpp -Werror -Wimplicit-fallthrough -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C++ compiler supports -Wunused-function... 
+DEBUG: Creating `/tmp/conftest.rx1lpruj.cpp` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.rx1lpruj.cpp -Werror -Wunused-function -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C++ compiler supports -Wunused-variable... 
+DEBUG: Creating `/tmp/conftest.319tpgiq.cpp` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.319tpgiq.cpp -Werror -Wunused-variable -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C compiler supports -Wstring-conversion... 
+DEBUG: Creating `/tmp/conftest.twhpamqd.c` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 /tmp/conftest.twhpamqd.c -Werror -Wstring-conversion -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C++ compiler supports -Wstring-conversion... 
+DEBUG: Creating `/tmp/conftest.wcstu9yd.cpp` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.wcstu9yd.cpp -Werror -Wstring-conversion -Wno-error=unused-command-line-argument -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C compiler supports -Wtautological-overlap-compare... 
+DEBUG: Creating `/tmp/conftest.b11pwsgc.c` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 /tmp/conftest.b11pwsgc.c -Werror -Wtautological-overlap-compare -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C++ compiler supports -Wtautological-overlap-compare... 
+DEBUG: Creating `/tmp/conftest.6yv6xkq2.cpp` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.6yv6xkq2.cpp -Werror -Wtautological-overlap-compare -Wno-error=unused-command-line-argument -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C compiler supports -Wtautological-unsigned-enum-zero-compare... 
+DEBUG: Creating `/tmp/conftest.cvkaikt5.c` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 /tmp/conftest.cvkaikt5.c -Werror -Wtautological-unsigned-enum-zero-compare -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C++ compiler supports -Wtautological-unsigned-enum-zero-compare... 
+DEBUG: Creating `/tmp/conftest.rvkdx15s.cpp` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.rvkdx15s.cpp -Werror -Wtautological-unsigned-enum-zero-compare -Wno-error=unused-command-line-argument -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C compiler supports -Wtautological-unsigned-zero-compare... 
+DEBUG: Creating `/tmp/conftest.pbwyyu_1.c` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 /tmp/conftest.pbwyyu_1.c -Werror -Wtautological-unsigned-zero-compare -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C++ compiler supports -Wtautological-unsigned-zero-compare... 
+DEBUG: Creating `/tmp/conftest.s06s74ox.cpp` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.s06s74ox.cpp -Werror -Wtautological-unsigned-zero-compare -Wno-error=unused-command-line-argument -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C compiler supports -Wno-error=tautological-type-limit-compare... 
+DEBUG: Creating `/tmp/conftest.gvmzgrgj.c` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 /tmp/conftest.gvmzgrgj.c -Werror -Wno-error=tautological-type-limit-compare -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C++ compiler supports -Wno-error=tautological-type-limit-compare... 
+DEBUG: Creating `/tmp/conftest.us68uhqq.cpp` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.us68uhqq.cpp -Werror -Wno-error=tautological-type-limit-compare -Wno-error=unused-command-line-argument -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C++ compiler supports -Wno-inline-new-delete... 
+DEBUG: Creating `/tmp/conftest.j9naekif.cpp` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.j9naekif.cpp -Werror -Winline-new-delete -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C compiler supports -Wno-error=maybe-uninitialized... 
+DEBUG: Creating `/tmp/conftest.wphgkroo.c` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 /tmp/conftest.wphgkroo.c -Werror -Wno-error=maybe-uninitialized -Wno-error=unused-command-line-argument -c`
+DEBUG: The command returned non-zero exit status 1.
+DEBUG: Its error output was:
+DEBUG: | error: unknown warning option '-Werror=maybe-uninitialized'; did you mean '-Werror=uninitialized'? [-Werror,-Wunknown-warning-option]
+INFO: no
+INFO: checking whether the C++ compiler supports -Wno-error=maybe-uninitialized... 
+DEBUG: Creating `/tmp/conftest.9cxkm084.cpp` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.9cxkm084.cpp -Werror -Wno-error=maybe-uninitialized -Wno-error=unused-command-line-argument -Wno-error=unused-command-line-argument -c`
+DEBUG: The command returned non-zero exit status 1.
+DEBUG: Its error output was:
+DEBUG: | error: unknown warning option '-Werror=maybe-uninitialized'; did you mean '-Werror=uninitialized'? [-Werror,-Wunknown-warning-option]
+INFO: no
+INFO: checking whether the C compiler supports -Wno-error=deprecated-declarations... 
+DEBUG: Creating `/tmp/conftest.0jae_o6u.c` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 /tmp/conftest.0jae_o6u.c -Werror -Wno-error=deprecated-declarations -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C++ compiler supports -Wno-error=deprecated-declarations... 
+DEBUG: Creating `/tmp/conftest.v5pvdhp9.cpp` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.v5pvdhp9.cpp -Werror -Wno-error=deprecated-declarations -Wno-error=unused-command-line-argument -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C compiler supports -Wno-error=array-bounds... 
+DEBUG: Creating `/tmp/conftest.gsn2r8b5.c` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 /tmp/conftest.gsn2r8b5.c -Werror -Wno-error=array-bounds -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C++ compiler supports -Wno-error=array-bounds... 
+DEBUG: Creating `/tmp/conftest.zn997678.cpp` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.zn997678.cpp -Werror -Wno-error=array-bounds -Wno-error=unused-command-line-argument -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C compiler supports -Wno-error=coverage-mismatch... 
+DEBUG: Creating `/tmp/conftest.zixfwc3i.c` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 /tmp/conftest.zixfwc3i.c -Werror -Wno-error=coverage-mismatch -Wno-error=unused-command-line-argument -c`
+DEBUG: The command returned non-zero exit status 1.
+DEBUG: Its error output was:
+DEBUG: | error: unknown warning option '-Werror=coverage-mismatch' [-Werror,-Wunknown-warning-option]
+INFO: no
+INFO: checking whether the C++ compiler supports -Wno-error=coverage-mismatch... 
+DEBUG: Creating `/tmp/conftest.owm33_pz.cpp` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.owm33_pz.cpp -Werror -Wno-error=coverage-mismatch -Wno-error=unused-command-line-argument -Wno-error=unused-command-line-argument -c`
+DEBUG: The command returned non-zero exit status 1.
+DEBUG: Its error output was:
+DEBUG: | error: unknown warning option '-Werror=coverage-mismatch' [-Werror,-Wunknown-warning-option]
+INFO: no
+INFO: checking whether the C compiler supports -Wno-error=backend-plugin... 
+DEBUG: Creating `/tmp/conftest.4wirpaxx.c` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 /tmp/conftest.4wirpaxx.c -Werror -Wno-error=backend-plugin -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C++ compiler supports -Wno-error=backend-plugin... 
+DEBUG: Creating `/tmp/conftest.sqoa65pz.cpp` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.sqoa65pz.cpp -Werror -Wno-error=backend-plugin -Wno-error=unused-command-line-argument -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C compiler supports -Wno-error=free-nonheap-object... 
+DEBUG: Creating `/tmp/conftest.0asjncny.c` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 /tmp/conftest.0asjncny.c -Werror -Wno-error=free-nonheap-object -Wno-error=unused-command-line-argument -c`
+DEBUG: The command returned non-zero exit status 1.
+DEBUG: Its error output was:
+DEBUG: | error: unknown warning option '-Werror=free-nonheap-object'; did you mean '-Werror=sequence-point'? [-Werror,-Wunknown-warning-option]
+INFO: no
+INFO: checking whether the C++ compiler supports -Wno-error=free-nonheap-object... 
+DEBUG: Creating `/tmp/conftest.o0ob5fd5.cpp` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.o0ob5fd5.cpp -Werror -Wno-error=free-nonheap-object -Wno-error=unused-command-line-argument -Wno-error=unused-command-line-argument -c`
+DEBUG: The command returned non-zero exit status 1.
+DEBUG: Its error output was:
+DEBUG: | error: unknown warning option '-Werror=free-nonheap-object'; did you mean '-Werror=sequence-point'? [-Werror,-Wunknown-warning-option]
+INFO: no
+INFO: checking whether the C compiler supports -Wno-multistatement-macros... 
+DEBUG: Creating `/tmp/conftest.auzd06fo.c` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 /tmp/conftest.auzd06fo.c -Werror -Wmultistatement-macros -Wno-error=unused-command-line-argument -c`
+DEBUG: The command returned non-zero exit status 1.
+DEBUG: Its error output was:
+DEBUG: | error: unknown warning option '-Wmultistatement-macros'; did you mean '-Wunused-macros'? [-Werror,-Wunknown-warning-option]
+INFO: no
+INFO: checking whether the C++ compiler supports -Wno-multistatement-macros... 
+DEBUG: Creating `/tmp/conftest.pvixolyc.cpp` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.pvixolyc.cpp -Werror -Wmultistatement-macros -Wno-error=unused-command-line-argument -Wno-error=unused-command-line-argument -c`
+DEBUG: The command returned non-zero exit status 1.
+DEBUG: Its error output was:
+DEBUG: | error: unknown warning option '-Wmultistatement-macros'; did you mean '-Wunused-macros'? [-Werror,-Wunknown-warning-option]
+INFO: no
+INFO: checking whether the C compiler supports -Wno-error=return-std-move... 
+DEBUG: Creating `/tmp/conftest.n20vco3e.c` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 /tmp/conftest.n20vco3e.c -Werror -Wno-error=return-std-move -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C++ compiler supports -Wno-error=return-std-move... 
+DEBUG: Creating `/tmp/conftest.qnfh8opm.cpp` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.qnfh8opm.cpp -Werror -Wno-error=return-std-move -Wno-error=unused-command-line-argument -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C compiler supports -Wno-error=class-memaccess... 
+DEBUG: Creating `/tmp/conftest.hk33naki.c` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 /tmp/conftest.hk33naki.c -Werror -Wno-error=class-memaccess -Wno-error=unused-command-line-argument -c`
+DEBUG: The command returned non-zero exit status 1.
+DEBUG: Its error output was:
+DEBUG: | error: unknown warning option '-Werror=class-memaccess'; did you mean '-Werror=class-varargs'? [-Werror,-Wunknown-warning-option]
+INFO: no
+INFO: checking whether the C++ compiler supports -Wno-error=class-memaccess... 
+DEBUG: Creating `/tmp/conftest.dg7i0pfu.cpp` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.dg7i0pfu.cpp -Werror -Wno-error=class-memaccess -Wno-error=unused-command-line-argument -Wno-error=unused-command-line-argument -c`
+DEBUG: The command returned non-zero exit status 1.
+DEBUG: Its error output was:
+DEBUG: | error: unknown warning option '-Werror=class-memaccess'; did you mean '-Werror=class-varargs'? [-Werror,-Wunknown-warning-option]
+INFO: no
+INFO: checking whether the C compiler supports -Wno-error=atomic-alignment... 
+DEBUG: Creating `/tmp/conftest.yyeap7_n.c` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 /tmp/conftest.yyeap7_n.c -Werror -Wno-error=atomic-alignment -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C++ compiler supports -Wno-error=atomic-alignment... 
+DEBUG: Creating `/tmp/conftest.069rtc59.cpp` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.069rtc59.cpp -Werror -Wno-error=atomic-alignment -Wno-error=unused-command-line-argument -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C compiler supports -Wno-error=deprecated-copy... 
+DEBUG: Creating `/tmp/conftest.swlbn2yo.c` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 /tmp/conftest.swlbn2yo.c -Werror -Wno-error=deprecated-copy -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C++ compiler supports -Wno-error=deprecated-copy... 
+DEBUG: Creating `/tmp/conftest.2lbuqjed.cpp` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.2lbuqjed.cpp -Werror -Wno-error=deprecated-copy -Wno-error=unused-command-line-argument -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C compiler supports -Wformat... 
+DEBUG: Creating `/tmp/conftest.xxvfyt67.c` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 /tmp/conftest.xxvfyt67.c -Werror -Wformat -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C++ compiler supports -Wformat... 
+DEBUG: Creating `/tmp/conftest.ut05mes7.cpp` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.ut05mes7.cpp -Werror -Wformat -Wno-error=unused-command-line-argument -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C compiler supports -Wformat-security... 
+DEBUG: Creating `/tmp/conftest.d43pmej_.c` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 /tmp/conftest.d43pmej_.c -Werror -Wformat-security -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C++ compiler supports -Wformat-security... 
+DEBUG: Creating `/tmp/conftest.40m95hjh.cpp` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.40m95hjh.cpp -Werror -Wformat-security -Wno-error=unused-command-line-argument -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C compiler supports -Wformat-overflow=2... 
+DEBUG: Creating `/tmp/conftest.0dbj7rlc.c` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 /tmp/conftest.0dbj7rlc.c -Werror -Wformat-overflow=2 -Wno-error=unused-command-line-argument -c`
+DEBUG: The command returned non-zero exit status 1.
+DEBUG: Its error output was:
+DEBUG: | error: unknown warning option '-Wformat-overflow=2'; did you mean '-Wshift-overflow'? [-Werror,-Wunknown-warning-option]
+INFO: no
+INFO: checking whether the C++ compiler supports -Wformat-overflow=2... 
+DEBUG: Creating `/tmp/conftest.k5wt72a6.cpp` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.k5wt72a6.cpp -Werror -Wformat-overflow=2 -Wno-error=unused-command-line-argument -Wno-error=unused-command-line-argument -c`
+DEBUG: The command returned non-zero exit status 1.
+DEBUG: Its error output was:
+DEBUG: | error: unknown warning option '-Wformat-overflow=2'; did you mean '-Wshift-overflow'? [-Werror,-Wunknown-warning-option]
+INFO: no
+INFO: checking whether the C compiler supports -Wno-gnu-zero-variadic-macro-arguments... 
+DEBUG: Creating `/tmp/conftest.uoaan507.c` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 /tmp/conftest.uoaan507.c -Werror -Wgnu-zero-variadic-macro-arguments -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C++ compiler supports -Wno-gnu-zero-variadic-macro-arguments... 
+DEBUG: Creating `/tmp/conftest.90xe4dfc.cpp` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.90xe4dfc.cpp -Werror -Wgnu-zero-variadic-macro-arguments -Wno-error=unused-command-line-argument -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C compiler supports -Werror=implicit-function-declaration... 
+DEBUG: Creating `/tmp/conftest.gatcjvj_.c` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 /tmp/conftest.gatcjvj_.c -Werror=implicit-function-declaration -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C compiler supports -Wno-psabi... 
+DEBUG: Creating `/tmp/conftest.w1ud91_y.c` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 /tmp/conftest.w1ud91_y.c -Werror -Wpsabi -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C++ compiler supports -Wno-psabi... 
+DEBUG: Creating `/tmp/conftest.9t97c4gh.cpp` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.9t97c4gh.cpp -Werror -Wpsabi -Wno-error=unused-command-line-argument -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C++ compiler supports -fno-sized-deallocation... 
+DEBUG: Creating `/tmp/conftest.vqm2gjpq.cpp` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest.vqm2gjpq.cpp -Werror -fno-sized-deallocation -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking whether the C++ compiler supports -fno-aligned-new... 
+DEBUG: Creating `/tmp/conftest._3u5vfku.cpp` with content:
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | 
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 /tmp/conftest._3u5vfku.cpp -Werror -fno-aligned-new -Wno-error=unused-command-line-argument -c`
+INFO: yes
+INFO: checking for llvm_profdata... 
+DEBUG: llvm_profdata: Looking for llvm-profdata
+INFO: /home/worker/.mozbuild/clang/bin/llvm-profdata
+INFO: checking for libpulse... 
+DEBUG: Executing: `/usr/sbin/pkg-config --errors-to-stdout --print-errors libpulse`
+INFO: yes
+INFO: checking MOZ_PULSEAUDIO_CFLAGS... 
+DEBUG: Executing: `/usr/sbin/pkg-config --cflags libpulse`
+INFO: -D_REENTRANT
+INFO: checking MOZ_PULSEAUDIO_LIBS... 
+DEBUG: Executing: `/usr/sbin/pkg-config --libs libpulse`
+INFO: -lpulse -pthread
+INFO: checking for rustc... 
+DEBUG: _rustc: Looking for rustc
+INFO: /usr/sbin/rustc
+INFO: checking for cargo... 
+DEBUG: _cargo: Looking for cargo
+INFO: /usr/sbin/cargo
+DEBUG: Executing: `/usr/sbin/rustc +stable`
+DEBUG: Executing: `rustup which rustc`
+INFO: Actually using '/home/worker/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/rustc'
+DEBUG: Executing: `/usr/sbin/cargo +stable`
+DEBUG: Executing: `rustup which cargo`
+INFO: Actually using '/home/worker/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/cargo'
+INFO: checking rustc version... 
+DEBUG: Executing: `/home/worker/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/rustc --version --verbose`
+INFO: 1.52.1
+INFO: checking cargo version... 
+DEBUG: Executing: `/home/worker/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/cargo --version --verbose`
+INFO: 1.52.0
+DEBUG: Executing: `/home/worker/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/rustc --print target-list`
+INFO: checking for rust host triplet... 
+DEBUG: Creating `/tmp/conftest0kyftns0.rs` with content:
+DEBUG: | pub extern fn hello() { println!("Hello world"); }
+DEBUG: Executing: `/home/worker/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/rustc --crate-type staticlib --target=x86_64-unknown-linux-gnu -o /tmp/conftestkrpe6vl4.rlib /tmp/conftest0kyftns0.rs`
+INFO: x86_64-unknown-linux-gnu
+INFO: checking for rust target triplet... 
+DEBUG: Creating `/tmp/conftest59l9esy9.rs` with content:
+DEBUG: | pub extern fn hello() { println!("Hello world"); }
+DEBUG: Executing: `/home/worker/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/rustc --crate-type staticlib --target=x86_64-unknown-linux-gnu -o /tmp/conftest9kf90x6z.rlib /tmp/conftest59l9esy9.rs`
+INFO: x86_64-unknown-linux-gnu
+INFO: checking for rustdoc... 
+DEBUG: rustdoc: Looking for rustdoc
+INFO: /usr/sbin/rustdoc
+INFO: checking for cbindgen... 
+DEBUG: trying cbindgen: /home/worker/.mozbuild/cbindgen/cbindgen
+DEBUG: Executing: `/home/worker/.mozbuild/cbindgen/cbindgen --version`
+DEBUG: /home/worker/.mozbuild/cbindgen/cbindgen has version 0.16.0
+INFO: /home/worker/.mozbuild/cbindgen/cbindgen
+INFO: checking for rustfmt... 
+DEBUG: rustfmt: Looking for rustfmt
+INFO: /usr/sbin/rustfmt
+INFO: checking for clang for bindgen... 
+INFO: /home/worker/.mozbuild/clang/bin/clang++
+INFO: checking for libclang for bindgen... 
+DEBUG: Executing: `/home/worker/.mozbuild/clang/bin/clang++ -print-search-dirs`
+DEBUG: Trying "libclang.so" in "/home/worker/.mozbuild/clang/lib"
+INFO: /home/worker/.mozbuild/clang/lib/libclang.so
+INFO: checking that libclang is new enough... 
+INFO: yes
+INFO: checking bindgen cflags... 
+INFO: -x c++ -fno-sized-deallocation -fno-aligned-new -DTRACING=1 -DIMPL_LIBXUL -DMOZILLA_INTERNAL_API -DRUST_BINDGEN -DOS_POSIX=1 -DOS_LINUX=1 -std=gnu++17
+INFO: checking for nodejs... 
+INFO: /home/worker/.mozbuild/node/bin/node (10.23.1)
+INFO: checking for gtk+-wayland-3.0 >= 3.14 xkbcommon >= 0.4.1 libdrm >= 2.4... 
+DEBUG: Executing: `/usr/sbin/pkg-config --errors-to-stdout --print-errors 'gtk+-wayland-3.0 >= 3.14 xkbcommon >= 0.4.1 libdrm >= 2.4'`
+INFO: yes
+INFO: checking MOZ_WAYLAND_CFLAGS... 
+DEBUG: Executing: `/usr/sbin/pkg-config --cflags 'gtk+-wayland-3.0 >= 3.14 xkbcommon >= 0.4.1 libdrm >= 2.4'`
+INFO: -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/lzo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/cloudproviders -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/at-spi-2.0 -pthread -I/usr/include/libdrm
+INFO: checking MOZ_WAYLAND_LIBS... 
+DEBUG: Executing: `/usr/sbin/pkg-config --libs 'gtk+-wayland-3.0 >= 3.14 xkbcommon >= 0.4.1 libdrm >= 2.4'`
+INFO: -lgtk-3 -lgdk-3 -lz -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0 -lxkbcommon -ldrm
+INFO: checking for pango >= 1.22.0 pangoft2 >= 1.22.0 pangocairo >= 1.22.0... 
+DEBUG: Executing: `/usr/sbin/pkg-config --errors-to-stdout --print-errors 'pango >= 1.22.0 pangoft2 >= 1.22.0 pangocairo >= 1.22.0'`
+INFO: yes
+INFO: checking MOZ_PANGO_CFLAGS... 
+DEBUG: Executing: `/usr/sbin/pkg-config --cflags 'pango >= 1.22.0 pangoft2 >= 1.22.0 pangocairo >= 1.22.0'`
+INFO: -I/usr/include/pango-1.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/lzo -I/usr/include/pixman-1 -pthread
+INFO: checking MOZ_PANGO_LIBS... 
+DEBUG: Executing: `/usr/sbin/pkg-config --libs 'pango >= 1.22.0 pangoft2 >= 1.22.0 pangocairo >= 1.22.0'`
+INFO: -lpangoft2-1.0 -lfontconfig -lfreetype -lpangocairo-1.0 -lpango-1.0 -lgobject-2.0 -lglib-2.0 -lharfbuzz -lcairo
+INFO: checking for fontconfig >= 2.7.0... 
+DEBUG: Executing: `/usr/sbin/pkg-config --errors-to-stdout --print-errors 'fontconfig >= 2.7.0'`
+INFO: yes
+INFO: checking _FONTCONFIG_CFLAGS... 
+DEBUG: Executing: `/usr/sbin/pkg-config --cflags 'fontconfig >= 2.7.0'`
+INFO: -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include
+INFO: checking _FONTCONFIG_LIBS... 
+DEBUG: Executing: `/usr/sbin/pkg-config --libs 'fontconfig >= 2.7.0'`
+INFO: -lfontconfig -lfreetype
+INFO: checking for freetype2 >= 6.1.0... 
+DEBUG: Executing: `/usr/sbin/pkg-config --errors-to-stdout --print-errors 'freetype2 >= 6.1.0'`
+INFO: yes
+INFO: checking _FT2_CFLAGS... 
+DEBUG: Executing: `/usr/sbin/pkg-config --cflags 'freetype2 >= 6.1.0'`
+INFO: -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include
+INFO: checking _FT2_LIBS... 
+DEBUG: Executing: `/usr/sbin/pkg-config --libs 'freetype2 >= 6.1.0'`
+INFO: -lfreetype
+INFO: checking for tar... 
+DEBUG: tar: Looking for gnutar
+DEBUG: tar: Looking for gtar
+DEBUG: tar: Looking for tar
+INFO: /usr/sbin/tar
+INFO: checking for unzip... 
+DEBUG: unzip: Looking for unzip
+INFO: /usr/sbin/unzip
+INFO: checking for zip... 
+DEBUG: zip: Looking for zip
+INFO: /usr/sbin/zip
+INFO: checking for gn... 
+DEBUG: gn: Looking for gn
+INFO: not found
+INFO: checking for the Mozilla API key... 
+INFO: no
+INFO: checking for the Google Location Service API key... 
+INFO: no
+INFO: checking for the Google Safebrowsing API key... 
+INFO: no
+INFO: checking for the Bing API key... 
+INFO: no
+INFO: checking for the Adjust SDK key... 
+INFO: no
+INFO: checking for the Leanplum SDK key... 
+INFO: no
+INFO: checking for the Pocket API key... 
+INFO: no
+INFO: checking for dump_syms... 
+DEBUG: dump_syms: Looking for dump_syms
+INFO: /home/worker/.mozbuild/dump_syms/dump_syms
+INFO: checking for getcontext... 
+DEBUG: Creating `/tmp/conftest.oztx97nx.c` with content:
+DEBUG: | /* Override any gcc2 internal prototype to avoid an error.  */
+DEBUG: | /* We use char because int might match the return type of a gcc2
+DEBUG: |     builtin and then its argument prototype would still apply.  */
+DEBUG: | char getcontext();
+DEBUG: | int
+DEBUG: | main(void)
+DEBUG: | {
+DEBUG: | getcontext();
+DEBUG: |   ;
+DEBUG: |   return 0;
+DEBUG: | }
+DEBUG: Executing: `/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 /tmp/conftest.oztx97nx.c`
+INFO: yes
+INFO: checking for awk... 
+DEBUG: awk: Looking for gawk
+INFO: /usr/sbin/gawk
+INFO: checking for perl... 
+DEBUG: perl: Looking for perl5
+DEBUG: perl: Looking for perl
+INFO: /usr/sbin/perl
+INFO: checking for minimum required perl version >= 5.006... 
+DEBUG: Executing: `/usr/sbin/perl -e 'print $]'`
+INFO: 5.032001
+INFO: checking for full perl installation... 
+INFO: yes
+INFO: checking for gmake... 
+DEBUG: gmake: Looking for /usr/sbin/make
+INFO: /usr/sbin/make
+INFO: checking for watchman... 
+INFO: not found
+INFO: checking for xargs... 
+DEBUG: xargs: Looking for xargs
+INFO: /usr/sbin/xargs
+INFO: checking for rpmbuild... 
+DEBUG: rpmbuild: Looking for rpmbuild
+INFO: not found
+INFO: checking for NSIS version... 
+INFO: no
+DEBUG: Executing: `/home/worker/.mozbuild/clang/bin/clang --print-prog-name=llvm-objdump`
+INFO: checking for llvm-objdump... 
+DEBUG: llvm_objdump: Looking for /home/worker/.mozbuild/clang/bin/llvm-objdump
+INFO: /home/worker/.mozbuild/clang/bin/llvm-objdump
+INFO: checking for m4... 
+DEBUG: m4: Looking for gm4
+DEBUG: m4: Looking for m4
+INFO: /usr/sbin/m4
+DEBUG: Injecting the following to old-configure:
+DEBUG: | # start of mozconfig values
+DEBUG: | _mozconfig_opt=MOZ_DATA_REPORTING= # added
+DEBUG: | # end of mozconfig values
+DEBUG: | _topsrcdir=/worker/build
+DEBUG: | _objdir=/worker/build/obj-x86_64-pc-linux-gnu
+DEBUG: | DIST=/worker/build/obj-x86_64-pc-linux-gnu/dist
+DEBUG: | PYTHON3=/worker/build/obj-x86_64-pc-linux-gnu/_virtualenvs/init_py3/bin/python
+DEBUG: | CROSS_COMPILE=''
+DEBUG: | HAVE_64BIT_BUILD=1
+DEBUG: | OS_TARGET=Linux
+DEBUG: | OS_ARCH=Linux
+DEBUG: | CPU_ARCH=x86_64
+DEBUG: | HOST_OS_ARCH=Linux
+DEBUG: | MOZ_BUILD_APP=browser
+DEBUG: | RELEASE_OR_BETA=1
+DEBUG: | MOZILLA_VERSION=87.0
+DEBUG: | MOZILLA_SYMBOLVERSION=87
+DEBUG: | MOZ_APP_VERSION=87.0
+DEBUG: | MOZ_UPDATE_CHANNEL=release
+DEBUG: | COMPILE_ENVIRONMENT=1
+DEBUG: | MOZ_DEBUG=''
+DEBUG: | MOZ_OPTIMIZE=1
+DEBUG: | CC='/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99'
+DEBUG: | ac_cv_prog_CC='/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99'
+DEBUG: | ac_cv_prog_cc_works=yes
+DEBUG: | ac_cv_prog_cc_cross=no
+DEBUG: | ac_cv_prog_cc_g=yes
+DEBUG: | ac_cv_prog_gcc=yes
+DEBUG: | CC_TYPE=clang
+DEBUG: | CPP='/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -E -std=gnu99'
+DEBUG: | CXX='/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17'
+DEBUG: | ac_cv_prog_CXX='/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17'
+DEBUG: | ac_cv_prog_cxx_works=yes
+DEBUG: | ac_cv_prog_cxx_cross=no
+DEBUG: | ac_cv_prog_cxx_g=yes
+DEBUG: | ac_cv_prog_gxx=yes
+DEBUG: | CXXCPP='/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -E -std=gnu++17'
+DEBUG: | HOST_CC='/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99'
+DEBUG: | HOST_CC_TYPE=clang
+DEBUG: | HOST_CXX='/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17'
+DEBUG: | MOZ_DEBUG_FLAGS=-g
+DEBUG: | LINKER_LDFLAGS=''
+DEBUG: | GCC_USE_GNU_LD=1
+DEBUG: | AS='/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99'
+DEBUG: | ac_cv_prog_AS='/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99'
+DEBUG: | GNU_AS=1
+DEBUG: | LIBFUZZER_FLAGS=-fsanitize-coverage=trace-pc-guard,trace-cmp
+DEBUG: | AR=/home/worker/.mozbuild/clang/bin/llvm-ar
+DEBUG: | PKG_CONFIG=/usr/sbin/pkg-config
+DEBUG: | MOZ_MEMORY=1
+DEBUG: | HAVE_MALLOC_H=1
+DEBUG: | WARNINGS_AS_ERRORS=-Werror
+DEBUG: | _WARNINGS_CFLAGS='-Wall -Wbitfield-enum-conversion -Wempty-body -Wignored-qualifiers -Wpointer-arith -Wshadow-field-in-constructor-modified -Wsign-compare -Wtype-limits -Wunreachable-code -Wunreachable-code-return -Wclass-varargs -Wfloat-overflow-conversion -Wfloat-zero-conversion -Wloop-analysis -Wno-range-loop-analysis -Wstring-conversion -Wtautological-overlap-compare -Wtautological-unsigned-enum-zero-compare -Wtautological-unsigned-zero-compare -Wno-error=tautological-type-limit-compare -Wno-error=deprecated-declarations -Wno-error=array-bounds -Wno-error=backend-plugin -Wno-error=return-std-move -Wno-error=atomic-alignment -Wno-error=deprecated-copy -Wformat -Wformat-security -Wno-gnu-zero-variadic-macro-arguments -Werror=implicit-function-declaration -Wno-psabi'
+DEBUG: | _WARNINGS_CXXFLAGS='-Wall -Wbitfield-enum-conversion -Wempty-body -Wignored-qualifiers -Woverloaded-virtual -Wpointer-arith -Wshadow-field-in-constructor-modified -Wsign-compare -Wtype-limits -Wunreachable-code -Wunreachable-code-return -Wwrite-strings -Wno-invalid-offsetof -Wclass-varargs -Wempty-init-stmt -Wfloat-overflow-conversion -Wfloat-zero-conversion -Wloop-analysis -Wno-range-loop-analysis -Wc++2a-compat -Wcomma -Wimplicit-fallthrough -Wunused-function -Wunused-variable -Wstring-conversion -Wtautological-overlap-compare -Wtautological-unsigned-enum-zero-compare -Wtautological-unsigned-zero-compare -Wno-error=tautological-type-limit-compare -Wno-inline-new-delete -Wno-error=deprecated-declarations -Wno-error=array-bounds -Wno-error=backend-plugin -Wno-error=return-std-move -Wno-error=atomic-alignment -Wno-error=deprecated-copy -Wformat -Wformat-security -Wno-gnu-zero-variadic-macro-arguments -Wno-psabi'
+DEBUG: | _WARNINGS_HOST_CFLAGS=''
+DEBUG: | _WARNINGS_HOST_CXXFLAGS=''
+DEBUG: | _COMPILATION_CFLAGS=''
+DEBUG: | _COMPILATION_CXXFLAGS='-fno-sized-deallocation -fno-aligned-new'
+DEBUG: | _COMPILATION_HOST_CFLAGS=''
+DEBUG: | _COMPILATION_HOST_CXXFLAGS=''
+DEBUG: | MOZ_LTO_CFLAGS=''
+DEBUG: | MOZ_LTO_LDFLAGS=''
+DEBUG: | OBJ_SUFFIX=o
+DEBUG: | NSPR_CFLAGS=-I/worker/build/obj-x86_64-pc-linux-gnu/dist/include/nspr
+DEBUG: | NSPR_LIBS='-L/worker/build/obj-x86_64-pc-linux-gnu/dist/bin -lnspr4 -lplc4 -lplds4'
+DEBUG: | _BINDGEN_CFLAGS='-x c++ -fno-sized-deallocation -fno-aligned-new -DTRACING=1 -DIMPL_LIBXUL -DMOZILLA_INTERNAL_API -DRUST_BINDGEN -DOS_POSIX=1 -DOS_LINUX=1 -std=gnu++17'
+DEBUG: | MOZ_WIDGET_TOOLKIT=gtk
+DEBUG: | MOZ_X11=1
+DEBUG: | USE_FC_FREETYPE=1
+DEBUG: | _HAVE_FREETYPE2=1
+DEBUG: | MOZ_FMP4=1
+DEBUG: | MOZ_SERVICES_HEALTHREPORT=1
+DEBUG: | MOZ_NORMANDY=1
+DEBUG: | MOZ_WEBSPEECH=1
+DEBUG: | FT2_LIBS='-lfreetype -lfontconfig -lfreetype'
+DEBUG: | FT2_CFLAGS='-I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include'
+DEBUG: | MOZ_WEBRTC=1
+DEBUG: | ACCESSIBILITY=1
+DEBUG: | NSS_CFLAGS=-I/worker/build/obj-x86_64-pc-linux-gnu/dist/include/nss
+DEBUG: | AWK=/usr/sbin/gawk
+DEBUG: | PERL=/usr/sbin/perl
+DEBUG: | LLVM_OBJDUMP=/home/worker/.mozbuild/clang/bin/llvm-objdump
+DEBUG: Running /usr/sbin/sh /worker/build/old-configure --enable-updater --with-branding=browser/branding/dot --host=x86_64-pc-linux-gnu --target=x86_64-pc-linux-gnu
+This file contains any messages produced by compilers while
+running configure, to aid debugging if configure makes a mistake.
+
+configure:662: checking host system type
+configure:683: checking target system type
+configure:701: checking build system type
+configure:796: checking for objcopy
+configure:838: checking for Cygwin environment
+configure:854: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -c   conftest.c 1>&5
+configure:850:8: error: use of undeclared identifier '__CYGWIN32__'
+return __CYGWIN__;
+       ^
+configure:848:20: note: expanded from macro '__CYGWIN__'
+#define __CYGWIN__ __CYGWIN32__
+                   ^
+1 error generated.
+configure: failed program was:
+#line 843 "configure"
+#include "confdefs.h"
+
+int main() {
+
+#ifndef __CYGWIN__
+#define __CYGWIN__ __CYGWIN32__
+#endif
+return __CYGWIN__;
+; return 0; }
+configure:871: checking for mingw32 environment
+configure:883: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -c   conftest.c 1>&5
+configure:879:8: error: use of undeclared identifier '__MINGW32__'
+return __MINGW32__;
+       ^
+1 error generated.
+configure: failed program was:
+#line 876 "configure"
+#include "confdefs.h"
+
+int main() {
+return __MINGW32__;
+; return 0; }
+configure:902: checking for executable suffix
+configure:912: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest     conftest.c  1>&5
+configure:1586: checking for gcc
+configure:1699: checking whether the C compiler (/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99   ) works
+configure:1754: checking whether the C compiler (/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99   ) is a cross-compiler
+configure:1759: checking whether we are using GNU C
+configure:1787: checking whether /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 accepts -g
+configure:1828: checking for c++
+configure:1860: checking whether the C++ compiler (/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17   ) works
+configure:1915: checking whether the C++ compiler (/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17   ) is a cross-compiler
+configure:1920: checking whether we are using GNU C++
+configure:1948: checking whether /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 accepts -g
+configure:1984: checking for /home/worker/.mozbuild/sccache/sccache
+configure:2038: checking for strip
+configure:2073: checking for otool
+configure:2401: checking for X
+configure:2468: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -E -std=gnu99  conftest.c >/dev/null 2>conftest.out
+configure:2544: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest     conftest.c -lXt  1>&5
+configure:2540:1: warning: implicit declaration of function 'XtMalloc' is invalid in C99 [-Wimplicit-function-declaration]
+XtMalloc()
+^
+1 warning generated.
+configure:2718: checking for dnet_ntoa in -ldnet
+configure:2737: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest     conftest.c -ldnet   1>&5
+/usr/sbin/ld: cannot find -ldnet
+clang-11: error: linker command failed with exit code 1 (use -v to see invocation)
+configure: failed program was:
+#line 2726 "configure"
+#include "confdefs.h"
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char dnet_ntoa();
+
+int main() {
+dnet_ntoa()
+; return 0; }
+configure:2759: checking for dnet_ntoa in -ldnet_stub
+configure:2778: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest     conftest.c -ldnet_stub   1>&5
+/usr/sbin/ld: cannot find -ldnet_stub
+clang-11: error: linker command failed with exit code 1 (use -v to see invocation)
+configure: failed program was:
+#line 2767 "configure"
+#include "confdefs.h"
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char dnet_ntoa();
+
+int main() {
+dnet_ntoa()
+; return 0; }
+configure:2807: checking for gethostbyname
+configure:2839: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest     conftest.c  1>&5
+configure:2909: checking for connect
+configure:2941: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest     conftest.c  1>&5
+configure:3005: checking for remove
+configure:3037: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest     conftest.c  1>&5
+configure:3101: checking for shmat
+configure:3133: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest     conftest.c  1>&5
+configure:3206: checking for IceConnectionNumber in -lICE
+configure:3225: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest     conftest.c -lICE   1>&5
+configure:3774: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -Qunused-arguments    conftest.c  1>&5
+configure:3801: checking for --noexecstack option to as
+configure:3812: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -c  -fno-strict-aliasing -Wa,--noexecstack -Qunused-arguments  conftest.c 1>&5
+configure:3825: checking for -z noexecstack option to ld
+configure:3836: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -Qunused-arguments    -Wl,-z,noexecstack conftest.c  1>&5
+configure:3849: checking for -z text option to ld
+configure:3860: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -Qunused-arguments    -Wl,-z,noexecstack -Wl,-z,text conftest.c  1>&5
+configure:3873: checking for -z relro option to ld
+configure:3884: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -Qunused-arguments    -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro conftest.c  1>&5
+configure:3897: checking for -z nocopyreloc option to ld
+configure:3908: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -Qunused-arguments    -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc conftest.c  1>&5
+configure:3921: checking for -Bsymbolic-functions option to ld
+configure:3932: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -Qunused-arguments    -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions conftest.c  1>&5
+configure:3945: checking for --build-id=sha1 option to ld
+configure:3956: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -Qunused-arguments    -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c  1>&5
+configure:3969: checking for --ignore-unresolved-symbol option to ld
+configure:3981: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -Qunused-arguments    -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 -Wl,--ignore-unresolved-symbol,environ conftest.c  1>&5
+configure:3996: checking if toolchain supports -mssse3 option
+configure:4008: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -c  -fno-strict-aliasing -mssse3 -Qunused-arguments  conftest.c 1>&5
+configure:4023: checking if toolchain supports -msse4.1 option
+configure:4035: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -c  -fno-strict-aliasing -msse4.1 -Qunused-arguments  conftest.c 1>&5
+configure:4051: checking for x86 AVX2 asm support in compiler
+configure:4060: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -c  -fno-strict-aliasing -Qunused-arguments  conftest.c 1>&5
+configure:4760: checking whether the linker supports Identical Code Folding
+configure:4769: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 -Wl,--icf=safe -ffunction-sections conftest.c  1>&2
+/usr/sbin/ld: unrecognized option '--icf=safe'
+/usr/sbin/ld: use the --help option for usage information
+clang-11: error: linker command failed with exit code 1 (use -v to see invocation)
+configure:4810: checking whether removing dead symbols breaks debugging
+configure:4817: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest.o  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -g -c conftest.c 1>&2
+configure:4818: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 -g -Wl,--gc-sections conftest.o  1>&2
+configure:4860: checking for working const
+configure:4914: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -c  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -Qunused-arguments  conftest.c 1>&5
+configure:4940: checking for mode_t
+configure:4978: checking for off_t
+configure:5016: checking for pid_t
+configure:5054: checking for size_t
+configure:5138: checking whether 64-bits std::atomic requires -latomic
+configure:5154: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 -o conftest  -fno-exceptions -fno-strict-aliasing -fno-rtti -ffunction-sections -fdata-sections -fno-exceptions -fno-math-errno -Qunused-arguments    -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.C  1>&5
+configure:5241: checking for dirent.h that defines DIR
+configure:5254: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -c  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -Qunused-arguments  conftest.c 1>&5
+configure:5282: checking for opendir in -ldir
+configure:5301: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -Qunused-arguments    -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -ldir   1>&5
+/usr/sbin/ld: cannot find -ldir
+clang-11: error: linker command failed with exit code 1 (use -v to see invocation)
+configure: failed program was:
+#line 5290 "configure"
+#include "confdefs.h"
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char opendir();
+
+int main() {
+opendir()
+; return 0; }
+configure:5372: checking for sockaddr_in.sin_len
+configure:5389: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -c  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -Qunused-arguments  conftest.c 1>&5
+configure:5383:60: error: no member named 'sin_len' in 'struct sockaddr_in'
+                                    void *foo = (void*) &x.sin_len;
+                                                         ~ ^
+1 error generated.
+configure: failed program was:
+#line 5377 "configure"
+#include "confdefs.h"
+#ifdef HAVE_SYS_TYPES_H
+                                    #include <sys/types.h>
+                                    #endif
+                                    #include <netinet/in.h>
+                                    struct sockaddr_in x;
+                                    void *foo = (void*) &x.sin_len;
+int main() {
+
+; return 0; }
+configure:5420: checking for sockaddr_in6.sin6_len
+configure:5437: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -c  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -Qunused-arguments  conftest.c 1>&5
+configure:5431:56: error: no member named 'sin6_len' in 'struct sockaddr_in6'
+                                void *foo = (void*) &x.sin6_len;
+                                                     ~ ^
+1 error generated.
+configure: failed program was:
+#line 5425 "configure"
+#include "confdefs.h"
+#ifdef HAVE_SYS_TYPES_H
+                                #include <sys/types.h>
+                                #endif
+                                #include <netinet/in.h>
+                                struct sockaddr_in6 x;
+                                void *foo = (void*) &x.sin6_len;
+int main() {
+
+; return 0; }
+configure:5461: checking for sockaddr.sa_len
+configure:5478: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -c  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -Qunused-arguments  conftest.c 1>&5
+configure:5472:56: error: no member named 'sa_len' in 'struct sockaddr'
+                                void *foo = (void*) &x.sa_len;
+                                                     ~ ^
+1 error generated.
+configure: failed program was:
+#line 5466 "configure"
+#include "confdefs.h"
+#ifdef HAVE_SYS_TYPES_H
+                                #include <sys/types.h>
+                                #endif
+                                #include <sys/socket.h>
+                                struct sockaddr x;
+                                void *foo = (void*) &x.sa_len;
+int main() {
+
+; return 0; }
+configure:5502: checking for gethostbyname_r in -lc_r
+configure:5521: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -Qunused-arguments    -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -lc_r   1>&5
+/usr/sbin/ld: cannot find -lc_r
+clang-11: error: linker command failed with exit code 1 (use -v to see invocation)
+configure: failed program was:
+#line 5510 "configure"
+#include "confdefs.h"
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char gethostbyname_r();
+
+int main() {
+gethostbyname_r()
+; return 0; }
+configure:5558: checking for library containing dlopen
+configure:5576: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -Qunused-arguments    -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c  1>&5
+/usr/sbin/ld: /tmp/conftest-69fab7.o: in function `main':
+conftest.c:(.text.main+0x12): undefined reference to `dlopen'
+clang-11: error: linker command failed with exit code 1 (use -v to see invocation)
+configure: failed program was:
+#line 5565 "configure"
+#include "confdefs.h"
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char dlopen();
+
+int main() {
+dlopen()
+; return 0; }
+configure:5598: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -Qunused-arguments    -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -ldl   1>&5
+configure:5616: checking for dlfcn.h
+configure:5629: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -c  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -Qunused-arguments  conftest.c 1>&5
+configure:5666: checking for dladdr
+configure:5698: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -D_GNU_SOURCE -Qunused-arguments    -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -ldl  1>&5
+configure:5666: checking for memmem
+configure:5698: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -D_GNU_SOURCE -Qunused-arguments    -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -ldl  1>&5
+configure:5781: checking for socket in -lsocket
+configure:5800: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -Qunused-arguments    -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -lsocket  -ldl  1>&5
+/usr/sbin/ld: cannot find -lsocket
+clang-11: error: linker command failed with exit code 1 (use -v to see invocation)
+configure: failed program was:
+#line 5789 "configure"
+#include "confdefs.h"
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char socket();
+
+int main() {
+socket()
+; return 0; }
+configure:5846: checking for XDrawLines in -lX11
+configure:5865: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -Qunused-arguments     -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -lX11  -ldl  1>&5
+configure:5887: checking for XextAddDisplay in -lXext
+configure:5906: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -Qunused-arguments     -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -lXext -lX11  -ldl  1>&5
+configure:5929: checking for XtFree in -lXt
+configure:5948: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -Qunused-arguments     -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -lXt  -ldl  1>&5
+configure:6094: checking for xcb_connect in -lxcb
+configure:6113: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -Qunused-arguments     -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -lxcb -lX11  -ldl  1>&5
+configure:6135: checking for xcb_shm_query_version in -lxcb-shm
+configure:6154: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -Qunused-arguments     -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -lxcb-shm -lxcb -lX11  -ldl  1>&5
+configure:6176: checking for XGetXCBConnection in -lX11-xcb
+configure:6195: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -Qunused-arguments     -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -lX11-xcb -lxcb-shm -lxcb -lX11  -ldl  1>&5
+configure:6233: checking for pthread_create in -lpthreads
+configure:6252: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -Qunused-arguments    -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -lpthreads  -ldl  1>&5
+/usr/sbin/ld: cannot find -lpthreads
+clang-11: error: linker command failed with exit code 1 (use -v to see invocation)
+configure: failed program was:
+#line 6241 "configure"
+#include "confdefs.h"
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char pthread_create();
+
+int main() {
+pthread_create()
+; return 0; }
+configure:6271: checking for pthread_create in -lpthread
+configure:6290: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -Qunused-arguments    -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -lpthread  -ldl  1>&5
+configure:6404: checking whether /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 accepts -pthread
+configure:6499: checking for pthread.h
+configure:6512: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -c  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -Qunused-arguments  conftest.c 1>&5
+configure:6547: checking for stat64
+configure:6579: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -Qunused-arguments  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -ldl  1>&5
+configure:6547: checking for lstat64
+configure:6579: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -Qunused-arguments  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -ldl  1>&5
+configure:6547: checking for truncate64
+configure:6579: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -Qunused-arguments  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -ldl  1>&5
+configure:6547: checking for statvfs64
+configure:6579: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -Qunused-arguments  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -ldl  1>&5
+configure:6547: checking for statvfs
+configure:6579: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -Qunused-arguments  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -ldl  1>&5
+configure:6547: checking for statfs64
+configure:6579: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -Qunused-arguments  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -ldl  1>&5
+configure:6547: checking for statfs
+configure:6579: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -Qunused-arguments  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -ldl  1>&5
+configure:6547: checking for getpagesize
+configure:6579: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -Qunused-arguments  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -ldl  1>&5
+configure:6547: checking for gmtime_r
+configure:6579: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -Qunused-arguments  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -ldl  1>&5
+configure:6547: checking for localtime_r
+configure:6579: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -Qunused-arguments  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -ldl  1>&5
+configure:6547: checking for arc4random
+configure:6579: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -Qunused-arguments  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -ldl  1>&5
+/usr/sbin/ld: /tmp/conftest-ce1af8.o: in function `main':
+conftest.c:(.text.main+0x12): undefined reference to `arc4random'
+clang-11: error: linker command failed with exit code 1 (use -v to see invocation)
+configure: failed program was:
+#line 6552 "configure"
+#define arc4random innocuous_arc4random
+#include "confdefs.h"
+#undef arc4random
+/* System header to define __stub macros and hopefully few prototypes,
+    which can conflict with char arc4random(); below.  */
+#define arc4random innocuous_arc4random
+#include <assert.h>
+#undef arc4random
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char arc4random();
+
+int main() {
+
+/* The GNU C library defines this for functions which it implements
+    to always fail with ENOSYS.  Some functions are actually named
+    something starting with __ and the normal name is an alias.  */
+#if defined (__stub_arc4random) || defined (__stub___arc4random)
+choke me
+#else
+arc4random();
+#endif
+
+; return 0; }
+configure:6547: checking for arc4random_buf
+configure:6579: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -Qunused-arguments  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -ldl  1>&5
+/usr/sbin/ld: /tmp/conftest-027ccc.o: in function `main':
+conftest.c:(.text.main+0x12): undefined reference to `arc4random_buf'
+clang-11: error: linker command failed with exit code 1 (use -v to see invocation)
+configure: failed program was:
+#line 6552 "configure"
+#define arc4random_buf innocuous_arc4random_buf
+#include "confdefs.h"
+#undef arc4random_buf
+/* System header to define __stub macros and hopefully few prototypes,
+    which can conflict with char arc4random_buf(); below.  */
+#define arc4random_buf innocuous_arc4random_buf
+#include <assert.h>
+#undef arc4random_buf
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char arc4random_buf();
+
+int main() {
+
+/* The GNU C library defines this for functions which it implements
+    to always fail with ENOSYS.  Some functions are actually named
+    something starting with __ and the normal name is an alias.  */
+#if defined (__stub_arc4random_buf) || defined (__stub___arc4random_buf)
+choke me
+#else
+arc4random_buf();
+#endif
+
+; return 0; }
+configure:6547: checking for mallinfo
+configure:6579: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -Qunused-arguments  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -ldl  1>&5
+configure:6547: checking for gettid
+configure:6579: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -Qunused-arguments  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -ldl  1>&5
+configure:6547: checking for lchown
+configure:6579: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -Qunused-arguments  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -ldl  1>&5
+configure:6547: checking for setpriority
+configure:6579: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -Qunused-arguments  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -ldl  1>&5
+configure:6547: checking for strerror
+configure:6579: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -Qunused-arguments  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -ldl  1>&5
+configure:6563:6: warning: incompatible redeclaration of library function 'strerror' [-Wincompatible-library-redeclaration]
+char strerror();
+     ^
+configure:6563:6: note: 'strerror' is a builtin with type 'char *(int)'
+1 warning generated.
+configure:6547: checking for syscall
+configure:6579: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -Qunused-arguments  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -ldl  1>&5
+configure:6547: checking for lutimes
+configure:6579: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -Qunused-arguments  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -ldl  1>&5
+configure:6608: checking for clock_gettime(CLOCK_MONOTONIC)
+configure:6627: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -fPIC -Qunused-arguments  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -ldl   1>&5
+configure:6663: checking for pthread_cond_timedwait_monotonic_np
+configure:6675: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -Werror -Qunused-arguments  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -ldl  1>&5
+configure:6671:1: error: implicit declaration of function 'pthread_cond_timedwait_monotonic_np' is invalid in C99 [-Werror,-Wimplicit-function-declaration]
+pthread_cond_timedwait_monotonic_np(0, 0, 0);
+^
+1 error generated.
+configure: failed program was:
+#line 6668 "configure"
+#include "confdefs.h"
+#include <pthread.h>
+int main() {
+pthread_cond_timedwait_monotonic_np(0, 0, 0);
+; return 0; }
+configure:6700: checking for res_ninit()
+configure:6723: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -Qunused-arguments  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -ldl  1>&5
+In file included from configure:6713:
+In file included from /usr/include/sys/types.h:25:
+/usr/include/features.h:187:3: warning: "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE" [-W#warnings]
+# warning "_BSD_SOURCE and _SVID_SOURCE are deprecated, use _DEFAULT_SOURCE"
+  ^
+1 warning generated.
+configure:6762: checking for an implementation of va_copy()
+configure:6783: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -c  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -Qunused-arguments  conftest.c 1>&5
+configure:6799: checking whether va_list can be copied by value
+configure:6820: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -c  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -Qunused-arguments  conftest.c 1>&5
+configure:6810:19: error: array type 'va_list' (aka '__builtin_va_list') is not assignable
+            args2 = args1;
+            ~~~~~ ^
+1 error generated.
+configure: failed program was:
+#line 6804 "configure"
+#include "confdefs.h"
+#include <stdarg.h>
+                     #include <stdlib.h>
+        void f (int i, ...) {
+            va_list args1, args2;
+            va_start (args1, i);
+            args2 = args1;
+            if (va_arg (args2, int) != 42 || va_arg (args1, int) != 42)
+                exit (1);
+            va_end (args1); va_end (args2);
+        }
+int main() {
+f(0, 42); return 0
+; return 0; }
+configure:6926: checking for __thread keyword for TLS variables
+configure:6938: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 -o conftest  -fno-exceptions -fno-strict-aliasing -fno-rtti -ffunction-sections -fdata-sections -fno-exceptions -fno-math-errno -pthread -Qunused-arguments  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 -fPIC -shared -Wl,-z,defs -Wl,--gc-sections  conftest.C -ldl  1>&5
+configure:7008: checking for localeconv
+configure:7040: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -Qunused-arguments  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -ldl  1>&5
+configure:7082: checking for malloc.h
+configure:7095: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -c  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -Qunused-arguments  conftest.c 1>&5
+configure:7130: checking for strndup
+configure:7162: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -Qunused-arguments  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -ldl  1>&5
+configure:7146:6: warning: incompatible redeclaration of library function 'strndup' [-Wincompatible-library-redeclaration]
+char strndup();
+     ^
+configure:7146:6: note: 'strndup' is a builtin with type 'char *(const char *, unsigned long)'
+1 warning generated.
+configure:7130: checking for posix_memalign
+configure:7162: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -Qunused-arguments  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -ldl  1>&5
+configure:7130: checking for memalign
+configure:7162: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -Qunused-arguments  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -ldl  1>&5
+configure:7193: checking for malloc_usable_size
+configure:7225: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -Qunused-arguments  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -ldl  1>&5
+configure:7255: checking whether malloc_usable_size definition can use const argument
+configure:7266: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -c  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -Qunused-arguments  conftest.c 1>&5
+configure:7260:26: error: conflicting types for 'malloc_usable_size'
+                  size_t malloc_usable_size(const void *ptr);
+                         ^
+/usr/include/malloc.h:156:15: note: previous declaration is here
+extern size_t malloc_usable_size (void *__ptr) __THROW;
+              ^
+1 error generated.
+configure: failed program was:
+#line 7257 "configure"
+#include "confdefs.h"
+#include <malloc.h>
+                  #include <stddef.h>
+                  size_t malloc_usable_size(const void *ptr);
+int main() {
+return malloc_usable_size(0);
+; return 0; }
+configure:7288: checking for valloc in malloc.h
+configure:7313: checking for valloc in unistd.h
+configure:7338: checking for _aligned_malloc in malloc.h
+configure:7750: checking if app-specific confvars.sh exists
+configure:7849: checking for gtk+-3.0 >= 3.14.0 gtk+-unix-print-3.0 glib-2.0 gobject-2.0 gio-unix-2.0 
+configure:7863: checking MOZ_GTK3_CFLAGS
+configure:7868: checking MOZ_GTK3_LIBS
+configure:7936: checking for gtk+-2.0 >= 2.18.0 gtk+-unix-print-2.0 glib-2.0 >= 2.42 gobject-2.0 gio-unix-2.0 gdk-x11-2.0
+configure:7950: checking MOZ_GTK2_CFLAGS
+configure:7955: checking MOZ_GTK2_LIBS
+configure:8172: checking for dbus-1 >= 0.60
+configure:8186: checking MOZ_DBUS_CFLAGS
+configure:8191: checking MOZ_DBUS_LIBS
+configure:8231: checking for dbus-glib-1 >= 0.60
+configure:8245: checking MOZ_DBUS_GLIB_CFLAGS
+configure:8250: checking MOZ_DBUS_GLIB_LIBS
+configure:8298: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -c  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -Qunused-arguments  conftest.c 1>&5
+configure:8436: checking for linux/joystick.h
+configure:8449: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -c  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -Qunused-arguments  conftest.c 1>&5
+configure:8539: checking for gthread-2.0
+configure:8553: checking MOZ_GTHREAD_CFLAGS
+configure:8558: checking MOZ_GTHREAD_LIBS
+configure:8758: checking for fdatasync
+configure:8790: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -Qunused-arguments  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -ldl  1>&5
+configure:8837: checking for valid C compiler optimization flags
+configure:8848: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -c  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -O2 -Qunused-arguments  conftest.c 1>&5
+configure:9118: checking for __cxa_demangle
+configure:9153: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 -o conftest  -fno-exceptions -fno-strict-aliasing -fno-rtti -ffunction-sections -fdata-sections -fno-exceptions -fno-math-errno -pthread -Qunused-arguments  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.C -ldl  1>&5
+configure:9223: checking for unwind.h
+configure:9236: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 -c  -fno-exceptions -fno-strict-aliasing -fno-rtti -ffunction-sections -fdata-sections -fno-exceptions -fno-math-errno -pthread -Qunused-arguments  conftest.C 1>&5
+configure:9253: checking for _Unwind_Backtrace
+configure:9290: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 -o conftest  -fno-exceptions -fno-strict-aliasing -fno-rtti -ffunction-sections -fdata-sections -fno-exceptions -fno-math-errno -pthread -Qunused-arguments  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.C -ldl  1>&5
+configure:9358: checking for -pipe support
+configure:9385: checking what kind of list files are supported by the linker
+configure:9390: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest.o -c   -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -pipe -Qunused-arguments  conftest.c 1>&5
+configure:9397: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.list -ldl  1>&5
+configure:9456: checking for glib-2.0 >= 1.3.7 gobject-2.0
+configure:9470: checking GLIB_CFLAGS
+configure:9475: checking GLIB_LIBS
+configure:9526: checking for FT_Bitmap_Size.y_ppem
+configure:9541: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -c  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -pipe -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -Qunused-arguments  conftest.c 1>&5
+configure:9570: checking for FT_GlyphSlot_Embolden
+configure:9602: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -pipe -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -Qunused-arguments  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -ldl  -lfreetype -lfontconfig -lfreetype 1>&5
+configure:9570: checking for FT_Load_Sfnt_Table
+configure:9602: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -pipe -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -Qunused-arguments  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -ldl  -lfreetype -lfontconfig -lfreetype 1>&5
+configure:9640: checking for fontconfig/fcfreetype.h
+configure:9653: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -c  -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -pipe -Qunused-arguments  -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include  conftest.c 1>&5
+configure:10311: checking for posix_fadvise
+configure:10343: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -pipe -Qunused-arguments  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -ldl  1>&5
+configure:10311: checking for posix_fallocate
+configure:10343: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -pipe -Qunused-arguments  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -ldl  1>&5
+configure:10394: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -c -fno-strict-aliasing -ffunction-sections -fdata-sections -fno-math-errno -pthread -pipe  -Qunused-arguments  conftest.c 1>&5
+js/src> DEBUG: Running /usr/sbin/sh /worker/build/js/src/old-configure --enable-updater --with-branding=browser/branding/dot --host=x86_64-pc-linux-gnu --target=x86_64-pc-linux-gnu
+This file contains any messages produced by compilers while
+running configure, to aid debugging if configure makes a mistake.
+
+configure:594: checking host system type
+configure:615: checking target system type
+configure:633: checking build system type
+configure:721: checking for Cygwin environment
+configure:754: checking for mingw32 environment
+configure:785: checking for executable suffix
+configure:1478: checking for gcc
+configure:1591: checking whether the C compiler (/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99   ) works
+configure:1646: checking whether the C compiler (/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99   ) is a cross-compiler
+configure:1651: checking whether we are using GNU C
+configure:1679: checking whether /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 accepts -g
+configure:1715: checking for c++
+configure:1747: checking whether the C++ compiler (/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17   ) works
+configure:1802: checking whether the C++ compiler (/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17   ) is a cross-compiler
+configure:1807: checking whether we are using GNU C++
+configure:1835: checking whether /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 accepts -g
+configure:1871: checking for /home/worker/.mozbuild/sccache/sccache
+configure:1925: checking for strip
+configure:2273: checking for sb-conf
+configure:2273: checking for ve
+configure:2326: checking for X
+configure:2643: checking for dnet_ntoa in -ldnet
+configure:2684: checking for dnet_ntoa in -ldnet_stub
+configure:2732: checking for gethostbyname
+configure:2834: checking for connect
+configure:2930: checking for remove
+configure:3026: checking for shmat
+configure:3131: checking for IceConnectionNumber in -lICE
+configure:3730: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -Qunused-arguments    conftest.c  1>&5
+configure:3761: checking for --noexecstack option to as
+configure:3772: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -c  -Wa,--noexecstack -Qunused-arguments  conftest.c 1>&5
+configure:3785: checking for -z noexecstack option to ld
+configure:3796: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -Qunused-arguments    -Wl,-z,noexecstack conftest.c  1>&5
+configure:3809: checking for -z text option to ld
+configure:3820: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -Qunused-arguments    -Wl,-z,noexecstack -Wl,-z,text conftest.c  1>&5
+configure:3833: checking for -z relro option to ld
+configure:3844: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -Qunused-arguments    -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro conftest.c  1>&5
+configure:3857: checking for -z nocopyreloc option to ld
+configure:3868: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -Qunused-arguments    -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc conftest.c  1>&5
+configure:3881: checking for -Bsymbolic-functions option to ld
+configure:3892: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -Qunused-arguments    -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions conftest.c  1>&5
+configure:3905: checking for --build-id=sha1 option to ld
+configure:3916: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -Qunused-arguments    -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c  1>&5
+configure:4413: checking whether the linker supports Identical Code Folding
+configure:4422: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 -Wl,--icf=safe -ffunction-sections conftest.c  1>&2
+/usr/sbin/ld: unrecognized option '--icf=safe'
+/usr/sbin/ld: use the --help option for usage information
+clang-11: error: linker command failed with exit code 1 (use -v to see invocation)
+configure:4463: checking whether removing dead symbols breaks debugging
+configure:4470: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest.o  -ffunction-sections -fdata-sections -fno-math-errno -g -c conftest.c 1>&2
+configure:4471: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 -g -Wl,--gc-sections conftest.o  1>&2
+configure:4513: checking for working const
+configure:4593: checking for mode_t
+configure:4631: checking for off_t
+configure:4669: checking for pid_t
+configure:4707: checking for size_t
+configure:4765: checking for ssize_t
+configure:4778: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -c  -ffunction-sections -fdata-sections -fno-math-errno -Qunused-arguments  conftest.c 1>&5
+configure:4829: checking whether 64-bits std::atomic requires -latomic
+configure:4916: checking for dirent.h that defines DIR
+configure:4957: checking for opendir in -ldir
+configure:5047: checking for gethostbyname_r in -lc_r
+configure:5103: checking for library containing dlopen
+configure:5161: checking for dlfcn.h
+configure:5260: checking for socket in -lsocket
+configure:5316: checking for pthread_create in -lpthreads
+configure:5354: checking for pthread_create in -lpthread
+configure:5487: checking whether /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 accepts -pthread
+configure:5583: checking for getc_unlocked
+configure:5615: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -ffunction-sections -fdata-sections -fno-math-errno -pthread -Qunused-arguments  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -ldl  1>&5
+configure:5583: checking for _getc_nolock
+configure:5615: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -ffunction-sections -fdata-sections -fno-math-errno -pthread -Qunused-arguments  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -ldl  1>&5
+/usr/sbin/ld: /tmp/conftest-20faf7.o: in function `main':
+conftest.c:(.text.main+0x12): undefined reference to `_getc_nolock'
+clang-11: error: linker command failed with exit code 1 (use -v to see invocation)
+configure: failed program was:
+#line 5588 "configure"
+#define _getc_nolock innocuous__getc_nolock
+#include "confdefs.h"
+#undef _getc_nolock
+/* System header to define __stub macros and hopefully few prototypes,
+    which can conflict with char _getc_nolock(); below.  */
+#define _getc_nolock innocuous__getc_nolock
+#include <assert.h>
+#undef _getc_nolock
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char _getc_nolock();
+
+int main() {
+
+/* The GNU C library defines this for functions which it implements
+    to always fail with ENOSYS.  Some functions are actually named
+    something starting with __ and the normal name is an alias.  */
+#if defined (__stub__getc_nolock) || defined (__stub____getc_nolock)
+choke me
+#else
+_getc_nolock();
+#endif
+
+; return 0; }
+configure:5583: checking for gmtime_r
+configure:5583: checking for localtime_r
+configure:5583: checking for pthread_getname_np
+configure:5615: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -ffunction-sections -fdata-sections -fno-math-errno -pthread -Qunused-arguments  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -ldl  1>&5
+configure:5583: checking for pthread_get_name_np
+configure:5615: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -ffunction-sections -fdata-sections -fno-math-errno -pthread -Qunused-arguments  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -ldl  1>&5
+/usr/sbin/ld: /tmp/conftest-19b2bc.o: in function `main':
+conftest.c:(.text.main+0x12): undefined reference to `pthread_get_name_np'
+clang-11: error: linker command failed with exit code 1 (use -v to see invocation)
+configure: failed program was:
+#line 5588 "configure"
+#define pthread_get_name_np innocuous_pthread_get_name_np
+#include "confdefs.h"
+#undef pthread_get_name_np
+/* System header to define __stub macros and hopefully few prototypes,
+    which can conflict with char pthread_get_name_np(); below.  */
+#define pthread_get_name_np innocuous_pthread_get_name_np
+#include <assert.h>
+#undef pthread_get_name_np
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char pthread_get_name_np();
+
+int main() {
+
+/* The GNU C library defines this for functions which it implements
+    to always fail with ENOSYS.  Some functions are actually named
+    something starting with __ and the normal name is an alias.  */
+#if defined (__stub_pthread_get_name_np) || defined (__stub___pthread_get_name_np)
+choke me
+#else
+pthread_get_name_np();
+#endif
+
+; return 0; }
+configure:5644: checking for clock_gettime(CLOCK_MONOTONIC)
+configure:5697: checking for sin in -lm
+configure:5716: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -ffunction-sections -fdata-sections -fno-math-errno -pthread -Qunused-arguments  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -lm  -ldl  1>&5
+configure:5709:6: warning: incompatible redeclaration of library function 'sin' [-Wincompatible-library-redeclaration]
+char sin();
+     ^
+configure:5709:6: note: 'sin' is a builtin with type 'double (double)'
+1 warning generated.
+configure:5748: checking for res_ninit()
+configure:5799: checking for nl_langinfo and CODESET
+configure:5811: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -ffunction-sections -fdata-sections -fno-math-errno -pthread -Qunused-arguments  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.c -lm -ldl  1>&5
+configure:5851: checking for an implementation of va_copy()
+configure:5888: checking whether va_list can be copied by value
+configure:6015: checking for __thread keyword for TLS variables
+configure:6079: checking for localeconv
+configure:6203: checking for valid optimization flags
+configure:6214: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -c  -ffunction-sections -fdata-sections -fno-math-errno -pthread -O3 -Qunused-arguments  conftest.c 1>&5
+configure:6395: checking for __cxa_demangle
+configure:6478: checking for -pipe support
+configure:6500: checking for tm_zone tm_gmtoff in struct tm
+configure:6512: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17 -c  -fno-rtti -ffunction-sections -fdata-sections -fno-exceptions -fno-math-errno -pthread -pipe -Qunused-arguments  conftest.C 1>&5
+configure:6551: checking what kind of list files are supported by the linker
+configure:6556: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest.o -c   -ffunction-sections -fdata-sections -fno-math-errno -pthread -pipe -Qunused-arguments  conftest.c 1>&5
+configure:6563: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -o conftest  -lpthread   -Wl,-z,noexecstack -Wl,-z,text -Wl,-z,relro -Wl,-z,nocopyreloc -Wl,-Bsymbolic-functions -Wl,--build-id=sha1 conftest.list -lm -ldl  1>&5
+configure:6672: checking for posix_fadvise
+configure:6672: checking for posix_fallocate
+configure:6759: checking for malloc.h
+configure:6807: checking for strndup
+configure:6807: checking for posix_memalign
+configure:6807: checking for memalign
+configure:6870: checking for malloc_usable_size
+configure:6932: checking whether malloc_usable_size definition can use const argument
+configure:6943: /home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99 -c -ffunction-sections -fdata-sections -fno-math-errno -pthread -pipe -Qunused-arguments  conftest.c 1>&5
+configure:6937:26: error: conflicting types for 'malloc_usable_size'
+                  size_t malloc_usable_size(const void *ptr);
+                         ^
+/usr/include/malloc.h:156:15: note: previous declaration is here
+extern size_t malloc_usable_size (void *__ptr) __THROW;
+              ^
+1 error generated.
+configure: failed program was:
+#line 6934 "configure"
+#include "confdefs.h"
+#include <malloc.h>
+                  #include <stddef.h>
+                  size_t malloc_usable_size(const void *ptr);
+int main() {
+return malloc_usable_size(0);
+; return 0; }
+configure:6965: checking for valloc in malloc.h
+configure:6990: checking for valloc in unistd.h
+configure:7015: checking for _aligned_malloc in malloc.h
+INFO: Creating config.status

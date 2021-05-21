@@ -1,0 +1,4 @@
+[
+    "-fomit-frame-pointer",
+    "-funwind-tables"
+]

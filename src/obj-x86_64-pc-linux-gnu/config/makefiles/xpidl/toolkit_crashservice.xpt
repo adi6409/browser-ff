@@ -1,0 +1,143 @@
+[
+  {
+    "consts": [
+      {
+        "name": "PROCESS_TYPE_MAIN",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 0
+      },
+      {
+        "name": "PROCESS_TYPE_PLUGIN",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 1
+      },
+      {
+        "name": "PROCESS_TYPE_CONTENT",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 2
+      },
+      {
+        "name": "PROCESS_TYPE_IPDLUNITTEST",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 3
+      },
+      {
+        "name": "PROCESS_TYPE_GMPLUGIN",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 4
+      },
+      {
+        "name": "PROCESS_TYPE_GPU",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 5
+      },
+      {
+        "name": "PROCESS_TYPE_VR",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 6
+      },
+      {
+        "name": "PROCESS_TYPE_RDD",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 7
+      },
+      {
+        "name": "PROCESS_TYPE_SOCKET",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 8
+      },
+      {
+        "name": "PROCESS_TYPE_SANDBOX_BROKER",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 9
+      },
+      {
+        "name": "PROCESS_TYPE_FORKSERVER",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 10
+      },
+      {
+        "name": "CRASH_TYPE_CRASH",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 0
+      },
+      {
+        "name": "CRASH_TYPE_HANG",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 1
+      }
+    ],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "addCrash",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT32"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_ASTRING"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_PROMISE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsICrashService",
+    "parent": "nsISupports",
+    "uuid": "70bd93ff-88fa-4600-8af8-57c8d002dbac"
+  }
+]

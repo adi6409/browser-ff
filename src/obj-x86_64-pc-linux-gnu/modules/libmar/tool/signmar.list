@@ -1,0 +1,5 @@
+INPUT("mar.o")
+INPUT("city.o")
+INPUT("../src/Unified_c_modules_libmar_src0.o")
+INPUT("../sign/Unified_c_modules_libmar_sign0.o")
+INPUT("../verify/Unified_c_libmar_verify0.o")

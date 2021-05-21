@@ -1,0 +1,236 @@
+[
+  {
+    "consts": [],
+    "flags": [],
+    "methods": [],
+    "name": "IPeerConnectionObserver",
+    "parent": "nsISupports",
+    "uuid": "d7dfe148-0416-446b-a128-66a7c71ae8d3"
+  },
+  {
+    "consts": [
+      {
+        "name": "kHintAudio",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 1
+      },
+      {
+        "name": "kHintVideo",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 2
+      },
+      {
+        "name": "kActionNone",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": -1
+      },
+      {
+        "name": "kActionOffer",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 0
+      },
+      {
+        "name": "kActionAnswer",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 1
+      },
+      {
+        "name": "kActionPRAnswer",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 2
+      },
+      {
+        "name": "kActionRollback",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 3
+      },
+      {
+        "name": "kIceGathering",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 0
+      },
+      {
+        "name": "kIceWaiting",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 1
+      },
+      {
+        "name": "kIceChecking",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 2
+      },
+      {
+        "name": "kIceConnected",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 3
+      },
+      {
+        "name": "kIceFailed",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 4
+      },
+      {
+        "name": "kNew",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 0
+      },
+      {
+        "name": "kNegotiating",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 1
+      },
+      {
+        "name": "kActive",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 2
+      },
+      {
+        "name": "kClosing",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 3
+      },
+      {
+        "name": "kClosed",
+        "type": {
+          "tag": "TD_INT32"
+        },
+        "value": 4
+      },
+      {
+        "name": "kDataChannelReliable",
+        "type": {
+          "tag": "TD_UINT16"
+        },
+        "value": 0
+      },
+      {
+        "name": "kDataChannelPartialReliableRexmit",
+        "type": {
+          "tag": "TD_UINT16"
+        },
+        "value": 1
+      },
+      {
+        "name": "kDataChannelPartialReliableTimed",
+        "type": {
+          "tag": "TD_UINT16"
+        },
+        "value": 2
+      },
+      {
+        "name": "kNoError",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 0
+      },
+      {
+        "name": "kInvalidCandidate",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 2
+      },
+      {
+        "name": "kInvalidMediastreamTrack",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 3
+      },
+      {
+        "name": "kInvalidState",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 4
+      },
+      {
+        "name": "kInvalidSessionDescription",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 5
+      },
+      {
+        "name": "kIncompatibleSessionDescription",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 6
+      },
+      {
+        "name": "kIncompatibleMediaStreamTrack",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 8
+      },
+      {
+        "name": "kInternalError",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 9
+      },
+      {
+        "name": "kTypeError",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 10
+      },
+      {
+        "name": "kOperationError",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 11
+      },
+      {
+        "name": "kMaxErrorType",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 11
+      }
+    ],
+    "flags": [],
+    "methods": [],
+    "name": "IPeerConnection",
+    "parent": "nsISupports",
+    "uuid": "14afc8e7-e421-4d0c-99a5-69308d871481"
+  }
+]

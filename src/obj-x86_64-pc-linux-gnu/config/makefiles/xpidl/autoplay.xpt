@@ -1,0 +1,32 @@
+[
+  {
+    "consts": [
+      {
+        "name": "ALLOWED",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 0
+      },
+      {
+        "name": "BLOCKED",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 1
+      },
+      {
+        "name": "BLOCKED_ALL",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 5
+      }
+    ],
+    "flags": [],
+    "methods": [],
+    "name": "nsIAutoplay",
+    "parent": "nsISupports",
+    "uuid": "048a24f6-c4d6-47bc-bea2-f6038d1db80a"
+  }
+]

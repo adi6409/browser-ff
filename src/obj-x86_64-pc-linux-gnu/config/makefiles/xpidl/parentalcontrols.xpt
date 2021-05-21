@@ -1,0 +1,306 @@
+[
+  {
+    "consts": [
+      {
+        "name": "DOWNLOAD",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 1
+      },
+      {
+        "name": "INSTALL_EXTENSION",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 2
+      },
+      {
+        "name": "INSTALL_APP",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 3
+      },
+      {
+        "name": "BROWSE",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 4
+      },
+      {
+        "name": "SHARE",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 5
+      },
+      {
+        "name": "BOOKMARK",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 6
+      },
+      {
+        "name": "ADD_CONTACT",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 7
+      },
+      {
+        "name": "SET_IMAGE",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 8
+      },
+      {
+        "name": "MODIFY_ACCOUNTS",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 9
+      },
+      {
+        "name": "REMOTE_DEBUGGING",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 10
+      },
+      {
+        "name": "IMPORT_SETTINGS",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 11
+      },
+      {
+        "name": "PRIVATE_BROWSING",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 12
+      },
+      {
+        "name": "DATA_CHOICES",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 13
+      },
+      {
+        "name": "CLEAR_HISTORY",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 14
+      },
+      {
+        "name": "MASTER_PASSWORD",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 15
+      },
+      {
+        "name": "GUEST_BROWSING",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 16
+      },
+      {
+        "name": "ADVANCED_SETTINGS",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 17
+      },
+      {
+        "name": "CAMERA_MICROPHONE",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 18
+      },
+      {
+        "name": "BLOCK_LIST",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 19
+      },
+      {
+        "name": "TELEMETRY",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 20
+      },
+      {
+        "name": "HEALTH_REPORT",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 21
+      },
+      {
+        "name": "DEFAULT_THEME",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 22
+      },
+      {
+        "name": "ePCLog_URIVisit",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 1
+      },
+      {
+        "name": "ePCLog_FileDownload",
+        "type": {
+          "tag": "TD_INT16"
+        },
+        "value": 2
+      }
+    ],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "parentalControlsEnabled",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "blockFileDownloadsEnabled",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "isAllowed",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT16"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "optional"
+            ],
+            "type": {
+              "name": "nsIURI",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "getter",
+          "hasretval"
+        ],
+        "name": "loggingEnabled",
+        "params": [
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [],
+        "name": "log",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_INT16"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "tag": "TD_BOOL"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIURI",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in",
+              "optional"
+            ],
+            "type": {
+              "name": "nsIFile",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIParentalControlsService",
+    "parent": "nsISupports",
+    "uuid": "2e97e5dd-467b-4aea-a1bb-6773c0f2beb0"
+  }
+]

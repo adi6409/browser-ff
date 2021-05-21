@@ -1,0 +1,1 @@
+/worker/build/testing/modules/AppInfo.jsm

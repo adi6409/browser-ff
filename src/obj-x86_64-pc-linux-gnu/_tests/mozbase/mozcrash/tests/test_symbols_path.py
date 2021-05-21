@@ -1,0 +1,1 @@
+/worker/build/testing/mozbase/mozcrash/tests/test_symbols_path.py

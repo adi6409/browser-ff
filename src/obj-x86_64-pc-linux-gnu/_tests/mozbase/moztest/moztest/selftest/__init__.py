@@ -1,0 +1,1 @@
+/worker/build/testing/mozbase/moztest/moztest/selftest/__init__.py

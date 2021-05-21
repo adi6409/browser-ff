@@ -1,0 +1,1 @@
+/worker/build/testing/mozbase/mozfile/tests/test_copycontents.py

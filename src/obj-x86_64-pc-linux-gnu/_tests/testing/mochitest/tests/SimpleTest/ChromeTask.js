@@ -1,0 +1,1 @@
+/worker/build/testing/mochitest/tests/SimpleTest/ChromeTask.js

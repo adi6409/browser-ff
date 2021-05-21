@@ -1,0 +1,1 @@
+"/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17"

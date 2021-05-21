@@ -1,0 +1,175 @@
+[
+  {
+    "consts": [
+      {
+        "name": "URI_SAFE_FOR_UNTRUSTED_CONTENT",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 1
+      },
+      {
+        "name": "ALLOW_SCRIPT",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 2
+      },
+      {
+        "name": "HIDE_FROM_ABOUTABOUT",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 4
+      },
+      {
+        "name": "ENABLE_INDEXED_DB",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 8
+      },
+      {
+        "name": "URI_CAN_LOAD_IN_CHILD",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 16
+      },
+      {
+        "name": "URI_MUST_LOAD_IN_CHILD",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 32
+      },
+      {
+        "name": "MAKE_UNLINKABLE",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 64
+      },
+      {
+        "name": "MAKE_LINKABLE",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 128
+      },
+      {
+        "name": "URI_CAN_LOAD_IN_PRIVILEGEDABOUT_PROCESS",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 256
+      },
+      {
+        "name": "URI_MUST_LOAD_IN_EXTENSION_PROCESS",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 512
+      },
+      {
+        "name": "ALLOW_UNSANITIZED_CONTENT",
+        "type": {
+          "tag": "TD_UINT32"
+        },
+        "value": 1024
+      }
+    ],
+    "flags": [],
+    "methods": [
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "newChannel",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIURI",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsILoadInfo",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsIChannel",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getURIFlags",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIURI",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "tag": "TD_UINT32"
+            }
+          }
+        ]
+      },
+      {
+        "flags": [
+          "hasretval"
+        ],
+        "name": "getChromeURI",
+        "params": [
+          {
+            "flags": [
+              "in"
+            ],
+            "type": {
+              "name": "nsIURI",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          },
+          {
+            "flags": [
+              "out"
+            ],
+            "type": {
+              "name": "nsIURI",
+              "tag": "TD_INTERFACE_TYPE"
+            }
+          }
+        ]
+      }
+    ],
+    "name": "nsIAboutModule",
+    "parent": "nsISupports",
+    "uuid": "c0c19db9-1b5a-4ac5-b656-ed6f8149fa48"
+  }
+]

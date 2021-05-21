@@ -1,0 +1,5 @@
+[
+    "-include",
+    "/worker/build/obj-x86_64-pc-linux-gnu/js/src/js-confdefs.h",
+    "-DMOZILLA_CLIENT"
+]

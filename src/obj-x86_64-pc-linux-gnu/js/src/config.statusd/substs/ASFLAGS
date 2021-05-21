@@ -1,0 +1,4 @@
+[
+    "-fPIC",
+    "-Wa,--noexecstack"
+]

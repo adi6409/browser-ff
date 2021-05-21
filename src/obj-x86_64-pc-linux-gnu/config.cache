@@ -1,0 +1,117 @@
+# This file is a shell script that caches the results of configure
+# tests run on this system so they can be shared between configure
+# scripts and configure runs.  It is not useful on other systems.
+# If it contains results you don't want to keep, you may remove or edit it.
+#
+# By default, configure uses ./config.cache as the cache file,
+# creating it if it does not exist already.  You can give configure
+# the --cache-file=FILE option to use a different cache file; that is
+# what configure does when it calls configure scripts in
+# subdirectories, so they share the cache.
+# Giving --cache-file=/dev/null disables caching, for debugging configure.
+# config.status only pays attention to the cache file if you give it the
+# --recheck option to rerun configure.
+#
+ac_cv_c_const=${ac_cv_c_const=yes}
+ac_cv_clock_monotonic=${ac_cv_clock_monotonic=}
+ac_cv_cygwin=${ac_cv_cygwin=no}
+ac_cv_exeext=${ac_cv_exeext=no}
+ac_cv_func_FT_GlyphSlot_Embolden=${ac_cv_func_FT_GlyphSlot_Embolden=yes}
+ac_cv_func_FT_Load_Sfnt_Table=${ac_cv_func_FT_Load_Sfnt_Table=yes}
+ac_cv_func__Unwind_Backtrace=${ac_cv_func__Unwind_Backtrace=yes}
+ac_cv_func___cxa_demangle=${ac_cv_func___cxa_demangle=yes}
+ac_cv_func__getc_nolock=${ac_cv_func__getc_nolock=no}
+ac_cv_func_arc4random=${ac_cv_func_arc4random=no}
+ac_cv_func_arc4random_buf=${ac_cv_func_arc4random_buf=no}
+ac_cv_func_connect=${ac_cv_func_connect=yes}
+ac_cv_func_dladdr=${ac_cv_func_dladdr=yes}
+ac_cv_func_fdatasync=${ac_cv_func_fdatasync=yes}
+ac_cv_func_getc_unlocked=${ac_cv_func_getc_unlocked=yes}
+ac_cv_func_gethostbyname=${ac_cv_func_gethostbyname=yes}
+ac_cv_func_getpagesize=${ac_cv_func_getpagesize=yes}
+ac_cv_func_gettid=${ac_cv_func_gettid=yes}
+ac_cv_func_gmtime_r=${ac_cv_func_gmtime_r=yes}
+ac_cv_func_lchown=${ac_cv_func_lchown=yes}
+ac_cv_func_localeconv=${ac_cv_func_localeconv=yes}
+ac_cv_func_localtime_r=${ac_cv_func_localtime_r=yes}
+ac_cv_func_lstat64=${ac_cv_func_lstat64=yes}
+ac_cv_func_lutimes=${ac_cv_func_lutimes=yes}
+ac_cv_func_mallinfo=${ac_cv_func_mallinfo=yes}
+ac_cv_func_malloc_usable_size=${ac_cv_func_malloc_usable_size=yes}
+ac_cv_func_memalign=${ac_cv_func_memalign=yes}
+ac_cv_func_memmem=${ac_cv_func_memmem=yes}
+ac_cv_func_posix_fadvise=${ac_cv_func_posix_fadvise=yes}
+ac_cv_func_posix_fallocate=${ac_cv_func_posix_fallocate=yes}
+ac_cv_func_posix_memalign=${ac_cv_func_posix_memalign=yes}
+ac_cv_func_pthread_get_name_np=${ac_cv_func_pthread_get_name_np=no}
+ac_cv_func_pthread_getname_np=${ac_cv_func_pthread_getname_np=yes}
+ac_cv_func_remove=${ac_cv_func_remove=yes}
+ac_cv_func_res_ninit=${ac_cv_func_res_ninit=yes}
+ac_cv_func_setpriority=${ac_cv_func_setpriority=yes}
+ac_cv_func_shmat=${ac_cv_func_shmat=yes}
+ac_cv_func_stat64=${ac_cv_func_stat64=yes}
+ac_cv_func_statfs=${ac_cv_func_statfs=yes}
+ac_cv_func_statfs64=${ac_cv_func_statfs64=yes}
+ac_cv_func_statvfs=${ac_cv_func_statvfs=yes}
+ac_cv_func_statvfs64=${ac_cv_func_statvfs64=yes}
+ac_cv_func_strerror=${ac_cv_func_strerror=yes}
+ac_cv_func_strndup=${ac_cv_func_strndup=yes}
+ac_cv_func_syscall=${ac_cv_func_syscall=yes}
+ac_cv_func_truncate64=${ac_cv_func_truncate64=yes}
+ac_cv_have_dash_pthread=${ac_cv_have_dash_pthread=yes}
+ac_cv_have_dash_pthreads=${ac_cv_have_dash_pthreads=no}
+ac_cv_have_x=${ac_cv_have_x='have_x=yes 		ac_x_includes= ac_x_libraries='}
+ac_cv_header_dirent_dirent_h=${ac_cv_header_dirent_dirent_h=yes}
+ac_cv_header_dlfcn_h=${ac_cv_header_dlfcn_h=yes}
+ac_cv_header_fontconfig_fcfreetype_h=${ac_cv_header_fontconfig_fcfreetype_h=yes}
+ac_cv_header_linux_joystick_h=${ac_cv_header_linux_joystick_h=yes}
+ac_cv_header_malloc_h=${ac_cv_header_malloc_h=yes}
+ac_cv_header_pthread_h=${ac_cv_header_pthread_h=yes}
+ac_cv_header_unwind_h=${ac_cv_header_unwind_h=yes}
+ac_cv_lib_ICE_IceConnectionNumber=${ac_cv_lib_ICE_IceConnectionNumber=yes}
+ac_cv_lib_X11_XDrawLines=${ac_cv_lib_X11_XDrawLines=yes}
+ac_cv_lib_X11_xcb_XGetXCBConnection=${ac_cv_lib_X11_xcb_XGetXCBConnection=yes}
+ac_cv_lib_Xext_XextAddDisplay=${ac_cv_lib_Xext_XextAddDisplay=yes}
+ac_cv_lib_Xt_XtFree=${ac_cv_lib_Xt_XtFree=yes}
+ac_cv_lib_c_r_gethostbyname_r=${ac_cv_lib_c_r_gethostbyname_r=no}
+ac_cv_lib_dir_opendir=${ac_cv_lib_dir_opendir=no}
+ac_cv_lib_dnet_dnet_ntoa=${ac_cv_lib_dnet_dnet_ntoa=no}
+ac_cv_lib_dnet_stub_dnet_ntoa=${ac_cv_lib_dnet_stub_dnet_ntoa=no}
+ac_cv_lib_m_sin=${ac_cv_lib_m_sin=yes}
+ac_cv_lib_pthread_pthread_create=${ac_cv_lib_pthread_pthread_create=yes}
+ac_cv_lib_pthreads_pthread_create=${ac_cv_lib_pthreads_pthread_create=no}
+ac_cv_lib_socket_socket=${ac_cv_lib_socket_socket=no}
+ac_cv_lib_xcb_shm_xcb_shm_query_version=${ac_cv_lib_xcb_shm_xcb_shm_query_version=yes}
+ac_cv_lib_xcb_xcb_connect=${ac_cv_lib_xcb_xcb_connect=yes}
+ac_cv_member_FT_Bitmap_Size_y_ppem=${ac_cv_member_FT_Bitmap_Size_y_ppem=yes}
+ac_cv_mingw32=${ac_cv_mingw32=no}
+ac_cv_needs_atomic=${ac_cv_needs_atomic=no}
+ac_cv_path_AS=${ac_cv_path_AS='/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99'}
+ac_cv_path_OBJCOPY=${ac_cv_path_OBJCOPY=/usr/sbin/objcopy}
+ac_cv_prog_AS=${ac_cv_prog_AS='/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99'}
+ac_cv_prog_CC=${ac_cv_prog_CC='/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang -std=gnu99'}
+ac_cv_prog_CXX=${ac_cv_prog_CXX='/home/worker/.mozbuild/sccache/sccache /home/worker/.mozbuild/clang/bin/clang++ -std=gnu++17'}
+ac_cv_prog_STRIP=${ac_cv_prog_STRIP=strip}
+ac_cv_prog_cc_cross=${ac_cv_prog_cc_cross=no}
+ac_cv_prog_cc_g=${ac_cv_prog_cc_g=yes}
+ac_cv_prog_cc_works=${ac_cv_prog_cc_works=yes}
+ac_cv_prog_cxx_cross=${ac_cv_prog_cxx_cross=no}
+ac_cv_prog_cxx_g=${ac_cv_prog_cxx_g=yes}
+ac_cv_prog_cxx_works=${ac_cv_prog_cxx_works=yes}
+ac_cv_prog_gcc=${ac_cv_prog_gcc=yes}
+ac_cv_prog_gxx=${ac_cv_prog_gxx=yes}
+ac_cv_pthread_cond_timewait_monotonic_np=${ac_cv_pthread_cond_timewait_monotonic_np=no}
+ac_cv_search_dlopen=${ac_cv_search_dlopen=-ldl}
+ac_cv_sockaddr_in6_sin6_len=${ac_cv_sockaddr_in6_sin6_len=false}
+ac_cv_sockaddr_in_sin_len=${ac_cv_sockaddr_in_sin_len=false}
+ac_cv_sockaddr_sa_len=${ac_cv_sockaddr_sa_len=false}
+ac_cv_struct_tm_zone_tm_gmtoff=${ac_cv_struct_tm_zone_tm_gmtoff=yes}
+ac_cv_thread_keyword=${ac_cv_thread_keyword=yes}
+ac_cv_type_mode_t=${ac_cv_type_mode_t=yes}
+ac_cv_type_off_t=${ac_cv_type_off_t=yes}
+ac_cv_type_pid_t=${ac_cv_type_pid_t=yes}
+ac_cv_type_size_t=${ac_cv_type_size_t=yes}
+ac_cv_type_ssize_t=${ac_cv_type_ssize_t=true}
+ac_cv_va_copy=${ac_cv_va_copy=yes}
+ac_cv_va_val_copy=${ac_cv_va_val_copy=no}
+am_cv_langinfo_codeset=${am_cv_langinfo_codeset=yes}

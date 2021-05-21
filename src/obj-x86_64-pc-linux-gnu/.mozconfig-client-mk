@@ -1,0 +1,6 @@
+MOZ_TELEMETRY_REPORTING=
+MOZ_DATA_REPORTING=
+MOZ_OBJDIR=/worker/build/obj-x86_64-pc-linux-gnu
+OBJDIR=/worker/build/obj-x86_64-pc-linux-gnu
+FOUND_MOZCONFIG=/worker/build/mozconfig
+export FOUND_MOZCONFIG

@@ -1,0 +1,5 @@
+host_mar.o
+host_city.o
+../src/host_mar_create.o
+../src/host_mar_extract.o
+../src/host_mar_read.o

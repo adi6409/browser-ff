@@ -1,0 +1,1 @@
+/worker/build/testing/mozbase/mozscreenshot/mozscreenshot/__init__.py

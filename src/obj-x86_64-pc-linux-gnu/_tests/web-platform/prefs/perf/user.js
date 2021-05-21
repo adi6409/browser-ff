@@ -1,0 +1,1 @@
+/worker/build/testing/profiles/perf/user.js
